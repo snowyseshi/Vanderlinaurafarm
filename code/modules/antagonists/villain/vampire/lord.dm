@@ -38,8 +38,8 @@
 /datum/antagonist/vampire/lord/after_gain()
 	owner.current.verbs |= /mob/living/carbon/human/proc/demand_submission
 	owner.current.verbs |= /mob/living/carbon/human/proc/vamp_regenerate
-    owner.current.verbs |= /mob/living/carbon/human/proc/punish_spawn
-   
+	owner.current.verbs |= /mob/living/carbon/human/proc/punish_spawn
+
 
 /datum/antagonist/vampire/lord/on_removal()
 	if(!isnull(batform))
@@ -52,8 +52,8 @@
 
 	owner.current.verbs -= /mob/living/carbon/human/proc/demand_submission
 	owner.current.verbs |= /mob/living/carbon/human/proc/vamp_regenerate
-    owner.current.verbs -= /mob/living/carbon/human/proc/punish_spawn
-   
+	owner.current.verbs -= /mob/living/carbon/human/proc/punish_spawn
+
 
 	. = ..()
 
@@ -108,7 +108,7 @@
 
 /datum/outfit/job/vamplord/pre_equip(mob/living/carbon/human/H)
 	..()
-	H.adjust_skillrank(/datum/skill/magic/blood, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/magic/blood, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 5, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)

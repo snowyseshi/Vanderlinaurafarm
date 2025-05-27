@@ -37,8 +37,9 @@
 
 /datum/antagonist/vampire/lord/after_gain()
 	owner.current.verbs |= /mob/living/carbon/human/proc/demand_submission
-	owner.current.verbs |= /mob/living/carbon/human/proc/punish_spawn
-    owner.current.verbs |= /mob/living/carbon/human/proc/vamp_regenerate
+	owner.current.verbs |= /mob/living/carbon/human/proc/vamp_regenerate
+    owner.current.verbs |= /mob/living/carbon/human/proc/punish_spawn
+   
 
 /datum/antagonist/vampire/lord/on_removal()
 	if(!isnull(batform))
@@ -50,8 +51,9 @@
 		QDEL_NULL(portal)
 
 	owner.current.verbs -= /mob/living/carbon/human/proc/demand_submission
-	owner.current.verbs -= /mob/living/carbon/human/proc/punish_spawn
-    owner.current.verbs |= /mob/living/carbon/human/proc/vamp_regenerate
+	owner.current.verbs |= /mob/living/carbon/human/proc/vamp_regenerate
+    owner.current.verbs -= /mob/living/carbon/human/proc/punish_spawn
+   
 
 	. = ..()
 

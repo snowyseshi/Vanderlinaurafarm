@@ -71,8 +71,8 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 
 	owner.current.cmode_music = 'sound/music/cmode/antag/CombatThrall.ogg'
 	owner.current.adjust_skillrank(/datum/skill/magic/blood, 2, TRUE)
-    owner.current.AddSpell(new /obj/effect/proc_holder/spell/targeted/transfix)
-    
+	owner.current.AddSpell(new /obj/effect/proc_holder/spell/targeted/transfix)
+
 	vamp_look()
 	. = ..()
 	equip()
@@ -84,8 +84,7 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 
 /datum/antagonist/vampire/proc/after_gain()
 	owner.current.verbs |= /mob/living/carbon/human/proc/vamp_regenerate
-    owner.current.verbs |= /mob/living/carbon/human/proc/disguise_button
-    
+	owner.current.verbs |= /mob/living/carbon/human/proc/disguise_button
 
 /datum/antagonist/vampire/on_removal()
 	owner.current.has_reflection = TRUE

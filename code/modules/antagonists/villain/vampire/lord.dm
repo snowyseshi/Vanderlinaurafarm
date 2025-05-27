@@ -38,6 +38,7 @@
 /datum/antagonist/vampire/lord/after_gain()
 	owner.current.verbs |= /mob/living/carbon/human/proc/demand_submission
 	owner.current.verbs |= /mob/living/carbon/human/proc/punish_spawn
+    owner.current.verbs |= /mob/living/carbon/human/proc/vamp_regenerate
 
 /datum/antagonist/vampire/lord/on_removal()
 	if(!isnull(batform))
@@ -50,6 +51,7 @@
 
 	owner.current.verbs -= /mob/living/carbon/human/proc/demand_submission
 	owner.current.verbs -= /mob/living/carbon/human/proc/punish_spawn
+    owner.current.verbs |= /mob/living/carbon/human/proc/vamp_regenerate
 
 	. = ..()
 

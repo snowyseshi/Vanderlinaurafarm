@@ -70,8 +70,9 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 		vampdude.adv_hugboxing_cancel()
 
 	owner.current.cmode_music = 'sound/music/cmode/antag/CombatThrall.ogg'
-	owner.current.AddSpell(new /obj/effect/proc_holder/spell/targeted/transfix)
-    owner.current.adjust_skillrank(/datum/skill/magic/blood, 2, TRUE)
+	owner.current.adjust_skillrank(/datum/skill/magic/blood, 2, TRUE)
+    owner.current.AddSpell(new /obj/effect/proc_holder/spell/targeted/transfix)
+    
 	vamp_look()
 	. = ..()
 	equip()
@@ -82,9 +83,9 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 	owner.special_role = span_redtext("[name]")
 
 /datum/antagonist/vampire/proc/after_gain()
-	owner.current.verbs |= /mob/living/carbon/human/proc/disguise_button
+	owner.current.verbs |= /mob/living/carbon/human/proc/vamp_regenerate
+    owner.current.verbs |= /mob/living/carbon/human/proc/disguise_button
     
-    owner.current.verbs |= /mob/living/carbon/human/proc/vamp_regenerate
 
 /datum/antagonist/vampire/on_removal()
 	owner.current.has_reflection = TRUE

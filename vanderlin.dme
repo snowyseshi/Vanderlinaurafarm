@@ -1854,6 +1854,7 @@
 #include "code\modules\antagonists\villain\neu_vampires\covens\coven_powers\auspex.dm"
 #include "code\modules\antagonists\villain\neu_vampires\covens\coven_powers\blood_rites.dm"
 #include "code\modules\antagonists\villain\neu_vampires\covens\coven_powers\bloodheal.dm"
+#include "code\modules\antagonists\villain\neu_vampires\covens\coven_powers\celerity.dm"
 #include "code\modules\antagonists\villain\neu_vampires\covens\coven_powers\demonic.dm"
 #include "code\modules\antagonists\villain\neu_vampires\covens\coven_powers\eoran.dm"
 #include "code\modules\antagonists\villain\neu_vampires\covens\coven_powers\fae_trickery.dm"

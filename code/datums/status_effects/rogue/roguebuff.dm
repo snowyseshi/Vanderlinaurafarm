@@ -892,3 +892,11 @@
 	name = "Invigorated"
 	desc = "I have supped on the finest of delicacies: life!"
 
+/datum/status_effect/buff/celerity
+	id = "celerity"
+	alert_type = /atom/movable/screen/alert/status_effect/buff
+	effectedstats = list(STATKEY_SPD = 1)
+	status_type = STATUS_EFFECT_REPLACE
+/datum/status_effect/buff/celerity/New(list/arguments)
+	effectedstats[STATKEY_SPD] = arguments[2]
+	. = ..()

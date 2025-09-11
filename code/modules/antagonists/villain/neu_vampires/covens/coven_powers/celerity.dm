@@ -52,7 +52,7 @@
 	. = ..()
 	RegisterSignal(owner, COMSIG_MOVABLE_MOVED, PROC_REF(celerity_visual))
 
-	owner.add_movespeed_modifier(MOVESPEED_ID_CELERITY, multiplicative_slowdown = -0.2)
+	owner.add_movespeed_modifier(MOVESPEED_ID_CELERITY, multiplicative_slowdown = -0.4)
 	owner.apply_status_effect(/datum/status_effect/buff/celerity, level)
 
 /datum/coven_power/celerity/one/deactivate()
@@ -83,7 +83,7 @@
 	. = ..()
 	RegisterSignal(owner, COMSIG_MOVABLE_MOVED, PROC_REF(celerity_visual))
 
-	owner.add_movespeed_modifier(MOVESPEED_ID_CELERITY, multiplicative_slowdown = -0.4)
+	owner.add_movespeed_modifier(MOVESPEED_ID_CELERITY, multiplicative_slowdown = -0.6)
 
 /datum/coven_power/celerity/two/deactivate()
 	. = ..()
@@ -112,7 +112,7 @@
 	. = ..()
 	RegisterSignal(owner, COMSIG_MOVABLE_MOVED, PROC_REF(celerity_visual))
 
-	owner.add_movespeed_modifier(MOVESPEED_ID_CELERITY, multiplicative_slowdown = -0.5)
+	owner.add_movespeed_modifier(MOVESPEED_ID_CELERITY, multiplicative_slowdown = -0.8)
 
 /datum/coven_power/celerity/three/deactivate()
 	. = ..()
@@ -141,7 +141,7 @@
 	. = ..()
 	RegisterSignal(owner, COMSIG_MOVABLE_MOVED, PROC_REF(celerity_visual))
 
-	owner.add_movespeed_modifier(MOVESPEED_ID_CELERITY, multiplicative_slowdown = -0.8)
+	owner.add_movespeed_modifier(MOVESPEED_ID_CELERITY, multiplicative_slowdown = -1)
 
 /datum/coven_power/celerity/four/deactivate()
 	. = ..()
@@ -170,7 +170,7 @@
 	. = ..()
 	RegisterSignal(owner, COMSIG_MOVABLE_MOVED, PROC_REF(celerity_visual))
 
-	owner.add_movespeed_modifier(MOVESPEED_ID_CELERITY, multiplicative_slowdown = -1)
+	owner.add_movespeed_modifier(MOVESPEED_ID_CELERITY, multiplicative_slowdown = -2)
 
 /datum/coven_power/celerity/five/deactivate()
 	. = ..()

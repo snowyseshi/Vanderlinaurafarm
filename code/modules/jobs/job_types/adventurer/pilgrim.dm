@@ -16,7 +16,7 @@
 
 	outfit = null
 	outfit_female = null
-	advclass_cat_rolls = list(CTAG_PILGRIM = 15)
+	advclass_cat_rolls = list(CTAG_PILGRIM = 25)
 
 	same_job_respawn_delay = 0
 

@@ -48,6 +48,7 @@
 		"Monk",
 		"Adventurer",
 		"Pilgrim",
+		"Wretch",
 		"Mercenary", // advclasses bug you out
 	)
 

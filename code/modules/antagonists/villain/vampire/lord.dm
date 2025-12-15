@@ -45,7 +45,7 @@
 		"Royal Knight",
 		"Templar",
 		"Assassin",
-		"Monk",
+		"Acolyte",
 	)
 
 	var/list/candidates = SSgamemode.get_candidates(ROLE_NBEAST, ROLE_NBEAST, living_players = TRUE, restricted_roles = restricted_roles)

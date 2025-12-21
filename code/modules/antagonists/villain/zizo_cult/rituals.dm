@@ -83,6 +83,7 @@ GLOBAL_LIST_INIT(ritualslist, build_zizo_rituals())
 	target.mind?.set_assigned_role(summon_job)
 	target.dress_up_as_job(summon_job)
 	summon_job.after_spawn(target, target.client)
+	ADD_TRAIT(target, TRAIT_CABAL, TRAIT_GENERIC)
 
 	to_chat(target, span_userdanger("I am returned to serve. I will obey, so that I may return to rest."))
 	to_chat(target, span_userdanger("My master is [user]."))

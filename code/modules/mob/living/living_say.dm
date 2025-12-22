@@ -151,18 +151,17 @@
 
 
 	if(mind && iscarbon(src) && findtext(lowertext(message), "zizo"))
-		if(!istype(patron, /datum/patron/inhumen/zizo))
-			if(!istype(patron, /datum/patron/godless))
-				add_stress(/datum/stress_event/zizochill)
-				var/text = pick_list("stress_messages.json", "insanity")
-				INVOKE_ASYNC(GLOBAL_PROC, GLOBAL_PROC_REF(show_blurb), \
-					targets = src, \
-					duration = 3 SECONDS, \
-					message = text, \
-					fade_time = 3 SECONDS, \
-					screen_position = "WEST+[rand(2,13)], SOUTH+[rand(1,12)]", \
-					text_alignment = pick("left", "right", "center"), \
-					text_color = "purple")
+		if(!istype(patron, /datum/patron/inhumen/zizo) && !istype(patron, /datum/patron/godless))
+			add_stress(/datum/stress_event/zizochill)
+			var/text = pick_list("stress_messages.json", "insanity")
+			INVOKE_ASYNC(GLOBAL_PROC, GLOBAL_PROC_REF(show_blurb), \
+				targets = src, \
+				duration = 3 SECONDS, \
+				message = text, \
+				fade_time = 3 SECONDS, \
+				screen_position = "WEST+[rand(2,13)], SOUTH+[rand(1,12)]", \
+				text_alignment = pick("left", "right", "center"), \
+				text_color = "purple")
 
 	if(language)
 		var/datum/language/L = GLOB.language_datum_instances[language]

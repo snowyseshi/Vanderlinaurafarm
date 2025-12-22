@@ -745,3 +745,8 @@
 	stress_change = 1
 	desc = span_red("I ate off a dirty bowl..")
 	timer = 1 MINUTES
+
+/datum/stress_event/zizochill
+	stress_change = 3
+	desc = span_red("I feel a chill down my spine..")
+	timer = 2 MINUTES

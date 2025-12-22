@@ -149,6 +149,11 @@
 
 	spans |= speech_span
 
+
+	if(mind && iscarbon(src) && findtext(lowertext(message), "zizo"))
+		if(!istype(patron, /datum/patron/inhumen/zizo))
+			add_stress(/datum/stress_event/zizochill)
+
 	if(language)
 		var/datum/language/L = GLOB.language_datum_instances[language]
 		if(ishuman(src))
@@ -516,3 +521,4 @@
 			return .
 
 	. = ..()
+

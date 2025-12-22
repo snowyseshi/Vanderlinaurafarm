@@ -149,7 +149,6 @@
 
 	spans |= speech_span
 
-
 	if(mind && iscarbon(src) && findtext(lowertext(message), "zizo"))
 		if(!istype(patron, /datum/patron/inhumen/zizo) && !istype(patron, /datum/patron/godless))
 			add_stress(/datum/stress_event/zizochill)

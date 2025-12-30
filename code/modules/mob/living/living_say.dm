@@ -149,9 +149,6 @@
 
 	spans |= speech_span
 
-	if(is_priest_job(src.mind?.assigned_role) && iscarbon(src) && findtext(lowertext(message), "Astrata"))
-		add_stress(/datum/stress_event/blessed)
-
 	if(language)
 		var/datum/language/L = GLOB.language_datum_instances[language]
 		if(ishuman(src))

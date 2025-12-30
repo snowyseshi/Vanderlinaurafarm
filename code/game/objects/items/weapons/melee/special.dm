@@ -125,13 +125,13 @@
 	resistance_flags = FIRE_PROOF // Leniency for unique items
 	dropshrink = 0.6
 	sellprice = 100
-	possible_item_intents = list(POLEARM_BASH, /datum/intent/priest_punish, /datum/intent/priest_silence)
+	possible_item_intents = list(POLEARM_BASH, /datum/intent/priest_smite, /datum/intent/priest_silence)
 	gripped_intents = list(POLEARM_BASH, /datum/intent/mace/smash/wood)
 	var/static/list/rod_jobs_priest = null
 	COOLDOWN_DECLARE(staff)
 
-/datum/intent/priest_punish
-	name = "electrocute"
+/datum/intent/priest_smite
+	name = "smite"
 	blade_class = null
 	icon_state = "inuse"
 	tranged = TRUE
@@ -184,7 +184,7 @@
 				to_chat(user, span_danger("The [src] is not ready yet! [round(COOLDOWN_TIMELEFT(src, staff) / 10, 1)] seconds left!"))
 				return
 
-			if(istype(user.used_intent, /datum/intent/priest_punish))
+			if(istype(user.used_intent, /datum/intent/priest_smite))
 				HU.visible_message(span_warning("[HU] smites [H] with \the [src]."))
 				user.Beam(target, icon_state = "solar_beam", time = 0.5 SECONDS) // LIGHTNING
 				playsound(user, 'sound/magic/lightningshock.ogg', 70, TRUE)

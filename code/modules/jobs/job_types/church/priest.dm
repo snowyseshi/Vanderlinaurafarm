@@ -23,7 +23,6 @@
 		/datum/action/cooldown/spell/undirected/list_target/convert_role/templar,
 		/datum/action/cooldown/spell/undirected/list_target/convert_role/acolyte,
 		/datum/action/cooldown/spell/undirected/list_target/convert_role/churchling,
-		/datum/action/cooldown/spell/silence_inhumen,
 		/datum/action/cooldown/spell/undirected/call_bird/priest,
 	)
 

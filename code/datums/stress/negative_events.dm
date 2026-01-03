@@ -749,4 +749,4 @@
 /datum/stress_event/zizochill
 	stress_change = 1
 	desc = span_red("I feel a chill down my spine..")
-	timer = 2 MINUTES
+	timer = 1 MINUTES

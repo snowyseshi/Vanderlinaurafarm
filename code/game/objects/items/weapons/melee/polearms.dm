@@ -179,16 +179,6 @@
 	minstr = 7
 	max_integrity = INTEGRITY_STRONGEST
 
-//................ Staff of the Testimonium ............... //
-/obj/item/weapon/polearm/woodstaff/aries
-	force_wielded =  DAMAGE_STAFF_WIELD+1
-	name = "staff of the testimonium"
-	desc = "A symbolic staff, granted to enlightened acolytes who have achieved and bear witnessed to the miracles of the Gods."
-	icon_state = "aries"
-	resistance_flags = FIRE_PROOF // Leniency for unique items
-	dropshrink = 0.6
-	sellprice = 100
-
 /obj/item/weapon/polearm/woodstaff/seer
 	force_wielded =  DAMAGE_STAFF_WIELD+1
 	name = "staff of the rous seer"

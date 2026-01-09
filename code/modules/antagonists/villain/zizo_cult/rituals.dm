@@ -518,6 +518,8 @@ GLOBAL_LIST_INIT(ritualslist, build_zizo_rituals())
 	if(target.mind.has_antag_datum(/datum/antagonist/werewolf))
 		to_chat(target, span_warning("The curse doesn't take hold!"))
 		return
+	if(target.stat == DEAD)
+		return
 	to_chat(target, span_warning("My very being, body, soul, and mind is contorted and twisted violently into a ball of flesh and fur, until I am reshaped anew as an abomination!"))
 	addtimer(CALLBACK(src, PROC_REF(get_hollowed), target, center), 5 SECONDS)
 

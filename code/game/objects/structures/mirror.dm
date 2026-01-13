@@ -20,7 +20,44 @@
 	if(icon_state == "mirror_broke" && !obj_broken)
 		atom_break(null, TRUE, mapload)
 
-/obj/structure/mirror/attack_hand(mob/user)
+/obj/structure/mirror/atom_break(damage_flag, silent, mapload)
+	. = ..()
+	if(!(flags_1 & NODECONSTRUCT_1))
+		icon_state = "[icon_state]1"
+		if(!mapload)
+			new /obj/item/natural/glass/shard (get_turf(src))
+
+/obj/structure/mirror/atom_fix()
+	. = ..()
+	icon_state = initial(icon_state)
+
+/obj/structure/mirror/deconstruct(disassembled = TRUE)
+	..()
+
+/obj/structure/mirror/welder_act(mob/living/user, obj/item/I)
+	..()
+	if(user.used_intent.type == INTENT_HARM)
+		return FALSE
+
+	if(!obj_broken)
+		return TRUE
+
+	if(!I.tool_start_check(user, amount=0))
+		return TRUE
+
+	to_chat(user, "<span class='notice'>I begin repairing [src]...</span>")
+	if(I.use_tool(src, user, 10, volume=50))
+		to_chat(user, "<span class='notice'>I repair [src].</span>")
+		atom_fix()
+		icon_state = initial(icon_state)
+		desc = initial(desc)
+
+	return TRUE
+
+/obj/structure/mirror/dev
+	icon_state = "fancymirror"
+
+/obj/structure/mirror/dev/attack_hand(mob/user)
 	. = ..()
 	if(.)
 		return
@@ -164,37 +201,3 @@
 	if(obj_broken)
 		return list()// no message spam
 	return ..()
-
-/obj/structure/mirror/atom_break(damage_flag, silent, mapload)
-	. = ..()
-	if(!(flags_1 & NODECONSTRUCT_1))
-		icon_state = "[icon_state]1"
-		if(!mapload)
-			new /obj/item/natural/glass/shard (get_turf(src))
-
-/obj/structure/mirror/atom_fix()
-	. = ..()
-	icon_state = initial(icon_state)
-
-/obj/structure/mirror/deconstruct(disassembled = TRUE)
-	..()
-
-/obj/structure/mirror/welder_act(mob/living/user, obj/item/I)
-	..()
-	if(user.used_intent.type == INTENT_HARM)
-		return FALSE
-
-	if(!obj_broken)
-		return TRUE
-
-	if(!I.tool_start_check(user, amount=0))
-		return TRUE
-
-	to_chat(user, "<span class='notice'>I begin repairing [src]...</span>")
-	if(I.use_tool(src, user, 10, volume=50))
-		to_chat(user, "<span class='notice'>I repair [src].</span>")
-		atom_fix()
-		icon_state = initial(icon_state)
-		desc = initial(desc)
-
-	return TRUE

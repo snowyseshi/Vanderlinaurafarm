@@ -19,9 +19,9 @@
 			if(held_item.get_sharpness() && held_item.wlength == WLENGTH_SHORT)
 				playsound(src, 'sound/foley/shaving.ogg', 100, TRUE, -1)
 				if(user == src)
-					user.visible_message("<span class='danger'>[user] starts to shave [user.p_their()] hair with [held_item].</span>")
+					user.visible_message(span_danger("[user] starts to shave [user.p_their()] hair with [held_item].</span>"))
 				else
-					user.visible_message("<span class='danger'>[user] starts to shave [src]'s hair with [held_item].</span>")
+					user.visible_message(span_danger("[user] starts to shave [src]'s hair with [held_item].</span>"))
 				if(do_after(user, 10 SECONDS, src))
 					set_hair_style(/datum/sprite_accessory/hair/head/bald)
 					update_body()

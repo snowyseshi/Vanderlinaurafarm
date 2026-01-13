@@ -68,13 +68,13 @@
 		var/mob/living/carbon/human/HU = user
 
 		if(!is_lord_job(HU.mind?.assigned_role))
-			to_chat(user, "<span class='danger'>The rod doesn't obey me.</span>")
+			to_chat(user, span_danger("The rod doesn't obey me."))
 			return
 
 		if(ishuman(target))
 			var/mob/living/carbon/human/H = target
 
-			user.visible_message("<span class='warning'>[user] points [src] at [target].</span>")
+			user.visible_message(span_warning("[user] points [src] at [target].</span>"))
 
 			if(H == HU)
 				return
@@ -155,13 +155,13 @@
 		var/mob/living/carbon/human/HU = user
 
 		if(!is_priest_job(HU.mind?.assigned_role))
-			to_chat(user, "<span class='danger'>The staff doesn't obey me.</span>")
+			to_chat(user, span_danger("The staff doesn't obey me."))
 			return
 
 		if(ishuman(target))
 			var/mob/living/carbon/human/H = target
 
-			user.visible_message("<span class='warning'>[user] points [src] at [target].</span>")
+			user.visible_message(span_warning("[user] points [src] at [target]."))
 
 			if(H == HU)
 				return

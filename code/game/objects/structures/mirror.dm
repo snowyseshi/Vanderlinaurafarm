@@ -45,19 +45,20 @@
 	if(!I.tool_start_check(user, amount=0))
 		return TRUE
 
-	to_chat(user, "<span class='notice'>I begin repairing [src]...</span>")
+	to_chat(user, span_notice("I begin repairing [src]..."))
 	if(I.use_tool(src, user, 10, volume=50))
-		to_chat(user, "<span class='notice'>I repair [src].</span>")
+		to_chat(user, span_notice("I repair [src]."))
 		atom_fix()
 		icon_state = initial(icon_state)
 		desc = initial(desc)
 
 	return TRUE
 
-/obj/structure/mirror/dev
+/obj/structure/mirror/magic
 	icon_state = "fancymirror"
+	desc = "A magical mirror that allows one to change their appearance."
 
-/obj/structure/mirror/dev/attack_hand(mob/user)
+/obj/structure/mirror/magic/attack_hand(mob/user)
 	. = ..()
 	if(.)
 		return

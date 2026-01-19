@@ -68,6 +68,23 @@
 	// This is approximate since we randomized on spawn
 	H.adjust_stat_modifier(STATMOD_QUIRK, STATKEY_INT, 3)
 
+/datum/quirk/peculiarity/ugly
+	name = "Ugly"
+	desc = "People find me repulsive."
+
+/datum/quirk/peculiarity/ugly/on_spawn()
+	if(!ishuman(owner))
+		return
+	var/mob/living/carbon/human/H = owner
+	ADD_TRAIT(H, TRAIT_UGLY, TRAIT_GENERIC)
+	REMOVE_TRAIT(H, TRAIT_BEAUTIFUL, TRAIT_GENERIC)
+
+/datum/quirk/peculiarity/ugly/on_remove()
+	if(!ishuman(owner))
+		return
+	var/mob/living/carbon/human/H = owner
+	REMOVE_TRAIT(H, TRAIT_UGLY, TRAIT_GENERIC)
+
 /datum/quirk/peculiarity/virgin
 	name = "Virgin"
 	desc = "YOU... ARE MAIDENLESS!! you never were good with women... or men, whether cause you are a awkward freak, or religous reasons, or simply plain unlucky, your blood remains untainted and pure."
@@ -88,7 +105,7 @@
 /datum/quirk/peculiarity/mystery_box
 	name = "Mystery Box"
 	desc = "You possess a locked box that you cannot open. Someone in this world knows the code..."
-	point_value = 0
+	point_value = -2
 	var/obj/item/mystery/mystery_box
 	var/passcode
 	var/mob/living/carbon/human/keeper

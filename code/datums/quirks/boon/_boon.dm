@@ -10,30 +10,6 @@
 		/datum/quirk/vice/bad_sight
 	)
 
-/datum/quirk/boon/night_vision
-	name = "Night Vision"
-	desc = "You can see better in darkness than most. Perhaps you have elf blood, or maybe you just spent too many nights as a watchman."
-	point_value = -4
-	incompatible_quirks = list(
-		/datum/quirk/vice/bad_sight,
-		/datum/quirk/vice/cyclops_left,
-		/datum/quirk/vice/cyclops_right
-	)
-
-/datum/quirk/boon/night_vision/on_spawn()
-	if(!ishuman(owner))
-		return
-	var/mob/living/carbon/human/H = owner
-	H.lighting_alpha = LIGHTING_PLANE_ALPHA_LESSER_NV_TRAIT
-	H.update_sight()
-
-/datum/quirk/boon/night_vision/on_remove()
-	if(!ishuman(owner))
-		return
-	var/mob/living/carbon/human/H = owner
-	H.lighting_alpha = initial(H.lighting_alpha)
-	H.update_sight()
-
 /datum/quirk/boon/light_footed
 	name = "Light Footed"
 	desc = "You move with grace and agility. Your steps are quieter then most."
@@ -329,21 +305,3 @@
 
 	var/mob/living/carbon/human/H = owner
 	H.clamped_adjust_skillrank(/datum/skill/misc/riding, 2, 2, TRUE)
-
-/datum/quirk/boon/beautiful
-	name = "Strikingly Beautiful"
-	desc = "You are remarkably attractive, improving social interactions."
-	point_value = -4
-
-/datum/quirk/boon/beautiful/on_spawn()
-	if(!owner)
-		return
-
-	ADD_TRAIT(owner, TRAIT_BEAUTIFUL, "[type]")
-
-	to_chat(owner, span_notice("You catch your reflection and can't help but admire yourself."))
-
-/datum/quirk/boon/beautiful/on_remove()
-	if(!owner)
-		return
-	REMOVE_TRAIT(owner, TRAIT_BEAUTIFUL, "[type]")

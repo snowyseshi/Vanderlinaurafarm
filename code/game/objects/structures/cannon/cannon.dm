@@ -55,8 +55,8 @@
 	if(!isopenturf(turf_to_shoot_from))
 		turf_to_shoot_from = get_turf(src)
 
-	playsound(get_turf(src), 'sound/foley/tinnitus.ogg', 60, FALSE, -6)
-	playsound(get_turf(src), 'sound/combat/Ranged/muskshoot.ogg', 60, FALSE, SOUND_EXTRA_RANGE_CANNON)
+	playsound(src, 'sound/foley/tinnitus.ogg', 60, FALSE, -6)
+	playsound(src, 'sound/combat/Ranged/muskshoot.ogg', 60, FALSE, SOUND_EXTRA_RANGE_CANNON)
 	new /obj/effect/particle_effect/smoke/chem/transparent(get_turf(src))
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage) // don't @ me
 
@@ -86,7 +86,7 @@
 			qdel(loaded_ammo) // I think this is a bug (?) but I don't want to deal with it rn
 		else
 			if(ismobholder(loaded_thing))
-				var/obj/item/clothing/head/mob_holder/curler = loaded_thing
+				var/obj/item/mob_holder/curler = loaded_thing
 				loaded_thing = curler.held_mob
 				qdel(curler)
 			loaded_thing.throw_at(target, blast_range, 3, force = MOVE_FORCE_OVERPOWERING)
@@ -255,7 +255,7 @@
 	lit = TRUE
 	cannon?.balloon_alert_to_viewers("Lit!")
 	addtimer(CALLBACK(src, PROC_REF(reached_end)), 5 SECONDS)
-	playsound(cannon.loc, 'sound/items/fuse.ogg', 100)
+	playsound(cannon, 'sound/items/fuse.ogg', 100)
 	SEND_SIGNAL(src, COMSIG_FUSE_LIT)
 
 /obj/item/fuse/proc/extinguished()

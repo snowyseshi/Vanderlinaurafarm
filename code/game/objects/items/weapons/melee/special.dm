@@ -189,7 +189,6 @@
 				HU.visible_message(span_warning("[HU] smites [H] with \the [src]."))
 				user.Beam(target, icon_state = "solar_beam", time = 0.5 SECONDS) // LIGHTNING
 				playsound(user, 'sound/magic/lightningshock.ogg', 70, TRUE)
-				playsound(user, 'sound/misc/gods/astrata_scream.ogg', 70, TRUE)
 				H.electrocute_act(5, src)
 				HU.log_message("has smitten [H.real_name] with the [src]!", LOG_ATTACK)
 				to_chat(H, span_danger("I'm smitten by the staff!"))
@@ -202,7 +201,6 @@
 				HU.log_message("has silenced [H.real_name] with the [src]!", LOG_ATTACK)
 				to_chat(H, span_danger("I'm silenced by the staff!"))
 				COOLDOWN_START(src, staff, 10 SECONDS)
-				return
 
 /obj/item/weapon/mace/stunmace
 	name = "stunmace"

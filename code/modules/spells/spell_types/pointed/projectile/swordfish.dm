@@ -53,7 +53,7 @@
 	force = DAMAGE_DAGGER
 	dropshrink = 0.8
 	possible_item_intents = list(DAGGER_THRUST, /datum/intent/food)
-	sellprice = 50
+	sellprice = VALUE_LUXURY_THING
 	beauty = 8
 	favorite_bait = list(
 		list(

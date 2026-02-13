@@ -15,7 +15,7 @@
 
 	edelay_type = 0
 
-	sellprice = 1
+	sellprice = VALUE_WORTHLESS
 
 	min_cold_protection_temperature = 5 //this basically covers you to when it starts doing stuff ie snow or cold nights
 	max_heat_protection_temperature = 25

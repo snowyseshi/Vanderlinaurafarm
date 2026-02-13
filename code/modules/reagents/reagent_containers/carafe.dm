@@ -16,7 +16,7 @@
 	drinksounds = list('sound/items/drink_gen (2).ogg','sound/items/drink_gen (3).ogg')
 	fillsounds = list('sound/items/fillcup.ogg')
 	poursounds = list('sound/items/fillbottle.ogg')
-	sellprice = 5
+	sellprice = VALUE_DIRT_CHEAP
 	gripped_intents = list(INTENT_POUR)
 
 /obj/item/reagent_containers/glass/carafe/silver
@@ -25,7 +25,7 @@
 	icon_state = "silver_carafe"
 	fill_icon_thresholds = null
 	dropshrink = 0.8
-	sellprice = 45
+	sellprice = VALUE_SILVER_ITEM
 	last_used = 0
 
 /obj/item/reagent_containers/glass/carafe/silver/Initialize(mapload)
@@ -48,7 +48,7 @@
 	icon_state = "gold_carafe"
 	fill_icon_thresholds = null
 	dropshrink = 0.8
-	sellprice = 65
+	sellprice = VALUE_GOLD_ITEM
 
 
 /* Teapots */
@@ -60,7 +60,7 @@
 	fill_icon_thresholds = null
 	volume = 100
 	dropshrink = 0.7
-	sellprice = 30
+	sellprice = VALUE_COSTLY_THING
 
 	amount_per_transfer_from_this = 6
 	possible_transfer_amounts = list(6)
@@ -90,7 +90,7 @@
 	fill_icon_thresholds = null
 	dropshrink = 1.0
 	smeltresult = /obj/item/ingot/gold
-	sellprice = 65
+	sellprice = VALUE_GOLD_ITEM
 
 /obj/item/reagent_containers/glass/carafe/teapot/silver
 	name = "silver teapot"
@@ -100,7 +100,7 @@
 	fill_icon_thresholds = null
 	dropshrink = 1.0
 	smeltresult = /obj/item/ingot/silver
-	sellprice = 35
+	sellprice = VALUE_SILVER_ITEM
 
 /obj/item/reagent_containers/glass/carafe/teapot/bronze
 	name = "bronze teapot"
@@ -110,7 +110,7 @@
 	fill_icon_thresholds = null
 	dropshrink = 1.0
 	smeltresult = /obj/item/ingot/bronze
-	sellprice = 25
+	sellprice = VALUE_BRONZE_ITEM
 
 /obj/item/reagent_containers/glass/carafe/teapot/jade
 	name = "joapstone teapot"
@@ -118,7 +118,7 @@
 	icon_state = "teapot_jade"
 	fill_icon_thresholds = null
 	dropshrink = 1.0
-	sellprice = 60
+	sellprice = VALUE_JADE_ITEM
 
 /obj/item/reagent_containers/glass/carafe/teapot/amber
 	name = "petriamber teapot"
@@ -126,7 +126,7 @@
 	icon_state = "teapot_amber"
 	fill_icon_thresholds = null
 	dropshrink = 1.0
-	sellprice = 60
+	sellprice = VALUE_AMBER_ITEM
 
 /obj/item/reagent_containers/glass/carafe/teapot/shell
 	name = "shell teapot"
@@ -134,7 +134,7 @@
 	icon_state = "teapot_shell"
 	fill_icon_thresholds = null
 	dropshrink = 1.0
-	sellprice = 20
+	sellprice = VALUE_SHELL_ITEM
 
 /obj/item/reagent_containers/glass/carafe/teapot/rose
 	name = "rosellusk teapot"
@@ -142,7 +142,7 @@
 	icon_state = "teapot_rose"
 	fill_icon_thresholds = null
 	dropshrink = 1.0
-	sellprice = 25
+	sellprice = VALUE_ROSE_ITEM
 
 /obj/item/reagent_containers/glass/carafe/teapot/opal
 	name = "opaloise teapot"
@@ -150,7 +150,7 @@
 	icon_state = "teapot_opal"
 	fill_icon_thresholds = null
 	dropshrink = 1.0
-	sellprice = 90
+	sellprice = VALUE_OPAL_ITEM
 
 /obj/item/reagent_containers/glass/carafe/teapot/onyxa
 	name = "onyxa teapot"
@@ -158,7 +158,7 @@
 	icon_state = "teapot_onyxa"
 	fill_icon_thresholds = null
 	dropshrink = 1.0
-	sellprice = 40
+	sellprice = VALUE_ONYX_ITEM
 
 /obj/item/reagent_containers/glass/carafe/teapot/coral
 	name = "aoetal teapot"
@@ -166,7 +166,7 @@
 	icon_state = "teapot_coral"
 	fill_icon_thresholds = null
 	dropshrink = 1.0
-	sellprice = 70
+	sellprice = VALUE_CORAL_ITEM
 
 /obj/item/reagent_containers/glass/carafe/teapot/turq
 	name = "ceruleabaster teapot"
@@ -174,7 +174,7 @@
 	icon_state = "teapot_turq"
 	fill_icon_thresholds = null
 	dropshrink = 1.0
-	sellprice = 85
+	sellprice = VALUE_TURQ_ITEM
 
 /obj/item/reagent_containers/glass/carafe/teapot/clay
 	name = "clay teapot"

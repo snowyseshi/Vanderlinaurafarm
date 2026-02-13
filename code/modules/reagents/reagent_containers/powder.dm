@@ -7,7 +7,7 @@
 	possible_transfer_amounts = null
 	volume = 15
 	list_reagents = null
-	sellprice = 10
+	sellprice = VALUE_COMMON_GOODS
 	grid_height = 32
 	grid_width = 32
 
@@ -78,7 +78,7 @@
 	icon_state = "spice"
 	item_state = "spice"
 	list_reagents = list(/datum/reagent/druqks = 15)
-	sellprice = 16
+	sellprice = VALUE_COMMON_GOODS
 
 /datum/reagent/druqks
 	name = "Drukqs"
@@ -137,7 +137,7 @@
 	icon = 'icons/roguetown/items/produce.dmi'
 	icon_state = "ozium"
 	list_reagents = list(/datum/reagent/ozium = 15)
-	sellprice = 8
+	sellprice = VALUE_COMMON_GOODS
 
 /datum/reagent/ozium
 	name = "Ozium"
@@ -170,7 +170,7 @@
 	icon = 'icons/roguetown/items/produce.dmi'
 	icon_state = "moondust"
 	list_reagents = list(/datum/reagent/moondust = 15)
-	sellprice = 16
+	sellprice = VALUE_COMMON_GOODS
 
 /datum/reagent/moondust
 	name = "Moondust"
@@ -213,7 +213,7 @@
 	icon = 'icons/roguetown/items/produce.dmi'
 	icon_state = "moondust_purest"
 	list_reagents = list(/datum/reagent/moondust_purest = 15)
-	sellprice = 20
+	sellprice = VALUE_COMMON_GOODS * 2
 
 /datum/reagent/moondust_purest
 	name = "Purest Moondust"
@@ -259,7 +259,7 @@
 	icon = 'icons/roguetown/items/produce.dmi'
 	icon_state = "salt"
 	list_reagents = list(/datum/reagent/toxin/manabloom_juice = 5)
-	sellprice = 10
+	sellprice = VALUE_COMMON_GOODS
 	color = COLOR_CYAN
 
 //generic herbs and spices used in cooking
@@ -272,7 +272,7 @@
 	icon_state = "flour"
 	volume = 1
 	list_reagents = list(/datum/reagent/ash = 1)//you shouldn't be eating this anyways
-	sellprice = 10
+	sellprice = VALUE_COMMON_GOODS
 	color = COLOR_PALE_GREEN_GRAY
 
 /obj/item/reagent_containers/powder/blastpowder
@@ -281,7 +281,7 @@
 	icon = 'icons/roguetown/items/produce.dmi'
 	icon_state = "blastpowder"
 	list_reagents = list(/datum/reagent/blastpowder = 15)
-	sellprice = 15
+	sellprice = VALUE_COMMON_GOODS
 	var/primed = FALSE
 
 /obj/item/reagent_containers/powder/blastpowder/spark_act()

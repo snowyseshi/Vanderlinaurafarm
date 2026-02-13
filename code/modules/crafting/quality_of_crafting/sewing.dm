@@ -26,7 +26,7 @@
 	output = /obj/item/clothing/shirt/tribalrag
 	requirements = list(/obj/item/natural/hide = 1,
 				/obj/item/natural/fibers = 1)
-	sellprice = 6
+	sellprice = VALUE_LEATHER_ARMOR
 	craftdiff = 0
 
 /datum/repeatable_crafting_recipe/sewing/hide/tribal_cloak
@@ -50,7 +50,7 @@
 		/obj/item/natural/fur = 2,
 	)
 	output = /obj/item/clothing/head/helmet/leather/volfhelm
-	sellprice = 20
+	sellprice = VALUE_LEATHER_ARMOR_PLUS
 
 /datum/repeatable_crafting_recipe/sewing/hide/volfmantle
 	name = "volf mantle"

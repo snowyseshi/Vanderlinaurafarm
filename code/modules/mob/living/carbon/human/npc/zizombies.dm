@@ -62,7 +62,7 @@
 	. = ..()
 	icon_state = "zizombie_head_s"
 	headprice = 2
-	sellprice = 2
+	sellprice = VALUE_MONSTER_HEAD
 
 /mob/living/carbon/human/species/zizombie/update_body()
 	remove_overlay(BODY_LAYER)

@@ -247,7 +247,7 @@
 	w_class = WEIGHT_CLASS_HUGE
 	slot_flags = ITEM_SLOT_BACK
 	melt_amount = 150
-	sellprice = 1	//breaking bad cash pallet dot jpg
+	sellprice = VALUE_WORTHLESS	//breaking bad cash pallet dot jpg
 
 /obj/item/weapon/hammer/sledgehammer/war/malum/getonmobprop(tag)
 	. = ..()

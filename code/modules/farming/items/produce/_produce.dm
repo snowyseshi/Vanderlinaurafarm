@@ -3,7 +3,7 @@
 	dried_type = null
 	resistance_flags = FLAMMABLE
 	w_class = WEIGHT_CLASS_SMALL
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 	force = 0
 	throwforce = 0
 	faretype = FARE_POOR
@@ -121,7 +121,7 @@
 	list_reagents = list(/datum/reagent/consumable/nutriment = 1)
 	worn_y_dimension = 64
 	rotprocess = SHELFLIFE_DECENT
-	sellprice = 0 // spoil too quickly to export
+	sellprice = NO_MARKET_VALUE // spoil too quickly to export
 	var/equippedloc = null
 	var/list/bitten_names = list()
 
@@ -166,7 +166,7 @@
 	bitesize = 5
 	list_reagents = list(/datum/reagent/consumable/nutriment = 0.5)
 	rotprocess = SHELFLIFE_SHORT
-	sellprice = 0 // spoil too quickly to export
+	sellprice = NO_MARKET_VALUE // spoil too quickly to export
 
 
 /obj/item/reagent_containers/food/snacks/produce/fruit/raspberry
@@ -180,7 +180,7 @@
 	list_reagents = list(/datum/reagent/consumable/nutriment = 0.5)
 	dropshrink = 0.75
 	rotprocess = SHELFLIFE_SHORT
-	sellprice = 0 // spoil too quickly to export
+	sellprice = NO_MARKET_VALUE // spoil too quickly to export
 
 
 /obj/item/reagent_containers/food/snacks/produce/fruit/blackberry
@@ -208,7 +208,7 @@
 	dropshrink = 0.75
 	var/color_index = "good"
 	rotprocess = SHELFLIFE_SHORT
-	sellprice = 0 // spoil too quickly to export
+	sellprice = NO_MARKET_VALUE // spoil too quickly to export
 	var/poisonous = FALSE
 
 /obj/item/reagent_containers/food/snacks/produce/fruit/jacksberry/Initialize()
@@ -282,7 +282,7 @@
 	tastes = list("sweet" = 1,"bitterness" = 1)
 	eat_effect = /datum/status_effect/debuff/badmeal
 	rotprocess = SHELFLIFE_LONG
-	sellprice = 0 // only dried has value
+	sellprice = NO_MARKET_VALUE // only dried has value
 
 /obj/item/reagent_containers/food/snacks/produce/swampweed_dried
 	seed = null
@@ -295,7 +295,7 @@
 	grind_results = list(/datum/reagent/drug/space_drugs = 5)
 	eat_effect = /datum/status_effect/debuff/badmeal
 	rotprocess = null
-	sellprice = 2
+	sellprice = VALUE_WORTHLESS
 
 
 /*	..................   Westleach leaf   ................... */
@@ -312,7 +312,7 @@
 	grind_results = list(/datum/reagent/drug/nicotine = 5)
 	eat_effect = /datum/status_effect/debuff/badmeal
 	rotprocess = SHELFLIFE_LONG
-	sellprice = 0 // only dried has value
+	sellprice = NO_MARKET_VALUE // only dried has value
 
 /obj/item/reagent_containers/food/snacks/produce/dry_westleach
 	seed = null
@@ -325,7 +325,7 @@
 	list_reagents = list(/datum/reagent/drug/nicotine = 5, /datum/reagent/consumable/nutriment = 1)
 	grind_results = list(/datum/reagent/drug/nicotine = 10)
 	rotprocess = null
-	sellprice = 1
+	sellprice = VALUE_WORTHLESS
 
 
 /*	..................   Cabbage   ................... */

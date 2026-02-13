@@ -393,24 +393,24 @@
 
 /obj/structure/chair/wood/alt/chair3/crafted
 	item_chair = /obj/item/chair/chair3/crafted
-	sellprice = 6
+	sellprice = VALUE_DIRT_CHEAP
 
 /obj/item/chair/chair3/crafted
 	origin_type = /obj/structure/chair/wood/alt/chair3/crafted
-	sellprice = 6
+	sellprice = VALUE_DIRT_CHEAP
 
 /obj/structure/chair/wood/alt/fancy/crafted
 	item_chair = /obj/item/chair/fancy/crafted
-	sellprice = 12
+	sellprice = VALUE_COMMON_GOODS
 
 /obj/item/chair/fancy/crafted
 	origin_type = /obj/structure/chair/wood/alt/fancy/crafted
-	sellprice = 12
+	sellprice = VALUE_COMMON_GOODS
 
 /obj/structure/chair/stool/crafted
 	item_chair = /obj/item/chair/stool/crafted
-	sellprice = 6
+	sellprice = VALUE_DIRT_CHEAP
 
 /obj/item/chair/stool/crafted
 	origin_type = /obj/structure/chair/stool/crafted
-	sellprice = 6
+	sellprice = VALUE_DIRT_CHEAP

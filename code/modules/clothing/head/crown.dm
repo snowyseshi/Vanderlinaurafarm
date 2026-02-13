@@ -45,49 +45,49 @@
 	name = "joapstone circlet"
 	desc = "An ornate circlet carved out of joapstone."
 	icon_state = "circlet_jade"
-	sellprice = 65
+	sellprice = VALUE_JADE_ITEM_FINE
 
 /obj/item/clothing/head/crown/circlet/amber
 	name = "petriamber circlet"
 	desc = "An ornate circlet carved out of petriamber."
 	icon_state = "circlet_amber"
-	sellprice = 65
+	sellprice = VALUE_AMBER_ITEM_FINE
 
 /obj/item/clothing/head/crown/circlet/shell
 	name = "shell circlet"
 	desc = "An ornate circlet carved out of shell."
 	icon_state = "circlet_shell"
-	sellprice = 25
+	sellprice = VALUE_SHELL_ITEM_FINE
 
 /obj/item/clothing/head/crown/circlet/rose
 	name = "rosellusk circlet"
 	desc = "An ornate circlet carved out of rosellusk."
 	icon_state = "circlet_rose"
-	sellprice = 30
+	sellprice = VALUE_ROSE_ITEM_FINE
 
 /obj/item/clothing/head/crown/circlet/turq
 	name = "ceruleabaster circlet"
 	desc = "An ornate circlet carved out of ceruleabaster."
 	icon_state = "circlet_turq"
-	sellprice = 90
+	sellprice = VALUE_TURQ_ITEM_FINE
 
 /obj/item/clothing/head/crown/circlet/onyxa
 	name = "onyxa circlet"
 	desc = "An ornate circlet carved out of onyxa."
 	icon_state = "circlet_onyxa"
-	sellprice = 45
+	sellprice = VALUE_ONYX_ITEM_FINE
 
 /obj/item/clothing/head/crown/circlet/coral
 	name = "aoetal circlet"
 	desc = "An ornate circlet carved out of aoetal."
 	icon_state = "circlet_coral"
-	sellprice = 75
+	sellprice = VALUE_CORAL_ITEM_FINE
 
 /obj/item/clothing/head/crown/circlet/opal
 	name = "opaloise circlet"
 	desc = "An ornate circlet carved out of opaloise."
 	icon_state = "circlet_opal"
-	sellprice = 95
+	sellprice = VALUE_OPAL_ITEM_FINE
 
 /obj/item/clothing/head/crown/nyle
 	name = "jewel of nyle"

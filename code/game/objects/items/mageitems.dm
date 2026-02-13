@@ -222,7 +222,7 @@
 /obj/item/gem/amethyst
 	name = "amythortz"
 	icon_state = "amethyst"
-	sellprice = 18
+	sellprice = M_AMYTHORTZ
 	arcyne_potency = 25
 	desc = "A pink crystal, it surges with magical energy, yet its artificial nature means it's worth little."
 	attuned = /datum/attunement/arcyne
@@ -626,7 +626,7 @@
 	desc = "You should not be seeing this"
 	resistance_flags = FLAMMABLE
 	w_class = WEIGHT_CLASS_SMALL
-	sellprice = 20
+	sellprice = VALUE_COMMON_GOODS * 2
 
 /obj/item/natural/melded/t1
 	name = "arcanic meld"

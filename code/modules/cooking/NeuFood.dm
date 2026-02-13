@@ -166,7 +166,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	volume = 25
 	obj_flags = CAN_BE_HIT
-	sellprice = 1
+	sellprice = VALUE_WORTHLESS
 	drinksounds = list('sound/items/drink_cup (1).ogg','sound/items/drink_cup (2).ogg','sound/items/drink_cup (3).ogg','sound/items/drink_cup (4).ogg','sound/items/drink_cup (5).ogg')
 	fillsounds = list('sound/items/fillcup.ogg')
 	metalizer_result = /obj/item/reagent_containers/glass/bowl/iron
@@ -295,7 +295,7 @@
 	icon_state = "bowl_jade"
 	fill_icon_state = "bowl"
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	sellprice = 55
+	sellprice = VALUE_JADE_ITEM
 	max_usages = 10
 
 /obj/item/reagent_containers/glass/bowl/onyxa
@@ -304,7 +304,7 @@
 	icon_state = "bowl_onyxa"
 	fill_icon_state = "bowl"
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	sellprice = 35
+	sellprice = VALUE_ONYX_ITEM
 	max_usages = 10
 
 /obj/item/reagent_containers/glass/bowl/rose
@@ -313,7 +313,7 @@
 	icon_state = "bowl_rose"
 	fill_icon_state = "bowl"
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	sellprice = 20
+	sellprice = VALUE_ROSE_ITEM
 	max_usages = 10
 
 /obj/item/reagent_containers/glass/bowl/amber
@@ -322,7 +322,7 @@
 	icon_state = "bowl_amber"
 	fill_icon_state = "bowl"
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	sellprice = 55
+	sellprice = VALUE_AMBER_ITEM
 	max_usages = 10
 
 /obj/item/reagent_containers/glass/bowl/turq
@@ -331,7 +331,7 @@
 	icon_state = "bowl_turq"
 	fill_icon_state = "bowl"
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	sellprice = 80
+	sellprice = VALUE_TURQ_ITEM
 	max_usages = 10
 
 /obj/item/reagent_containers/glass/bowl/shell
@@ -340,7 +340,7 @@
 	icon_state = "bowl_shell"
 	fill_icon_state = "bowl"
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	sellprice = 15
+	sellprice = VALUE_SHELL_ITEM
 	max_usages = 10
 
 /obj/item/reagent_containers/glass/bowl/coral
@@ -349,7 +349,7 @@
 	icon_state = "bowl_coral"
 	fill_icon_state = "bowl"
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	sellprice = 65
+	sellprice = VALUE_CORAL_ITEM
 	max_usages = 10
 
 /obj/item/reagent_containers/glass/bowl/opal
@@ -358,7 +358,7 @@
 	icon_state = "bowl_opal"
 	fill_icon_state = "bowl"
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	sellprice = 85
+	sellprice = VALUE_OPAL_ITEM
 	max_usages = 10
 
 
@@ -556,7 +556,7 @@
 	icon_state = "flour"
 	list_reagents = list(/datum/reagent/flour = 1)
 	volume = 1
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 	var/water_added
 
 /datum/reagent/flour
@@ -619,7 +619,7 @@
 	icon_state = "salt"
 	list_reagents = list(/datum/reagent/flour = 1)
 	volume = 1
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 
 /obj/item/reagent_containers/powder/salt/throw_impact(atom/hit_atom, datum/thrownthing/thrownthing)
 	new /obj/effect/decal/cleanable/food/flour(get_turf(src))

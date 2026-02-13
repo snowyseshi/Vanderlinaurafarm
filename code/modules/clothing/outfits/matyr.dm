@@ -8,7 +8,7 @@
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/cloaks.dmi'
 	body_parts_covered = CHEST|GROIN
 	boobed = FALSE
-	sellprice = 100
+	sellprice = VALUE_FINE_CLOTHING
 	slot_flags = ITEM_SLOT_BACK_R|ITEM_SLOT_ARMOR|ITEM_SLOT_CLOAK
 	flags_inv = HIDEBOOB
 
@@ -22,7 +22,7 @@
 	sleevetype = "silverarmor"
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/martyr.dmi'
 	armor = ARMOR_PLATE
-	sellprice = 1000
+	sellprice = VALUE_EXTREME
 	melting_material = /datum/material/silver
 	melt_amount = 350
 
@@ -36,7 +36,7 @@
 	icon_state = "silverlegs"
 	item_state = "silverlegs"
 	armor = ARMOR_PLATE
-	sellprice = 1000
+	sellprice = VALUE_EXTREME
 	melting_material = /datum/material/silver
 	melt_amount = 250
 
@@ -54,7 +54,7 @@
 	worn_y_dimension = 64
 	icon_state = "silverbascinet"
 	item_state = "silverbascinet"
-	sellprice = 1000
+	sellprice = VALUE_EXTREME
 	melting_material = /datum/material/silver
 	melt_amount = 250
 
@@ -74,7 +74,7 @@
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_CLOAK
 	flags_inv = HIDEBOOB
 	var/overarmor = TRUE
-	sellprice = 300
+	sellprice = VALUE_LUXURY_THING
 
 
 /obj/item/clothing/cloak/holysee/Initialize(mapload, ...)
@@ -123,7 +123,7 @@
 	armor = ARMOR_MASK_METAL
 	flags_inv = HIDEFACE
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
-	sellprice = 0
+	sellprice = VALUE_STEEL_ARMOR
 
 /obj/item/clothing/face/lordmask/naledi/equipped(mob/user, slot)
 	. = ..()
@@ -151,7 +151,7 @@
 	armor = ARMOR_MASK_METAL
 	flags_inv = HIDEFACE
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
-	sellprice = 0
+	sellprice = VALUE_STEEL_ARMOR
 
 /obj/item/clothing/face/exoticsilkmask
 	name = "exotic silk mask"

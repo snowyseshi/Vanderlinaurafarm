@@ -2,7 +2,7 @@
 	name = "golden halfmask"
 	desc = "Half of your face turned gold."
 	icon_state = "lmask"
-	sellprice = 50
+	sellprice = VALUE_LUXURY_THING
 
 /obj/item/clothing/face/lordmask/l
 	icon_state = "lmask_l"
@@ -138,7 +138,7 @@
 	sewrepair = FALSE
 	anvilrepair = FALSE
 	clothing_flags = CANT_SLEEP_IN
-	sellprice = 70
+	sellprice = VALUE_JADE_ITEM_FINE
 
 /obj/item/clothing/face/turqmask
 	name = "ceruleabaster mask "
@@ -158,7 +158,7 @@
 	sewrepair = FALSE
 	anvilrepair = FALSE
 	clothing_flags = CANT_SLEEP_IN
-	sellprice = 95
+	sellprice = VALUE_TURQ_ITEM_FINE
 
 /obj/item/clothing/face/rosemask
 	name = "rosellusk mask "
@@ -178,7 +178,7 @@
 	sewrepair = FALSE
 	anvilrepair = FALSE
 	clothing_flags = CANT_SLEEP_IN
-	sellprice = 35
+	sellprice = VALUE_ROSE_ITEM_FINE
 
 /obj/item/clothing/face/shellmask
 	name = "shell mask "
@@ -198,7 +198,7 @@
 	sewrepair = FALSE
 	anvilrepair = FALSE
 	clothing_flags = CANT_SLEEP_IN
-	sellprice = 30
+	sellprice = VALUE_SHELL_ITEM_FINE
 
 /obj/item/clothing/face/coralmask
 	name = "aoetal mask "
@@ -218,7 +218,7 @@
 	sewrepair = FALSE
 	anvilrepair = FALSE
 	clothing_flags = CANT_SLEEP_IN
-	sellprice = 80
+	sellprice = VALUE_CORAL_ITEM_FINE
 
 /obj/item/clothing/face/ambermask
 	name = "petriamber mask "
@@ -238,7 +238,7 @@
 	sewrepair = FALSE
 	anvilrepair = FALSE
 	clothing_flags = CANT_SLEEP_IN
-	sellprice = 70
+	sellprice = VALUE_AMBER_ITEM_FINE
 
 /obj/item/clothing/face/onyxamask
 	name = "onyxa mask "
@@ -258,7 +258,7 @@
 	sewrepair = FALSE
 	anvilrepair = FALSE
 	clothing_flags = CANT_SLEEP_IN
-	sellprice = 50
+	sellprice = VALUE_ONYX_ITEM_FINE
 
 /obj/item/clothing/face/opalmask
 	name = "opaloise mask "
@@ -278,7 +278,7 @@
 	sewrepair = FALSE
 	anvilrepair = FALSE
 	clothing_flags = CANT_SLEEP_IN
-	sellprice = 100
+	sellprice = VALUE_OPAL_ITEM_FINE
 
 /obj/item/clothing/face/shepherd/clothmask
 	name = "cloth mask"
@@ -512,7 +512,7 @@
 	name = "gold mask"
 	icon_state = "goldmask"
 	max_integrity = 150
-	sellprice = 100
+	sellprice = VALUE_GOLD_ITEM
 	smeltresult = /obj/item/ingot/gold
 
 /obj/item/clothing/face/operavisage

@@ -7,7 +7,7 @@
 	icon_state = "nobleboots"
 	item_state = "nobleboots"
 	armor = list("blunt" = 20, "slash" = 20, "stab" = 20,  "piercing" = 15, "fire" = 0, "acid" = 0)
-	sellprice = 10
+	sellprice = VALUE_LEATHER_ARMOR_PLUS
 	salvage_result = /obj/item/natural/hide/cured
 	salvage_amount = 1
 
@@ -41,7 +41,7 @@
 	gender = PLURAL
 	icon_state = "ridingboots"
 	item_state = "ridingboots"
-	sellprice = 10
+	sellprice = VALUE_LEATHER_ARMOR_PLUS
 	salvage_result = /obj/item/natural/hide/cured
 	salvage_amount = 1
 	wetable = FALSE
@@ -53,7 +53,7 @@
 	icon_state = "apothboots"
 	item_state = "apothboots"
 	armor = list("blunt" = 15, "slash" = 15, "stab" = 15,  "piercing" = 5, "fire" = 0, "acid" = 0)
-	sellprice = 10
+	sellprice = VALUE_LEATHER_ARMOR
 	wetable = FALSE
 
 /obj/item/clothing/shoes/simpleshoes
@@ -80,7 +80,7 @@
 	icon_state = "simpleshoe"
 	item_state = "simpleshoe"
 	color = CLOTHING_ASH_GREY
-	sellprice = 20
+	sellprice = VALUE_LEATHER_ARMOR_LORD
 
 /obj/item/clothing/shoes/gladiator
 	name = "caligae"
@@ -108,7 +108,7 @@
 	desc = "Worn sandals lined with bronze, ready to march ever onwards."
 	icon_state = "aasimarfeet"
 	item_state = "aasimarfeet"
-	sellprice = 20
+	sellprice = VALUE_LEATHER_ARMOR_PLUS
 
 /obj/item/clothing/shoes/shalal
 	name = "babouche"
@@ -116,7 +116,7 @@
 	gender = PLURAL
 	icon_state = "shalal"
 	item_state = "shalal"
-	sellprice = 15
+	sellprice = VALUE_LEATHER_ARMOR
 	wetable = FALSE
 
 /obj/item/clothing/shoes/tribal
@@ -124,13 +124,13 @@
 	desc = "Haphazardly-made slippers of creecher leather worn by those with nothing better, or those who don't care about fashion and just want to protect their feet."
 	icon_state = "tribalshoes"
 	item_state = "tribalshoes"
-	sellprice = 3
+	sellprice = VALUE_LEATHER_ARMOR
 
 /obj/item/clothing/shoes/jester
 	name = "funny shoes"
 	desc = "Shoes typically worn by a Jester."
 	icon_state = "jestershoes"
-	sellprice = 10
+	sellprice = VALUE_LEATHER_ARMOR
 
 /obj/item/clothing/shoes/jester/Initialize()
 	. = ..()
@@ -142,7 +142,7 @@
 	item_state = "grenzelboots"
 	sleeved = 'icons/roguetown/clothing/onmob/helpers/stonekeep_merc.dmi'
 	armor = list("blunt" = 25, "slash" = 25, "stab" = 25,  "piercing" = 15, "fire" = 0, "acid" = 0)
-	sellprice = 20
+	sellprice = VALUE_LEATHER_ARMOR_PLUS
 	wetable = FALSE
 
 /obj/item/clothing/shoes/otavan

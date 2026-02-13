@@ -1054,7 +1054,7 @@
 	blade_dulling = DULLING_BASHCHOP
 	layer = BELOW_MOB_LAYER
 	max_integrity = 100
-	sellprice = 40
+	sellprice = VALUE_COSTLY_THING
 	buckleverb = "crucifie"
 	can_buckle = 1
 	buckle_lying = 0

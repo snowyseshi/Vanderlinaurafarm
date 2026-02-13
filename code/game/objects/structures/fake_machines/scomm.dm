@@ -182,7 +182,7 @@
 	muteinmouth = TRUE
 	var/listening = TRUE
 	var/speaking = TRUE
-	sellprice = 35
+	sellprice = VALUE_COSTLY_THING
 
 /obj/item/scomstone/Initialize()
 	. = ..()
@@ -273,7 +273,7 @@
 	name = "serfstone"
 	icon_state = "ring_emerald"
 	listening = FALSE
-	sellprice = 2
+	sellprice = VALUE_WORTHLESS
 
 /obj/item/scomstone/bad/Hear()
 	return

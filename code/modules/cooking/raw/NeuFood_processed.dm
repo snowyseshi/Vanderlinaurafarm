@@ -627,7 +627,7 @@
 	slice_path = /obj/item/reagent_containers/food/snacks/cheese_wedge/aged
 	become_rot_type = null
 	rotprocess = null
-	sellprice = 60
+	sellprice = VALUE_LUXURY_THING
 	faretype = FARE_FINE
 
 /obj/item/reagent_containers/food/snacks/cheese_wedge
@@ -655,7 +655,7 @@
 	slice_path = /obj/item/reagent_containers/food/snacks/cheddarslice/aged
 	become_rot_type = null
 	rotprocess = null
-	sellprice = 10
+	sellprice = VALUE_OF_A_SIMPLE_MEAL
 	faretype = FARE_FINE
 
 /obj/item/reagent_containers/food/snacks/cheddarslice

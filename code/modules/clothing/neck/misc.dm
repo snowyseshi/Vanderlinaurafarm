@@ -12,7 +12,7 @@
 	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
-	sellprice = 60
+	sellprice = VALUE_GOLD_ITEM
 
 /obj/item/clothing/neck/silveramulet
 	name = "silver amulet"
@@ -22,7 +22,7 @@
 	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
-	sellprice = 35
+	sellprice = VALUE_SILVER_ITEM
 
 /obj/item/clothing/neck/silveramulet/Initialize()
 	. = ..()
@@ -36,7 +36,7 @@
 	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
-	sellprice = 60
+	sellprice = VALUE_JADE_ITEM
 
 /obj/item/clothing/neck/turqamulet
 	name = "ceruleabaster amulet"
@@ -46,7 +46,7 @@
 	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
-	sellprice = 85
+	sellprice = VALUE_TURQ_ITEM
 
 /obj/item/clothing/neck/onyxaamulet
 	name = "onyxa amulet"
@@ -56,7 +56,7 @@
 	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
-	sellprice = 40
+	sellprice = VALUE_ONYX_ITEM
 
 /obj/item/clothing/neck/coralamulet
 	name = "aoetal amulet"
@@ -66,7 +66,7 @@
 	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
-	sellprice = 70
+	sellprice = VALUE_CORAL_ITEM
 
 /obj/item/clothing/neck/amberamulet
 	name = "petriamber amulet"
@@ -76,7 +76,7 @@
 	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
-	sellprice = 60
+	sellprice = VALUE_AMBER_ITEM
 
 /obj/item/clothing/neck/opalamulet
 	name = "opaloise amulet"
@@ -86,7 +86,7 @@
 	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
-	sellprice = 90
+	sellprice = VALUE_OPAL_ITEM
 
 /obj/item/clothing/neck/roseamulet
 	name = "rosellusk amulet"
@@ -96,7 +96,7 @@
 	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
-	sellprice = 25
+	sellprice = VALUE_ROSE_ITEM
 
 /obj/item/clothing/neck/shellamulet
 	name = "shell amulet"
@@ -106,7 +106,7 @@
 	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
-	sellprice = 25
+	sellprice = VALUE_SHELL_ITEM
 
 /obj/item/clothing/neck/coif
 	name = "leather coif"
@@ -587,7 +587,7 @@
 	item_state = "talkstone"
 	//dropshrink = 0.75
 	resistance_flags = FIRE_PROOF
-	sellprice = 98
+	sellprice = VALUE_MAGIC_ITEM_STRONG
 
 /obj/item/clothing/neck/mercator
 	name = "mercator's eye"
@@ -595,7 +595,7 @@
 	icon_state = "horus"
 	//dropshrink = 0.75
 	resistance_flags = FIRE_PROOF
-	sellprice = 30
+	sellprice = VALUE_COSTLY_THING
 
 /obj/item/clothing/neck/mercator/examine()
 	. = ..()
@@ -621,7 +621,7 @@
 	icon_state = "shalal"
 	//dropshrink = 0.75
 	resistance_flags = FIRE_PROOF
-	sellprice = 15
+	sellprice = VALUE_COMMON_GOODS
 
 /obj/item/clothing/neck/shalal/emir
 	name = "desert noble medal"
@@ -631,21 +631,21 @@
 	desc = "Fits snug."
 	icon_state = "feldcollar"
 	item_state = "feldcollar"
-	sellprice = 15
+	sellprice = VALUE_FINE_CLOTHING
 
 /obj/item/clothing/neck/phys
 	name = "physicker's collar"
 	desc = "Fits snug."
 	icon_state = "surgcollar"
 	item_state = "surgcollar"
-	sellprice = 15
+	sellprice = VALUE_COMMON_GOODS
 
 /obj/item/clothing/neck/courtphysician
 	name = "court physician's collar"
 	desc = "Fits snug."
 	icon_state = "courtcollar"
 	item_state = "courtcollar"
-	sellprice = 15
+	sellprice = VALUE_FINE_CLOTHING
 	icon = 'icons/roguetown/clothing/courtphys.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/courtphys.dmi'
 

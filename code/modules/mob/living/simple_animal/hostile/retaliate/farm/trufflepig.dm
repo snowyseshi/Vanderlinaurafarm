@@ -49,7 +49,7 @@
 	list_reagents = list(/datum/reagent/consumable/nutriment = 5)
 	color = "#ab7d6f"
 	tastes = list("mushroom" = 1)
-	sellprice = 30
+	sellprice = VALUE_COSTLY_THING
 	rotprocess = null
 	biting = TRUE
 

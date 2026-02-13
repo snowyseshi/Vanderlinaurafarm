@@ -7,7 +7,7 @@
 	drag_slowdown = 2
 	open_sound = 'sound/misc/chestopen.ogg'
 	close_sound = 'sound/misc/chestclose.ogg'
-	sellprice = 1 // crate recycling program
+	sellprice = VALUE_WORTHLESS // crate recycling program
 	max_integrity = 200
 	blade_dulling = DULLING_BASHCHOP
 	mob_storage_capacity = 1
@@ -77,7 +77,7 @@
 	open_sound = 'sound/items/book_open.ogg'
 	open_sound = 'sound/items/book_close.ogg'
 	close_sound = 'sound/items/book_close.ogg'
-	sellprice = 0
+	sellprice = VALUE_WORTHLESS
 
 /obj/structure/closet/crate/chest/wicker/random_soilson/populate_contents()
 	for(var/i = 1 to rand(5, 8))
@@ -135,10 +135,10 @@
 	name = "handcrafted chest"
 	icon_state = "chest_neu"
 	base_icon_state = "chest_neu"
-	sellprice = 6
+	sellprice = VALUE_DIRT_CHEAP
 
 /obj/structure/closet/crate/crafted_closet/crafted
-	sellprice = 6
+	sellprice = VALUE_DIRT_CHEAP
 
 //a chest with a corpse in it
 /obj/structure/closet/crate/chest/neu_iron/corpse/populate_contents()

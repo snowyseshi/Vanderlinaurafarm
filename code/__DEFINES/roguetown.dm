@@ -176,6 +176,7 @@ GLOBAL_LIST_EMPTY(job_respawn_delays)
 // theres two parts of what a material is worth, how hard is it to find it and how painful is it to collect, and how useful is it.
 #define VALUE_OF_A_SIMPLE_MEAL 6	// some sort of base value, usually whats charged for a basic meal in the inn. Good measure to work from. Its comically low valued when looking at the actual invested material + effort vs smithing or crafting though
 #define VALUE_OF_A_MUG_OF_ALE 2
+#define VALUE_MONSTER_HEAD 	2
 #define M_MISC		1	// random stuff like stones or fibres I guess
 #define M_WOOD		2	// one small log.
 #define M_CLOTH		2	// one cloth piece
@@ -184,8 +185,13 @@ GLOBAL_LIST_EMPTY(job_respawn_delays)
 #define M_SILK		M_CLOTH * 2	// one silk thread
 #define M_SALT		4	// one salt, or raw ore, or coal
 #define M_LEATHER	M_CLOTH * 2 // one hide
+#define M_CLEATHER	M_LEATHER+W_MINOR // one cured hide
+#define M_COPPER	10	// one copper bar
+#define M_TIN		15	// one tin bar
 #define M_IRON		12	// one iron bar  Twelve is a good number for it can be halved, cut in three and four without fractions. Multiples of 6
-#define M_STEEL		M_IRON+W_MODERATE	// one steel bar
+#define M_BRONZE	M_COPPER+W_MODERATE // bronze bar
+#define M_STEEL		M_IRON+W_MAJOR	// one steel bar
+#define M_BSTEEL 	M_STEEL+M_SILVER+W_MAJOR // one blacksteel bar
 #define M_SILVER	M_IRON*3	// one silver bar
 #define M_GOLD		M_IRON*5	// one gold bar
 
@@ -196,6 +202,7 @@ GLOBAL_LIST_EMPTY(job_respawn_delays)
 #define M_SAFFIRA	56
 #define M_DORPEL	121
 #define M_RONTZ		100
+#define M_AMYTHORTZ	18
 #define M_SHELL		10
 #define M_ROSE		15
 #define M_JADE		55
@@ -232,20 +239,35 @@ GLOBAL_LIST_EMPTY(job_respawn_delays)
 // TINY is 1/3 of a bar, SMALL is 1/2
 #define NO_MARKET_VALUE			null
 #define VALUE_CHEAP_CLOTHING	M_CLOTH+W_MINOR
-#define VALUE_FINE_CLOTHING		M_CLOTH+M_SILK+W_MINOR
+#define VALUE_FINE_CLOTHING		M_CLOTH+M_SILK+W_MODERATE
+#define VALUE_ROYAL_CLOTHING	M_CLOTH+M_SILK+W_MAJOR+BONUS_VALUE_BIG
+#define VALUE_WOOD_ITEM			M_WOOD+W_MINOR
 #define VALUE_FANCY_HAT			M_SILK+W_MINOR+BONUS_VALUE_SMALL
+#define VALUE_COPPER_SMALL_ITEM	VALUE_COPPER_ITEM/2
+#define VALUE_COPPER_TINY_ITEM	M_COPPER/3+W_MODERATE/3
+#define VALUE_COPPER_ITEM		M_COPPER+W_MINOR
 #define VALUE_IRON_SMALL_ITEM	VALUE_IRON_ITEM/2
 #define VALUE_IRON_TINY_ITEM	M_IRON/3+W_MODERATE/3
 #define VALUE_IRON_ITEM			M_IRON+W_MINOR
+#define VALUE_BRONZE_SMALL_ITEM	VALUE_BRONZE_ITEM/2
+#define VALUE_BRONZE_TINY_ITEM	M_BRONZE/3+W_MODERATE/3
+#define VALUE_BRONZE_ITEM		M_BRONZE+W_MINOR
 #define VALUE_STEEL_SMALL_ITEM	VALUE_STEEL_ITEM/2
 #define VALUE_STEEL_TINY_ITEM	M_STEEL/3+W_MODERATE/3
-#define VALUE_STEEL_ITEM		M_STEEL+W_MINOR
+#define VALUE_STEEL_ITEM		M_STEEL+W_MODERATE
 #define VALUE_SILVER_TINY_ITEM	M_SILVER/3+W_MODERATE/3
 #define VALUE_SILVER_ITEM		M_SILVER+W_MODERATE
 #define VALUE_GOLD_TINY_ITEM	M_GOLD/3+W_MODERATE/3
 #define VALUE_GOLD_ITEM			M_GOLD+W_MODERATE
 #define VALUE_GOLD_RARE_ITEM	VALUE_GOLD_ITEM+BONUS_VALUE_MODEST
 
+#define VALUE_GEMERALD_ITEM		M_GEMERALD+W_MODERATE
+#define VALUE_BLORTZ_ITEM		M_BLORTZ+W_MODERATE
+#define VALUE_TOPER_ITEM		M_TOPER+W_MODERATE
+#define VALUE_SAFFIRA_ITEM		M_SAFFIRA+W_MODERATE
+#define VALUE_DORPEL_ITEM		M_DORPEL+W_MODERATE
+#define VALUE_RONTZ_ITEM		M_RONTZ+W_MODERATE
+#define VALUE_AMYTHORTZ_ITEM	M_JADE+W_MODERATE
 #define VALUE_SHELL_ITEM		M_SHELL+W_MINOR
 #define VALUE_SHELL_ITEM_FINE	M_SHELL+W_MODERATE // FINE = for the items that require more work and skill to make
 #define VALUE_ROSE_ITEM			M_ROSE+W_MINOR
@@ -298,6 +320,7 @@ GLOBAL_LIST_EMPTY(job_respawn_delays)
 
 
 // Generic values - a lot of items lack materials for the above calculations so this is a super basic template to assign value to misc items
+#define VALUE_WORTHLESS		1
 #define VALUE_DIRT_CHEAP	6
 #define VALUE_COMMON_GOODS	VALUE_DIRT_CHEAP * 2		// so 12
 #define VALUE_COSTLY_THING	VALUE_COMMON_GOODS * 3		// 36

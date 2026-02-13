@@ -37,7 +37,7 @@
 	max_integrity = INTEGRITY_STRONGEST + 220
 	minstr = 12
 	resistance_flags = FIRE_PROOF
-	sellprice = 550
+	sellprice = VALUE_EXTREME * 2
 
 /obj/item/weapon/polearm/halberd/bardiche/woodcutter/gorefeast/Initialize(mapload, ...)
 	. = ..()
@@ -111,7 +111,7 @@
 	resistance_flags = FIRE_PROOF
 	dropshrink = 0.75
 	thrown_bclass = BCLASS_CUT
-	sellprice = 550
+	sellprice = VALUE_EXTREME * 2
 
 	COOLDOWN_DECLARE(fire_projectile)
 
@@ -372,7 +372,7 @@
 	possible_item_intents = list(SWORD_STRIKE, SWORD_CUT)
 	gripped_intents = list(SWORD_STRIKE, SWORD_CHOP, SWORD_THRUST, PLEX_BLINK)
 	max_integrity = INTEGRITY_STRONGEST + 220
-	sellprice = 550
+	sellprice = VALUE_EXTREME * 2
 
 	COOLDOWN_DECLARE(pleonexia_blink)
 

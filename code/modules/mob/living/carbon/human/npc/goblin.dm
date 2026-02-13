@@ -132,13 +132,13 @@
 /obj/item/bodypart/head/goblin/skeletonize()
 	. = ..()
 	icon_state = "goblin_skel_head"
-	sellprice = 2
+	sellprice = VALUE_MONSTER_HEAD
 	if(headprice)
 		headprice = 2
 
 /obj/item/bodypart/head/goblin/drop_organs(mob/user, violent_removal)
 	. = ..()
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 
 /datum/species/goblin
 	name = "goblin"

@@ -126,7 +126,7 @@ GLOBAL_LIST_EMPTY(rousman_ambush_objects)
 	. = ..()
 	icon_state = "rousman_skel_head"
 	headprice = 2
-	sellprice = 2
+	sellprice = VALUE_MONSTER_HEAD
 
 
 /datum/species/rousman

@@ -5,7 +5,7 @@
 	icon_state = "psycross_wood"
 	//dropshrink = 0.75
 	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_HIP|ITEM_SLOT_WRISTS
-	sellprice = 10
+	sellprice = VALUE_WOOD_ITEM
 	experimental_onhip = TRUE
 
 // INHUMEN PSYCROSSES
@@ -15,7 +15,7 @@
 	desc = "Through power dominate, through domination rule, through Zizo become the divinity you were always meant to be."
 	icon_state = "zcross"
 	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_HIP|ITEM_SLOT_WRISTS
-	sellprice = 0
+	sellprice = VALUE_WORTHLESS
 	experimental_onhip = TRUE
 
 // SILVER PSYCROSS START
@@ -25,7 +25,7 @@
 	desc = "Let His name be naught but forgot'n. Let the wicked undead burn at my touch."
 	icon_state = "psycross_silver"
 	resistance_flags = FIRE_PROOF
-	sellprice = 50
+	sellprice = VALUE_SILVER_ITEM
 	smeltresult = /obj/item/ingot/silver
 
 /obj/item/clothing/neck/psycross/silver/Initialize(mapload)
@@ -134,7 +134,7 @@
 	icon_state = "psycross_gold"
 	//dropshrink = 0.75
 	resistance_flags = FIRE_PROOF
-	sellprice = 100
+	sellprice = VALUE_GOLD_ITEM
 	smeltresult = /obj/item/ingot/gold
 
 /obj/item/clothing/neck/psycross/silver/undivided

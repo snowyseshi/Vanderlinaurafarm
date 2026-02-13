@@ -30,7 +30,7 @@
 	gripped_intents = null
 	slot_flags = ITEM_SLOT_HIP
 	w_class = WEIGHT_CLASS_NORMAL
-	sellprice = 200 // This kind of equipment is very hard to come by in Rockhill.
+	sellprice = VALUE_EXTREME // This kind of equipment is very hard to come by in Rockhill.
 	grid_height = 32
 	grid_width = 96
 	var/wheellock = TRUE
@@ -240,7 +240,7 @@
 	icon_state = "aflask"
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/pistol/conjured
-	sellprice = 0 //Yeah, Let's not sell this.
+	sellprice = VALUE_WORTHLESS //Yeah, Let's not sell this.
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/musk/loaded
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/pistol/conjured/Initialize()
@@ -281,7 +281,7 @@
 	wdefense = GOOD_PARRY
 	blade_dulling = DULLING_BASHCHOP
 	max_blade_int = 100
-	sellprice = 400
+	sellprice = VALUE_EXTREME * 1.5
 	wheellock = FALSE
 	var/bayonet_affixed = FALSE
 	rod = /obj/item/ramrod/musket

@@ -11,7 +11,7 @@
 	damtype = BURN
 	force = 15
 	hitsound = 'sound/blank.ogg'
-	sellprice = 30
+	sellprice = VALUE_MAGIC_ITEM_WEAK
 	dropshrink = 0.6
 
 	grid_height = 32

@@ -77,7 +77,7 @@
 		/obj/item/natural/cloth = 1,
 	)
 	output = /obj/item/storage/belt/pouch
-	sellprice = 6
+	sellprice = VALUE_LEATHER_ARMOR
 
 /datum/repeatable_crafting_recipe/leather/storage/satchel
 	name = "leather satchel"
@@ -295,7 +295,7 @@
 		/obj/item/natural/fibers = 1
 	)
 	output = /obj/item/clothing/shoes/gladiator
-	sellprice = 17
+	sellprice = VALUE_LEATHER_ARMOR_PLUS
 	craftdiff = 1
 
 /datum/repeatable_crafting_recipe/leather/cloak

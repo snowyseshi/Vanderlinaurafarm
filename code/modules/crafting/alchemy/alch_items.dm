@@ -21,7 +21,7 @@
 	fillsounds = list('sound/items/fillcup.ogg')
 	poursounds = list('sound/items/fillbottle.ogg')
 	experimental_onhip = TRUE
-	sellprice = 1
+	sellprice = VALUE_WORTHLESS
 
 /obj/item/reagent_containers/glass/alchemical/attackby(obj/item/I, mob/user, list/modifiers)
 	if(reagents.total_volume)

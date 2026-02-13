@@ -2,7 +2,7 @@
 /obj/item/clothing/ring/silver
 	name = "silver ring"
 	icon_state = "ring_s"
-	sellprice = 33
+	sellprice = VALUE_SILVER_RING
 
 /obj/item/clothing/ring/silver/Initialize(mapload)
 	. = ..()
@@ -12,118 +12,118 @@
 	name = "makers' ring"
 	desc = "The wearer is a proud member of the Makers' guild."
 	icon_state = "guild_mason"
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 
 /obj/item/clothing/ring/silver/dorpel
 	name = "dorpel ring"
 	icon_state = "s_ring_diamond"
-	sellprice = 140
+	sellprice = VALUE_DORPEL_ITEM
 
 /obj/item/clothing/ring/silver/blortz
 	name = "blortz ring"
 	icon_state = "s_ring_quartz"
-	sellprice = 110
+	sellprice = VALUE_BLORTZ_ITEM
 
 /obj/item/clothing/ring/silver/saffira
 	name = "saffira ring"
 	icon_state = "s_ring_sapphire"
-	sellprice = 95
+	sellprice = VALUE_SAFFIRA_ITEM
 
 /obj/item/clothing/ring/silver/gemerald
 	name = "gemerald ring"
 	icon_state = "s_ring_emerald"
-	sellprice = 80
+	sellprice = VALUE_GEMERALD_ITEM
 
 /obj/item/clothing/ring/silver/toper
 	name = "toper ring"
 	icon_state = "s_ring_topaz"
-	sellprice = 65
+	sellprice = VALUE_TOPER_ITEM
 
 /obj/item/clothing/ring/silver/rontz
 	name = "rontz ring"
 	icon_state = "s_ring_ruby"
-	sellprice = 130
+	sellprice = VALUE_RONTZ_ITEM
 
 /obj/item/clothing/ring/gold
 	name = "gold ring"
 	icon_state = "ring_g"
-	sellprice = 70
+	sellprice = VALUE_GOLD_RING
 
 /obj/item/clothing/ring/gold/guild_mercator
 	name = "Mercator ring"
 	desc = "The wearer is a proud member of the Mercator guild."
 	icon_state = "guild_mercator"
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 
 /obj/item/clothing/ring/gold/dorpel
 	name = "dorpel ring"
 	icon_state = "g_ring_diamond"
-	sellprice = 270
+	sellprice = VALUE_DORPEL_ITEM * 2
 
 /obj/item/clothing/ring/gold/blortz
 	name = "blortz ring"
 	icon_state = "g_ring_quartz"
-	sellprice = 245
+	sellprice = VALUE_BLORTZ_ITEM * 2
 
 /obj/item/clothing/ring/gold/saffira
 	name = "saffira ring"
 	icon_state = "g_ring_sapphire"
-	sellprice = 200
+	sellprice = VALUE_SAFFIRA_ITEM * 2
 
 /obj/item/clothing/ring/gold/gemerald
 	name = "gemerald ring"
 	icon_state = "g_ring_emerald"
-	sellprice = 195
+	sellprice = VALUE_GEMERALD_ITEM * 2
 
 /obj/item/clothing/ring/gold/toper
 	name = "toper ring"
 	icon_state = "g_ring_topaz"
-	sellprice = 180
+	sellprice = VALUE_TOPER_ITEM * 2
 
 /obj/item/clothing/ring/gold/rontz
 	name = "rontz ring"
 	icon_state = "g_ring_ruby"
-	sellprice = 255
+	sellprice = VALUE_RONTZ_ITEM * 2
 
 /obj/item/clothing/ring/jade
 	name = "joapstone ring"
 	icon_state = "ring_jade"
-	sellprice = 60
+	sellprice = VALUE_JADE_ITEM
 
 /obj/item/clothing/ring/coral
 	name = "aoetal ring"
 	icon_state = "ring_coral"
-	sellprice = 70
+	sellprice = VALUE_CORAL_ITEM
 
 /obj/item/clothing/ring/onyxa
 	name = "onyxa ring"
 	icon_state = "ring_onyxa"
-	sellprice = 40
+	sellprice = VALUE_ONYX_ITEM
 
 /obj/item/clothing/ring/shell
 	name = "shell ring"
 	icon_state = "ring_shell"
-	sellprice = 20
+	sellprice = VALUE_SHELL_ITEM
 
 /obj/item/clothing/ring/amber
 	name = "petriamber ring"
 	icon_state = "ring_amber"
-	sellprice = 20
+	sellprice = VALUE_AMBER_ITEM
 
 /obj/item/clothing/ring/turq
 	name = "ceruleabaster ring"
 	icon_state = "ring_turq"
-	sellprice = 85
+	sellprice = VALUE_TURQ_ITEM
 
 /obj/item/clothing/ring/rose
 	name = "rosellusk ring"
 	icon_state = "ring_rose"
-	sellprice = 25
+	sellprice = VALUE_ROSE_ITEM
 
 /obj/item/clothing/ring/opal
 	name = "opaloise ring"
 	icon_state = "ring_opal"
-	sellprice = 90
+	sellprice = VALUE_OPAL_ITEM
 
 /obj/item/clothing/ring/active
 	var/active = FALSE
@@ -172,7 +172,7 @@
 	activate_sound = 'sound/magic/antimagic.ogg'
 	cdtime = 10 MINUTES
 	activetime = 30 SECONDS
-	sellprice = 100
+	sellprice = VALUE_MAGIC_ITEM_STRONG
 
 /obj/item/clothing/ring/active/nomag/update_icon_state()
 	. = ..()
@@ -299,7 +299,7 @@
 /obj/item/clothing/ring/gold/burden
 	name = "ring of burden"
 	icon_state = "ring_protection" //N/A change this to a real sprite after its made
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 
 /obj/item/clothing/ring/gold/burden/Initialize()
 	. = ..()
@@ -391,7 +391,7 @@
 	name = "dragon ring"
 	icon_state = "ring_g" // supposed to have it's own sprite but I'm lazy asf
 	desc = "Carrying the likeness of a dragon, this glorious ring hums with a subtle energy."
-	sellprice = 666
+	sellprice = VALUE_EXTREME * 2
 	var/active_item
 
 /obj/item/clothing/ring/dragon_ring/equipped(mob/living/user, slot)
@@ -423,15 +423,15 @@
 	icon_state = "signet"
 	desc = "A large golden ring engraved with the Symbol of Psydon."
 	desc = "A large golden signet ring engraved with the Symbol of Psydon."
-	sellprice = 135
-	sellprice = 135
+	sellprice = VALUE_SILVER_RING
+	sellprice = VALUE_SILVER_RING
 	var/tallowed = FALSE
 
 /obj/item/clothing/ring/signet/silver
 	name = "silver signet ring"
 	icon_state = "signet_silver"
 	desc = "A ring of blessed silver, bearing the Archbishop's symbol. By dipping it in melted redtallow, it can seal writs of religious importance."
-	sellprice = 90
+	sellprice = VALUE_SILVER_RING
 
 /obj/item/clothing/ring/signet/attack_hand_secondary(mob/user, params)
 	. = ..()

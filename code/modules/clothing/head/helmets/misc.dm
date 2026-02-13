@@ -189,7 +189,7 @@
 	desc = "A crimson red iron cap decorated with gold trims and embellishments."
 	icon_state = "lakkaricap"
 	item_state = "lakkaricap"
-	sellprice = 50
+	sellprice = VALUE_IRON_HELMET+BONUS_VALUE_MODEST
 	flags_inv = null
 	armor = ARMOR_SCALE
 	anvilrepair = /datum/skill/craft/armorsmithing
@@ -529,7 +529,7 @@
 	icon_state = "zizobarbute"
 	icon = 'icons/roguetown/clothing/special/evilarmor.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/evilarmor.dmi'
-	sellprice = 0 // Incredibly evil Zizoid armor, this should be burnt, nobody wants this
+	sellprice = NO_MARKET_VALUE // Incredibly evil Zizoid armor, this should be burnt, nobody wants this
 	item_weight = 5 * STEEL_MULTIPLIER
 
 //................. Silver Bascinet .............. //

@@ -1,7 +1,7 @@
 /obj/item/speakerinq
 	name = "secret whisperer"
 	desc = "Sweet secrets whispered so freely."
-	sellprice = 20
+	sellprice = VALUE_COMMON_GOODS * 2
 	icon = 'icons/roguetown/items/misc.dmi'
 	icon_state = "scomite"
 	gripped_intents = null

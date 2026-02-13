@@ -24,7 +24,7 @@
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
 	equip_sound = 'sound/foley/equip/equip_armor_chain.ogg'
 	swingsound = BLUNTWOOSH_MED
-	sellprice = 20
+	sellprice = VALUE_IRON_ITEM
 
 	grid_width = 32
 	grid_height = 96
@@ -57,7 +57,7 @@
 	minstr = 5
 	smeltresult = /obj/item/fertilizer/ash
 	melting_material = null
-	sellprice = 10
+	sellprice = VALUE_WOOD_ITEM
 
 
 //................ Steel Flail ............... //
@@ -70,7 +70,7 @@
 	minstr = 4
 	melting_material = /datum/material/steel
 	melt_amount = 75
-	sellprice = 35
+	sellprice = VALUE_STEEL_ITEM
 
 /obj/item/weapon/flail/sflail/ancient
 	name = "ancient flail"
@@ -94,7 +94,7 @@
 	minstr = 4
 	melting_material = /datum/material/silver
 	melt_amount = 75
-	sellprice = 50
+	sellprice = VALUE_SILVER_ITEM
 	last_used = 0
 
 /obj/item/weapon/flail/psydon/Initialize(mapload)
@@ -126,7 +126,7 @@
 	gripsprite = TRUE
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK
-	sellprice = 20
+	sellprice = VALUE_IRON_ITEM * 2
 
 /obj/item/weapon/flail/peasant/getonmobprop(tag)
 	. = ..()
@@ -189,4 +189,4 @@
 	anvilrepair = /datum/skill/craft/weaponsmithing
 	melting_material = /datum/material/steel
 	melt_amount = 150
-	sellprice = 250
+	sellprice = VALUE_GOLD_ITEM * 2

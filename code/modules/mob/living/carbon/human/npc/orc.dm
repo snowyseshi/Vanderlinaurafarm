@@ -84,7 +84,7 @@
 	. = ..()
 	icon_state = "orc_skel_head"
 	headprice = 2
-	sellprice = 2
+	sellprice = VALUE_MONSTER_HEAD
 
 /mob/living/carbon/human/species/orc/update_body()
 	remove_overlay(BODY_LAYER)

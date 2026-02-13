@@ -22,7 +22,7 @@
 	anvilrepair = /datum/skill/craft/tanning
 	resistance_flags = FLAMMABLE // Fully made of leather
 	swingsound = WHIPWOOSH
-	sellprice = 30
+	sellprice = VALUE_BIG_LEATHER
 	grid_width = 32
 	grid_height = 64
 
@@ -45,7 +45,7 @@
 	resistance_flags = FIRE_PROOF
 	melting_material = /datum/material/steel
 	melt_amount = 75
-	sellprice = 50
+	sellprice = VALUE_STEEL_ITEM * 2
 
 //................ Silver Whip ............... //
 /obj/item/weapon/whip/silver
@@ -96,7 +96,7 @@
 	wlength = WLENGTH_NORMAL
 	possible_item_intents = list(CANE_LASH)
 	max_integrity = 4 // Striking unarmoured parts doesn't take integrity, four hits to anything with an armor value will break it.
-	sellprice = 0
+	sellprice = VALUE_WORTHLESS
 
 /obj/item/weapon/whip/cane/getonmobprop(tag)
 	. = ..()

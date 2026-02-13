@@ -245,7 +245,7 @@
 	name = "cheap dyes"
 	desc = "A handful of muted dyes made from natural elements."
 	icon_state = "cheap_dyes"
-	sellprice = 3
+	sellprice = VALUE_DIRT_CHEAP
 
 /obj/item/dye_pack/cheap/Initialize()
 	selectable_colors = GLOB.peasant_dyes.Copy()
@@ -255,7 +255,7 @@
 	name = "luxury dyes"
 	desc = "An assortment of rich, colorful dyes, hailing from all across Psydonia. This would certainly cost a pretty zenny."
 	icon_state = "luxury_dyes"
-	sellprice = 30
+	sellprice = VALUE_COSTLY_THING
 
 /obj/item/dye_pack/luxury/Initialize()
 	selectable_colors = GLOB.noble_dyes.Copy()
@@ -266,7 +266,7 @@
 	desc = "Dyes with powders hailing from all across Psydonia, from Kingsfield to Heartfelt. \
 		Vibrant and pleasing to the eyes, only the highest in the social hierarchy are seen with these colors."
 	icon_state = "luxury_dyes"
-	sellprice = 70
+	sellprice = VALUE_LUXURY_THING
 
 /obj/item/dye_pack/royal/Initialize()
 	selectable_colors = GLOB.royal_dyes.Copy()

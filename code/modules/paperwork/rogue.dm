@@ -4,7 +4,7 @@
 	slot_flags = null
 	dropshrink = 0.6
 	firefuel = 30 SECONDS
-	sellprice = 2
+	sellprice = VALUE_WORTHLESS
 	textper = 108
 	maxlen = 2000
 	throw_range = 3
@@ -428,7 +428,7 @@
 	w_class = WEIGHT_CLASS_TINY
 	dropshrink = 0.5
 	firefuel = 30 SECONDS
-	sellprice = 2
+	sellprice = VALUE_WORTHLESS
 	throwforce = 0
 	slot_flags = ITEM_SLOT_HIP|ITEM_SLOT_MOUTH
 	var/signee = null

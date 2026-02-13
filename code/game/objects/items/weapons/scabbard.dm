@@ -48,7 +48,7 @@
 	slot_flags = ITEM_SLOT_HIP|ITEM_SLOT_BACK|ITEM_SLOT_WRISTS|ITEM_SLOT_NECK
 	associated_skill = /datum/skill/combat/knives
 	sewrepair = TRUE
-	sellprice = 10
+	sellprice = VALUE_COMMON_GOODS
 	experimental_onback = FALSE
 	experimental_onhip = FALSE
 
@@ -76,13 +76,13 @@
 	name = "silver decorated knife sheath"
 	desc = "A slingable sheath made of leather, enamored with elaborate silver decorations, often seen on the hips of nobles"
 	icon_state = "nsheath"
-	sellprice = 50
+	sellprice = VALUE_COSTLY_THING
 
 /obj/item/weapon/scabbard/knife/royal
 	name = "gold decorated knife sheath"
 	desc = "A slingable sheath made of leather, enamored with exquisite golden decorations, often seen on the hips of royalty"
 	icon_state = "rsheath"
-	sellprice = 100
+	sellprice = VALUE_LUXURY_THING
 
 /obj/item/weapon/scabbard/sword
 	name = "scabbard"
@@ -95,7 +95,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	anvilrepair = /datum/skill/craft/carpentry
 	associated_skill = /datum/skill/combat/swords
-	sellprice = 10
+	sellprice = VALUE_COMMON_GOODS
 
 /obj/item/weapon/scabbard/sword/apply_components()
 	. = ..()
@@ -118,13 +118,13 @@
 	name = "silver decorated scabbard"
 	desc = "A scabbard designed to hold a sword. This one is decorated on a silver platter."
 	icon_state = "nscabbard"
-	sellprice = 50
+	sellprice = VALUE_COSTLY_THING
 
 /obj/item/weapon/scabbard/sword/royal
 	name = "gold decorated scabbard"
 	desc = "A scabbard designed to hold a sword. This one is lined with golden fittings, fit for a royal."
 	icon_state = "rscabbard"
-	sellprice = 100
+	sellprice = VALUE_LUXURY_THING
 
 /obj/item/weapon/scabbard/cane
 	name = "fancy cane"
@@ -133,7 +133,7 @@
 	force = DAMAGE_MACE - 4
 	force_wielded = DAMAGE_MACE - 2
 	wdefense = MEDIOCRE_PARRY
-	sellprice = 45
+	sellprice = VALUE_COSTLY_THING
 
 	slot_flags = ITEM_SLOT_HIP
 	w_class = WEIGHT_CLASS_BULKY
@@ -220,7 +220,7 @@
 	anvilrepair = /datum/skill/craft/carpentry
 	associated_skill = /datum/skill/combat/shields
 	max_integrity = INTEGRITY_STANDARD
-	sellprice = 10
+	sellprice = VALUE_COMMON_GOODS
 
 /obj/item/weapon/scabbard/kazengun/apply_components()
 	. = ..()

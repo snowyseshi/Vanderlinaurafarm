@@ -27,7 +27,7 @@
 	thrown_bclass = BCLASS_STAB
 	grid_height = 96
 	grid_width = 64
-	sellprice = 20
+	sellprice = VALUE_COMMON_GOODS
 
 /obj/item/weapon/polearm/Initialize()
 	. = ..()
@@ -59,7 +59,7 @@
 
 	slot_flags = ITEM_SLOT_BACK
 	sharpness = IS_BLUNT
-	sellprice = 5
+	sellprice = VALUE_DIRT_CHEAP
 
 /obj/item/weapon/polearm/woodstaff/getonmobprop(tag)
 	. = ..()
@@ -79,7 +79,7 @@
 	icon_state = "quarterstaff"
 	force_wielded =  DAMAGE_STAFF_WIELD
 	max_integrity = INTEGRITY_STRONG
-	sellprice = 10
+	sellprice = VALUE_WOOD_ITEM
 
 //................ Iron-shod Staff ............... //
 /obj/item/weapon/polearm/woodstaff/quarterstaff/iron
@@ -107,14 +107,14 @@
 	force_wielded =  DAMAGE_STAFF_WIELD + 1
 	resistance_flags = FIRE_PROOF // Leniency for unique items
 	dropshrink = 0.6
-	sellprice = 100
+	sellprice = VALUE_LUXURY_THING
 
 /obj/item/weapon/polearm/woodstaff/seer
 	name = "staff of the rous seer"
 	desc = "A staff used by the rousman seers, mainly to protect themselves."
 	icon_state = "seerstaff"
 	force_wielded =  DAMAGE_STAFF_WIELD + 1
-	sellprice = 100
+	sellprice = VALUE_LUXURY_THING
 
 //................ Spear ............... //
 /obj/item/weapon/polearm/spear
@@ -133,7 +133,7 @@
 	melt_amount = 75
 	dropshrink = 0.8
 	thrown_bclass = BCLASS_STAB
-	sellprice = 22
+	sellprice = VALUE_IRON_ITEM
 
 /obj/item/weapon/polearm/spear/getonmobprop(tag)
 	. = ..()
@@ -179,7 +179,7 @@
 	max_integrity = INTEGRITY_STRONG
 	resistance_flags = FIRE_PROOF
 	melting_material = /datum/material/silver
-	sellprice = 60
+	sellprice = VALUE_SILVER_ITEM
 
 /obj/item/weapon/polearm/spear/psydon/Initialize(mapload)
 	. = ..()
@@ -210,7 +210,7 @@
 	drop_sound = 'sound/foley/dropsound/blade_drop.ogg'
 	melting_material = /datum/material/steel
 	melt_amount = 75
-	sellprice = 60
+	sellprice = VALUE_STEEL_ITEM
 
 /obj/item/weapon/polearm/spear/billhook/ji
 	name = "steel dagger-ax"
@@ -251,7 +251,7 @@
 	smeltresult = /obj/item/fertilizer/ash
 	melting_material = null
 	dropshrink = 0.7
-	sellprice = 5
+	sellprice = VALUE_DIRT_CHEAP
 
 //................ Javelin ............... //
 /obj/item/weapon/polearm/spear/stone/copper
@@ -265,7 +265,7 @@
 	melting_material = /datum/material/copper
 	melt_amount = 75
 	dropshrink = 0.9
-	sellprice = 15
+	sellprice = VALUE_COPPER_ITEM
 	throw_speed = 3
 	embedding = list("embedded_pain_multiplier" = 4, "embed_chance" = 50, "embedded_fall_chance" = 0, "embedded_ignore_throwspeed_threshold" = 1)
 
@@ -299,7 +299,7 @@
 	dropshrink = 0.8
 	melting_material = /datum/material/steel
 	melt_amount = 150
-	sellprice = 90
+	sellprice = VALUE_STEEL_ITEM * 2
 
 /obj/item/weapon/polearm/halberd/getonmobprop(tag)
 	. = ..()
@@ -332,7 +332,7 @@
 	axe_cut = 15
 	melting_material = /datum/material/iron
 	melt_amount = 75
-	sellprice = 20
+	sellprice = VALUE_IRON_ITEM
 
 /obj/item/weapon/woodchopper/getonmobprop(tag)
 	. = ..()
@@ -368,7 +368,7 @@
 	axe_cut = 15
 	melting_material = /datum/material/iron
 	melt_amount = 150
-	sellprice = 20
+	sellprice = VALUE_IRON_ITEM
 
 /obj/item/weapon/polearm/halberd/bardiche/warcutter/getonmobprop(tag)
 	. = ..()
@@ -396,7 +396,7 @@
 	resistance_flags = FIRE_PROOF
 	melting_material = /datum/material/silver
 	melt_amount = 150
-	sellprice = 100
+	sellprice = VALUE_SILVER_ITEM * 2
 
 /obj/item/weapon/polearm/halberd/psydon/Initialize(mapload)
 	. = ..()
@@ -439,7 +439,7 @@
 	axe_cut = 10
 	melting_material = /datum/material/iron
 	melt_amount = 140
-	sellprice = 30
+	sellprice = VALUE_IRON_ITEM * 2
 
 /obj/item/weapon/polearm/halberd/bardiche/ancient
 	name = "bardiche"
@@ -472,7 +472,7 @@
 	dropshrink = 0.8
 	melting_material = /datum/material/steel
 	melt_amount = 150
-	sellprice = 60
+	sellprice = VALUE_STEEL_ITEM * 2
 
 /obj/item/weapon/polearm/eaglebeak/getonmobprop(tag)
 	. = ..()
@@ -495,7 +495,7 @@
 	max_integrity = INTEGRITY_STRONG
 	melting_material = /datum/material/iron
 	melt_amount = 150
-	sellprice = 40
+	sellprice = VALUE_IRON_ITEM * 2
 
 //................ Hoplite Spear ............... //
 /obj/item/weapon/polearm/spear/hoplite
@@ -507,14 +507,14 @@
 	max_integrity = INTEGRITY_STRONG
 	melting_material = /datum/material/bronze
 	melt_amount = 75
-	sellprice = 120 // A noble collector would love to get his/her hands on one of these spears
+	sellprice = VALUE_LUXURY_THING * 2 // A noble collector would love to get his/her hands on one of these spears
 
 /obj/item/weapon/polearm/spear/hoplite/winged // Winged version has +1 weapon defence and sells for a bit more, but is identical otherwise
 	name = "ancient winged spear"
 	desc = "A spear with a winged bronze head, a rare survivor from the battles long past that nearly destroyed Psydonia."
 	icon_state = "bronzespear_winged"
 	wdefense = ULTMATE_PARRY
-	sellprice = 150 // A noble collector would love to get his/her hands on one of these spears
+	sellprice = VALUE_LUXURY_THING * 2 // A noble collector would love to get his/her hands on one of these spears
 
 /obj/item/weapon/polearm/spear/hoplite/abyssal
 	name = "Abyssal spear"
@@ -522,7 +522,7 @@
 	icon = 'icons/roguetown/weapons/64/ancient.dmi'
 	icon_state = "ancient_spear"
 	wdefense = ULTMATE_PARRY
-	sellprice = 40
+	sellprice = VALUE_COSTLY_THING
 
 /obj/item/weapon/polearm/spear/bronze
 	name = "Bronze Spear"
@@ -565,7 +565,7 @@
 	blade_dulling = DULLING_BASHCHOP
 	melting_material = /datum/material/iron
 	melt_amount = 75
-	sellprice = 10
+	sellprice = VALUE_IRON_ITEM
 
 /obj/item/weapon/sickle/scythe/Initialize()
 	. = ..()

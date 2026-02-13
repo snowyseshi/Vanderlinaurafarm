@@ -7,7 +7,7 @@
 	icon_state = ""
 	grid_width = 64
 	grid_height = 96
-	sellprice = 20
+	sellprice = VALUE_COMMON_GOODS
 
 	slot_flags = ITEM_SLOT_HEAD
 	resistance_flags = INDESTRUCTIBLE

@@ -12,7 +12,7 @@
 	var/dead = FALSE
 	eat_effect = /datum/status_effect/debuff/uncookedfood
 	max_integrity = 10
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 	rotprocess = null
 
 /obj/item/reagent_containers/food/snacks/smallrat/onbite(mob/living/user)
@@ -51,7 +51,7 @@
 	w_class = WEIGHT_CLASS_TINY
 	tastes = list("burnt flesh" = 1)
 	rotprocess = SHELFLIFE_SHORT
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 
 /obj/item/reagent_containers/food/snacks/smallrat/burning(input as num)
 	if(!dead)

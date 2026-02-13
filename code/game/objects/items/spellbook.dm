@@ -235,43 +235,43 @@
 	name = "poorly made tome of the arcyne"
 	desc = "A poorly made book, it barely glows with arcyne and has only small notes on arcyne symbols."
 	bookquality = 1
-	sellprice = 15
+	sellprice = VALUE_COMMON_GOODS
 
 /obj/item/book/granter/spellbook/mid	//decent magic stones and basic crafting materials
 	name = "beginners tome of the arcyne"
 	desc = "An obviously handcrafted book, it glows occasionally with arcyne and has a meager amount notes on arcyne symbols."
 	bookquality = 2
-	sellprice = 30
+	sellprice = VALUE_COSTLY_THING
 
 /obj/item/book/granter/spellbook/apprentice	//apprentices get made with obsidian
 	name = "apprentice tome of the arcyne"
 	desc = "A carefully made book, faintly glowing with arcyne and half filled with notes and theory on arcyne symbols."
 	bookquality = 3
-	sellprice = 75
+	sellprice = VALUE_LUXURY_THING
 
 /obj/item/book/granter/spellbook/adept	//refugee mages &normal loot
 	name = "adept tome of the arcyne"
 	desc = "A well-made book, it shines moderately with arcyne light. It has been filled with notes of varying degrees on the arcyne "
 	bookquality = 4
-	sellprice = 150
+	sellprice = VALUE_LUXURY_THING * 2
 
 /obj/item/book/granter/spellbook/expert	//made from 2nd tier loot item
 	name = "expert tome of the arcyne"
 	desc = "A well cared for book, shining brightly with arcyne. It has many runes and arcyne symbols scribed within, with detailed notes."
 	bookquality = 6
-	sellprice = 200
+	sellprice = VALUE_LUXURY_THING * 3
 
 /obj/item/book/granter/spellbook/master	// Court mage & made from 3rd tier loot item
 	name = "masterful tome of the arcyne"
 	desc = "A crackling, glowing book, filled with advanced arcyne runes and symbols that hurt the mind to stare at. A true master of the arcyne has left their mark behind."
 	bookquality = 8
-	sellprice = 250
+	sellprice = VALUE_EXTREME
 
 /obj/item/book/granter/spellbook/legendary	//max tier lootmade item
 	name = "legendary tome of the arcyne"
 	desc = "An incredible book that gives off glowing arcyne motes, it is filled with runes and arcyne theories that is hard for even masters of arcyne to understand. The arcyne script glows and practically whispers from the page.."
 	bookquality = 12
-	sellprice = 400
+	sellprice = VALUE_EXTREME * 2
 
 /// Book slapcrafting
 

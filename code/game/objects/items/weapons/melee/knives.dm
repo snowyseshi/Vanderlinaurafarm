@@ -28,7 +28,7 @@
 	melting_material = /datum/material/iron
 	melt_amount = 50
 	sharpness = IS_SHARP
-	sellprice = 30
+	sellprice = VALUE_IRON_ITEM
 
 	grid_height = 64
 	grid_width = 32
@@ -55,7 +55,7 @@
 	force = DAMAGE_DAGGER
 	melting_material = /datum/material/steel
 	melt_amount = 75
-	sellprice = 6
+	sellprice = VALUE_STEEL_ITEM
 
 
 /obj/item/weapon/knife/dagger/navaja
@@ -67,7 +67,7 @@
 	possible_item_intents = list(DAGGER_THRUST,DAGGER_CUT)
 	var/extended = 0
 	wdefense = TERRIBLE_PARRY
-	sellprice = 30 //shiny :o
+	sellprice = VALUE_STEEL_ITEM
 
 /obj/item/weapon/knife/dagger/navaja/attack_self(mob/user)
 	extended = !extended
@@ -184,7 +184,7 @@
 	max_integrity = INTEGRITY_STANDARD - 20
 	melting_material = /datum/material/iron
 	wbalance = HARD_TO_DODGE
-	sellprice = 15
+	sellprice = VALUE_IRON_ITEM
 
 /obj/item/weapon/knife/cleaver/combat/getonmobprop(tag)
 	. = ..()
@@ -202,7 +202,7 @@
 	icon_state = "dagger_bronze"
 	melting_material = /datum/material/bronze
 	melt_amount = 50
-	sellprice = 10
+	sellprice = VALUE_BRONZE_ITEM
 
 //................ Iron Dagger ............... //
 /obj/item/weapon/knife/dagger
@@ -211,7 +211,7 @@
 	icon_state = "idagger"
 	force = DAMAGE_DAGGER
 	possible_item_intents = list(DAGGER_CUT, DAGGER_THRUST)
-	sellprice = 12
+	sellprice = VALUE_IRON_ITEM
 
 /obj/item/weapon/knife/dagger/jile
 	name = "iron jile"
@@ -234,7 +234,7 @@
 	icon = 'icons/roguetown/weapons/32/lakkari.dmi'
 	icon_state = "njora_iron"
 	possible_item_intents = list(DAGGER_CUT, DAGGER_CHOP, DAGGER_THRUST)
-	sellprice = 12
+	sellprice = VALUE_IRON_ITEM
 	dropshrink = 1.0
 
 //................ Steel Dagger ............... //
@@ -252,7 +252,7 @@
 	desc = "A curved steel dagger from the fallen east."
 	icon = 'icons/roguetown/weapons/32/lakkari.dmi'
 	icon_state = "jile_steel"
-	sellprice = 20
+	sellprice = VALUE_STEEL_ITEM
 	dropshrink = 1.0
 
 /obj/item/weapon/knife/dagger/steel/njora
@@ -262,7 +262,7 @@
 	icon_state = "njora_steel"
 	wbalance = HARD_TO_DODGE
 	possible_item_intents = list(DAGGER_CUT, DAGGER_CHOP, DAGGER_THRUST)
-	sellprice = 20
+	sellprice = VALUE_STEEL_ITEM
 	dropshrink = 1.0
 
 /obj/item/weapon/knife/dagger/steel/special
@@ -322,7 +322,7 @@
 	melting_material = /datum/material/silver
 	max_blade_int = 120
 	max_integrity = INTEGRITY_STRONG * 0.8
-	sellprice = 45
+	sellprice = VALUE_SILVER_ITEM
 	last_used = 0
 
 /obj/item/weapon/knife/dagger/silver/Initialize(mapload)
@@ -335,14 +335,14 @@
 	desc = "A silver dagger favored by close range fighters of the inquisition."
 	icon = 'icons/roguetown/weapons/32/psydonite.dmi'
 	icon_state = "psydagger"
-	sellprice = 60
+	sellprice = VALUE_SILVER_ITEM
 
 //................ Profane Dagger ............... //
 /obj/item/weapon/knife/dagger/steel/profane
 	// name = "profane dagger"
 	// desc = "A profane dagger made of cursed black steel. Whispers emanate from the gem on its hilt."
 	possible_item_intents = list(DAGGER_CUT, DAGGER_THRUST, FACE_STEAL)
-	sellprice = 250
+	sellprice = VALUE_WORTHLESS // heretical
 	icon_state = "pdagger"
 	melting_material = null
 	embedding = list("embed_chance" = 0) // Embedding the cursed dagger has the potential to cause duping issues. Keep it like this unless you want to do a lot of bug hunting.
@@ -530,7 +530,7 @@
 	max_blade_int = 30
 	smeltresult = /obj/item/fertilizer/ash
 	melting_material = null
-	sellprice = 5
+	sellprice = VALUE_DIRT_CHEAP
 
 /obj/item/weapon/knife/stone/kukri
 	name = "joapstone kukri"
@@ -541,7 +541,7 @@
 	max_integrity = INTEGRITY_WORST / 2
 	max_blade_int = 35
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	sellprice = 75
+	sellprice = VALUE_JADE_ITEM
 
 /obj/item/weapon/knife/stone/opal
 	name = "opaloise knife"
@@ -552,7 +552,7 @@
 	max_integrity = INTEGRITY_WORST / 2
 	max_blade_int = 35
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	sellprice = 105
+	sellprice = VALUE_OPAL_ITEM
 //................ Villager Knife ............... //
 /obj/item/weapon/knife/villager
 	name = "villager knife"
@@ -569,7 +569,7 @@
 	max_integrity = INTEGRITY_WORST - 25
 	melting_material = /datum/material/copper
 	melt_amount = 50
-	sellprice = 10
+	sellprice = VALUE_COPPER_ITEM
 
 
 /obj/item/weapon/knife/throwingknife
@@ -584,7 +584,7 @@
 	icon_state = "throw_knifei"
 	embedding = list("embedded_pain_multiplier" = 4, "embed_chance" = 25, "embedded_fall_chance" = 20)
 	melt_amount = 50
-	sellprice = 3
+	sellprice = VALUE_WORTHLESS // So you can't make infinite mammons by buying tossbelts
 
 /obj/item/weapon/knife/throwingknife/bronze
 	name = "bronze tossblade"
@@ -596,7 +596,7 @@
 	icon_state = "throwing_bronze"
 	embedding = list("embedded_pain_multiplier" = 3, "embed_chance" = 20, "embedded_fall_chance" = 15)
 	melting_material = /datum/material/bronze
-	sellprice = 2
+	sellprice = VALUE_WORTHLESS
 
 /obj/item/weapon/knife/throwingknife/steel
 	name = "steel tossblade"
@@ -607,7 +607,7 @@
 	max_integrity = INTEGRITY_WORST
 	embedding = list("embedded_pain_multiplier" = 4, "embed_chance" = 30, "embedded_fall_chance" = 15)
 	melting_material = /datum/material/steel
-	sellprice = 4
+	sellprice = VALUE_WORTHLESS
 
 /obj/item/weapon/knife/throwingknife/psydon
 	name = "psydonian tossblade"
@@ -618,7 +618,7 @@
 	throw_speed = 4
 	max_integrity = INTEGRITY_POOR
 	embedding = list("embedded_pain_multiplier" = 4, "embed_chance" = 50, "embedded_fall_chance" = 0)
-	sellprice = 65
+	sellprice = VALUE_SILVER_ITEM
 	melting_material = /datum/material/silver
 
 /obj/item/weapon/knife/throwingknife/psydon/Initialize(mapload)
@@ -633,7 +633,7 @@
 	throw_speed = 4
 	max_integrity = INTEGRITY_POOR
 	embedding = list("embedded_pain_multiplier" = 4, "embed_chance" = 30, "embedded_fall_chance" = 15)
-	sellprice = 5
+	sellprice = VALUE_DIRT_CHEAP
 
 /obj/item/weapon/knife/throwingknife/throwcard
 	name = "Calling Card"
@@ -642,4 +642,4 @@
 	throw_speed = 5
 	max_integrity = INTEGRITY_WORST - 50 // It's not about how effective it is, it's about sending a message.
 	embedding = list("embedded_pain_multiplier" = 2, "embed_chance" = 50, "embedded_fall_chance" = 5)
-	sellprice = 2
+	sellprice = VALUE_WORTHLESS

@@ -43,7 +43,7 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT)
 	blocksound = PLATEHIT
 	max_integrity = 100
-	sellprice = 5
+	sellprice = VALUE_DIRT_CHEAP
 
 /obj/item/clothing/head/helmet/orc/warlord
 	name = "Orc Warlord Helmet"
@@ -52,7 +52,7 @@
 	armor = list("blunt" = 70, "slash" = 70, "stab" = 70,  "piercing" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_STAB)
 	max_integrity = 150
-	sellprice = 10
+	sellprice = VALUE_COMMON_GOODS
 
 /obj/item/clothing/head/helmet/leather/orc
 	slot_flags = ITEM_SLOT_HEAD|ITEM_SLOT_HIP
@@ -74,7 +74,7 @@
 	allowed_race = list(SPEC_ID_ORC)
 	armor = list("blunt" = 30, "slash" = 30, "stab" = 30,  "piercing" = 0, "fire" = 0, "acid" = 0)
 	body_parts_covered = CHEST|GROIN
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 
 ///obj/item/clothing/armor/leather/hide/orc
 

@@ -10,7 +10,7 @@ GLOBAL_LIST_EMPTY(custom_fermentation_recipes)
 	density = TRUE
 	anchored = FALSE
 
-	sellprice = 15 // so you can sell the keg directly
+	sellprice = VALUE_COMMON_GOODS // so you can sell the keg directly
 
 	/// The sound of fermentation
 	var/datum/looping_sound/boiling/soundloop

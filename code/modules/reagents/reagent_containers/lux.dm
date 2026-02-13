@@ -8,7 +8,7 @@
 	volume = 15
 	list_reagents = list(/datum/reagent/lux = 5)
 	grind_results = list(/datum/reagent/lux = 5)
-	sellprice = 500
+	sellprice = NO_MARKET_VALUE
 
 /datum/reagent/lux
 	name = "Lux"
@@ -139,7 +139,7 @@
 	volume = 15
 	list_reagents = list(/datum/reagent/lux_tainted = 5)
 	grind_results = list(/datum/reagent/lux_tainted = 5)
-	sellprice = 25
+	sellprice = NO_MARKET_VALUE
 
 /datum/reagent/lux_tainted
 	name = "Tainted lux"

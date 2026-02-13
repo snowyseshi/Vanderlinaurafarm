@@ -7,7 +7,7 @@
 	icon_state = "blackboots"
 	item_state = "blackboots"
 	armor = list("blunt" = 15, "slash" = 15, "stab" = 15,  "piercing" = 5, "fire" = 0, "acid" = 0)
-	sellprice = 10
+	sellprice = VALUE_LEATHER_ARMOR
 	salvage_result = /obj/item/natural/hide/cured
 	salvage_amount = 1
 	max_integrity = INTEGRITY_STANDARD
@@ -31,7 +31,7 @@
 	equip_sound = 'sound/foley/equip/equip_armor_plate.ogg'
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
 	break_sound = 'sound/foley/breaksound.ogg'
-	sellprice = 25
+	sellprice = VALUE_STEEL_ARMOR
 	item_weight = 7 * STEEL_MULTIPLIER
 
 /obj/item/clothing/shoes/boots/armor/light
@@ -42,7 +42,7 @@
 	armor = list("blunt" = 80, "slash" = 80, "stab" = 80,  "piercing" = 60, "fire" = 0, "acid" = 0)
 	max_integrity = INTEGRITY_STRONG + 50
 	armor_class = AC_MEDIUM
-	sellprice = 20
+	sellprice = VALUE_STEEL_ARMOR
 	item_weight = 7 * IRON_MULTIPLIER
 
 /obj/item/clothing/shoes/boots/armor/ironmaille
@@ -95,7 +95,7 @@
 	item_state = "leatherboots"
 	armor = list("blunt" = 20, "slash" = 20, "stab" = 20,  "piercing" = 10, "fire" = 0, "acid" = 0)
 	resistance_flags = FLAMMABLE
-	sellprice = 10
+	sellprice = VALUE_LEATHER_ARMOR
 	salvage_result = /obj/item/natural/hide/cured
 	salvage_amount = 1
 	item_weight = 3
@@ -194,7 +194,7 @@
 	icon = 'icons/roguetown/clothing/special/evilarmor.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/evilarmor.dmi'
 	sleeved = 'icons/roguetown/clothing/special/onmob/evilarmor.dmi'
-	sellprice = 0 // Incredibly evil Zizoid armor, this should be burnt, nobody wants this
+	sellprice = NO_MARKET_VALUE // Incredibly evil Zizoid armor, this should be burnt, nobody wants this
 
 /obj/item/clothing/shoes/boots/armor/matthios
 	name = "gilded boots"
@@ -204,7 +204,7 @@
 	icon = 'icons/roguetown/clothing/special/evilarmor.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/evilarmor.dmi'
 	sleeved = 'icons/roguetown/clothing/special/onmob/evilarmor.dmi'
-	sellprice = 0 // See above comment
+	sellprice = NO_MARKET_VALUE // See above comment
 
 /obj/item/clothing/shoes/boots/armor/graggar
 	name = "vicious boots"
@@ -214,4 +214,4 @@
 	icon = 'icons/roguetown/clothing/special/evilarmor.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/evilarmor.dmi'
 	sleeved = 'icons/roguetown/clothing/special/onmob/evilarmor.dmi'
-	sellprice = 0 // See above comment
+	sellprice = NO_MARKET_VALUE // See above comment

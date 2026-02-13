@@ -31,7 +31,7 @@
 	thrown_bclass = BCLASS_CUT
 	melting_material = /datum/material/steel
 	melt_amount = 75
-	sellprice = 30
+	sellprice = VALUE_STEEL_ITEM
 	grid_height = 96
 	grid_width = 64
 
@@ -65,7 +65,7 @@
 	max_integrity = INTEGRITY_STRONG
 	minstr = 4
 	w_class = WEIGHT_CLASS_NORMAL
-	sellprice = 30
+	sellprice = VALUE_STEEL_ITEM
 
 /obj/item/weapon/sword/short/iron
 	desc = "An iron sword of shortened design and a reduced grip for single hand use."
@@ -73,7 +73,7 @@
 	wdefense = GOOD_PARRY
 	max_integrity = INTEGRITY_STANDARD
 	melting_material = /datum/material/iron
-	sellprice = 15
+	sellprice = VALUE_IRON_ITEM
 
 /obj/item/weapon/sword/short/bronze
 	name = "bronze short sword"
@@ -83,7 +83,7 @@
 	max_blade_int = 85
 	max_integrity = INTEGRITY_STANDARD
 	melting_material = /datum/material/bronze
-	sellprice = 10
+	sellprice = VALUE_BRONZE_ITEM
 
 /obj/item/weapon/sword/short/psy
 	name = "psydonian shortsword"
@@ -104,7 +104,7 @@
 	name = "arming sword"
 	desc = "A trustworthy blade design, the first dedicated tool of war since before the age of history."
 	icon_state = "sword1"
-	sellprice = 30
+	sellprice = VALUE_STEEL_ITEM
 
 /obj/item/weapon/sword/arming/Initialize()
 	. = ..()
@@ -113,7 +113,7 @@
 
 /obj/item/weapon/sword/decorated
 	icon_state = "decsword1"
-	sellprice = 140
+	sellprice = VALUE_LUXURY_THING * 2
 
 /obj/item/weapon/sword/decorated/Initialize()
 	. = ..()
@@ -129,7 +129,7 @@
 	force_wielded = DAMAGE_SWORD_WIELD - 1
 	max_integrity = INTEGRITY_STRONG
 	melting_material = /datum/material/silver
-	sellprice = 45
+	sellprice = VALUE_SILVER_ITEM
 	last_used = 0
 
 /obj/item/weapon/sword/silver/Initialize(mapload)
@@ -183,21 +183,21 @@
 	icon_state = "ida_steel"
 	wdefense = GOOD_PARRY
 	minstr = 5
-	sellprice = 50
+	sellprice = VALUE_STEEL_ITEM
 
 /obj/item/weapon/sword/short/iron/ida
 	name = "iron ida"
 	desc = "A short sword with a leaf-shaped blade. Used to be a popular weapon in the east."
 	icon = 'icons/roguetown/weapons/32/lakkari.dmi'
 	icon_state = "ida_iron"
-	sellprice = 20
+	sellprice = VALUE_IRON_ITEM
 
 /obj/item/weapon/sword/rapier/caneblade
 	name = "cane blade"
 	desc = "A steel blade with a gold handle, intended to be concealed inside of a cane. Has a focus on stabbing"
 	icon = 'icons/roguetown/weapons/32/swords.dmi'
 	icon_state = "caneblade"
-	sellprice = 100 //Gold handle
+	sellprice = VALUE_LUXURY_THING
 	bigboy = FALSE
 	SET_BASE_PIXEL(0, 0)
 
@@ -227,7 +227,7 @@
 	name = "decorated sabre"
 	desc = "A sabre decorated with fashionable gold accents without sacrificing its lethal practicality."
 	icon_state = "decsaber"
-	sellprice = 140
+	sellprice = VALUE_LUXURY_THING * 2
 
 /obj/item/weapon/sword/sabre/stalker
 	name = "stalker sabre"
@@ -299,7 +299,7 @@
 	inhand_y_dimension = 64
 	slot_flags = ITEM_SLOT_BACK|ITEM_SLOT_HIP
 	dropshrink = 0.
-	sellprice = 80
+	sellprice = VALUE_LUXURY_THING
 
 /obj/item/weapon/sword/sabre/shalal/getonmobprop(tag)
 	. = ..()
@@ -351,7 +351,7 @@
 	gripped_intents = list(SWORD_CHOP, SWORD_THRUST)
 	minstr = 8 // Heavy blade used by orcs
 	melting_material = /datum/material/iron
-	sellprice = 20
+	sellprice = VALUE_IRON_ITEM
 
 /obj/item/weapon/sword/scimitar/lakkarikhopesh/iron
 	name = "iron khopesh"
@@ -359,7 +359,7 @@
 	icon = 'icons/roguetown/weapons/32/lakkari.dmi'
 	icon_state = "khopesh_iron"
 	melting_material = /datum/material/iron
-	sellprice = 20
+	sellprice = VALUE_IRON_ITEM
 
 /obj/item/weapon/sword/scimitar/lakkarikhopesh
 	name = "steel khopesh"
@@ -369,14 +369,14 @@
 	wbalance = EASY_TO_DODGE
 	possible_item_intents = list(SWORD_CUT, AXE_CHOP)
 	gripped_intents = list(SWORD_CHOP, SWORD_THRUST)
-	sellprice = 45
+	sellprice = VALUE_STEEL_ITEM
 
 /obj/item/weapon/sword/scimitar/sengese/iron
 	name = "iron sengese"
 	icon = 'icons/roguetown/weapons/32/lakkari.dmi'
 	icon_state = "sengese_iron"
 	melting_material = /datum/material/iron
-	sellprice = 20
+	sellprice = VALUE_IRON_ITEM
 
 /obj/item/weapon/sword/scimitar/sengese
 	name = "steel sengese"
@@ -387,14 +387,14 @@
 	gripped_intents = list(SWORD_CUT, SWORD_CHOP, CURVED_THRUST)
 	swingsound = BLADEWOOSH_SMALL
 	minstr = 6
-	sellprice = 45
+	sellprice = VALUE_STEEL_ITEM
 
 /obj/item/weapon/sword/scimitar/sengese/bronze
 	name = "bronze sengese"
 	icon = 'icons/roguetown/weapons/32/swords.dmi'
 	icon_state = "sengese_bronze"
 	melting_material = /datum/material/bronze
-	sellprice = 15
+	sellprice = VALUE_BRONZE_ITEM
 
 /obj/item/weapon/sword/scimitar/sengese/silver
 	name = "silver sengese"
@@ -402,7 +402,7 @@
 	icon_state = "sengese_silver"
 	minstr = 7
 	melting_material = /datum/material/silver
-	sellprice = 30
+	sellprice = VALUE_SILVER_ITEM
 
 /obj/item/weapon/sword/scimitar/sengese/silver/Initialize(mapload)
 	. = ..()
@@ -546,7 +546,7 @@
 	name = "decorated rapier"
 	desc = "A rapier decorated with gold inlaid on its hilt. A regal weapon fit for nobility."
 	icon_state = "decrapier"
-	sellprice = 140
+	sellprice = VALUE_LUXURY_THING * 2
 
 /obj/item/weapon/sword/rapier/nimcha
 	name = "nimcha"
@@ -555,7 +555,7 @@
 	icon_state = "nimcha"
 	wbalance = HARD_TO_DODGE
 	dropshrink = 0.8
-	sellprice = 140 // its made with gold and steel, thats pretty valuable
+	sellprice = VALUE_LUXURY_THING * 2 // its made with gold and steel, thats pretty valuable
 
 //................ Lord's Rapier ............... //
 /obj/item/weapon/sword/rapier/dec/lord
@@ -563,7 +563,7 @@
 	desc = "Passed down through the ages, a weapon that once carved a kingdom out now relegated to a decorative piece."
 	icon_state = "lord_rapier"
 	force = DAMAGE_SWORD_WIELD
-	sellprice = 200
+	sellprice = VALUE_EXTREME
 	max_blade_int = 400
 
 /obj/item/weapon/sword/rapier/silver
@@ -575,7 +575,7 @@
 	max_blade_int = 240 // .8 of base steel
 	max_integrity = INTEGRITY_STRONGEST * 0.8
 	melting_material = /datum/material/silver
-	sellprice = 45
+	sellprice = VALUE_SILVER_ITEM
 	last_used = 0
 
 /obj/item/weapon/sword/rapier/silver/Initialize(mapload)
@@ -613,7 +613,7 @@
 	bigboy = TRUE // WHY DOES THIS FUCKING VARIABLE CONTROL WHETHER THE BLOOD OVERLAY WORKS ON 64x64 WEAPONS
 	slot_flags = ITEM_SLOT_BACK|ITEM_SLOT_HIP
 	melting_material = /datum/material/bronze
-	sellprice = 200 // A noble collector would love to get his/her hands on one of these blades
+	sellprice = VALUE_EXTREME // A noble collector would love to get his/her hands on one of these blades
 
 
 
@@ -644,7 +644,7 @@
 	inhand_y_dimension = 64
 	slot_flags = ITEM_SLOT_BACK|ITEM_SLOT_HIP
 	dropshrink = 0.75
-	sellprice = 60
+	sellprice = VALUE_STEEL_ITEM * 2
 	grid_height = 96
 	grid_width = 64
 
@@ -658,7 +658,7 @@
 
 	gripsprite = FALSE
 	dropshrink = 0.8
-	sellprice = 80
+	sellprice = VALUE_STEEL_ITEM * 2
 	max_integrity = INTEGRITY_STRONG - 50 //this thing is long as hell, it would be more likely to break over time
 
 /obj/item/weapon/sword/long/shotel/getonmobprop(tag)
@@ -681,7 +681,7 @@
 	icon_state = "shotel_iron"
 	max_integrity = INTEGRITY_STANDARD - 50
 	melting_material = /datum/material/iron
-	sellprice = 60
+	sellprice = VALUE_IRON_ITEM * 2
 
 /obj/item/weapon/sword/long/death
 	color = CLOTHING_SOOT_BLACK
@@ -710,7 +710,7 @@
 	gripsprite = FALSE
 	max_integrity = INTEGRITY_POOR + 25
 	dropshrink = 0.9
-	sellprice = 60
+	sellprice = VALUE_STEEL_ITEM
 
 /obj/item/weapon/sword/long/aruval/getonmobprop(tag)
 	. = ..()
@@ -732,7 +732,7 @@
 	icon_state = "aruval_iron"
 	max_integrity = INTEGRITY_POOR - 25
 	melting_material = /datum/material/iron
-	sellprice = 35
+	sellprice = VALUE_IRON_ITEM
 
 /obj/item/weapon/sword/long/aruval/iron/getonmobprop(tag)
 	. = ..()
@@ -777,7 +777,7 @@
 	max_blade_int = 180 // Neglected, unused
 	max_integrity = INTEGRITY_STRONG
 	static_price = TRUE
-	sellprice = 45 // Old and chipped
+	sellprice = VALUE_STEEL_ITEM // Old and chipped
 
 
 // Repurposing this unused sword for the Paladin job as a heavy counter against vampires.
@@ -790,7 +790,7 @@
 	possible_item_intents = list(SWORD_CUT, SWORD_THRUST, SWORD_STRIKE)
 	gripped_intents = list(SWORD_CUT, SWDLONG_THRUST, SWORD_STRIKE, SWDLONG_CHOP)
 
-	sellprice = 363
+	sellprice = VALUE_EXTREME
 	static_price = TRUE
 	last_used = 0
 
@@ -824,7 +824,7 @@
 	desc = "An ancestral long blade with an ominous glow, serrated with barbs along its edges. Stained with a strange green tint."
 	force = DAMAGE_SWORD - 2
 	force_wielded = DAMAGE_GREATSWORD_WIELD
-	sellprice = 363
+	sellprice = VALUE_EXTREME
 	static_price = TRUE
 
 /obj/item/weapon/sword/long/vlord/Initialize(mapload)
@@ -852,7 +852,7 @@
 	desc = "A curved blade of Zaladin origin meaning 'curved one'. The standard sword that saw the conquest of the Zalad continent and peoples."
 	possible_item_intents = list(SWORD_CUT, SWORD_STRIKE)
 	gripped_intents = list(SWORD_CUT, SWORD_STRIKE, SWDLONG_CHOP)
-	sellprice = 80
+	sellprice = VALUE_STEEL_ITEM
 
 /obj/item/weapon/sword/long/rider/steppe
 	name = "steppe sabre"
@@ -892,7 +892,7 @@
 	last_used = 0
 	melting_material = /datum/material/silver
 	melt_amount = 75
-	sellprice = 90
+	sellprice = VALUE_SILVER_ITEM
 
 /obj/item/weapon/sword/long/forgotten/Initialize(mapload)
 	. = ..()
@@ -917,7 +917,7 @@
 
 	last_used = 0
 	melting_material = /datum/material/silver
-	sellprice = 100
+	sellprice = VALUE_SILVER_ITEM * 2
 
 /obj/item/weapon/sword/long/psydon/Initialize(mapload)
 	. = ..()
@@ -946,7 +946,7 @@
 
 	last_used = 0
 	melting_material = /datum/material/silver
-	sellprice = 160
+	sellprice = VALUE_LUXURY_THING * 2
 
 /obj/item/weapon/sword/long/decorated/Initialize(mapload)
 	. = ..()
@@ -972,7 +972,7 @@
 	swingsound = BLADEWOOSH_HUGE
 	slot_flags = ITEM_SLOT_BACK
 	melt_amount = 225
-	sellprice = 90
+	sellprice = VALUE_STEEL_ITEM * 2
 
 /obj/item/weapon/sword/long/greatsword/getonmobprop(tag)
 	. = ..()
@@ -998,7 +998,7 @@
 	minstr = 11
 	melting_material = /datum/material/silver
 	melt_amount = 150
-	sellprice = 150
+	sellprice = VALUE_SILVER_ITEM * 2
 
 /obj/item/weapon/sword/long/greatsword/psydon/Initialize(mapload)
 	. = ..()
@@ -1066,7 +1066,7 @@
 	desc = "Commonly known as a flame-bladed sword, this weapon has an undulating blade. Its wave-like form distributes force better, and is less likely to break on impact."
 	icon_state = "flamberge"
 	wbalance = DODGE_CHANCE_NORMAL
-	sellprice = 120
+	sellprice = VALUE_STEEL_ITEM * 3
 
 /obj/item/weapon/sword/long/greatsword/steelflamberge
 	name = "steel flamberge"
@@ -1074,7 +1074,7 @@
 	icon_state = "steelflamberge"
 	wbalance = DODGE_CHANCE_NORMAL
 	melt_amount = 300
-	sellprice = 120
+	sellprice = VALUE_STEEL_ITEM * 3
 
 /obj/item/weapon/sword/long/greatsword/zwei
 	name = "zweihander"
@@ -1087,7 +1087,7 @@
 	max_integrity = INTEGRITY_STRONG
 	melting_material = /datum/material/iron
 	melt_amount = 225
-	sellprice = 60
+	sellprice = VALUE_IRON_ITEM * 2
 
 /obj/item/weapon/sword/long/greatsword/zwei/getonmobprop(tag)
 	. = ..()
@@ -1109,7 +1109,7 @@
 	icon_state = "kriegsmesser"
 	wdefense = ULTMATE_PARRY
 	minstr = 10
-	sellprice = 120
+	sellprice = VALUE_LUXURY_THING * 2
 
 /obj/item/weapon/sword/long/greatsword/elfgsword/getonmobprop(tag)
 	. = ..()
@@ -1131,7 +1131,7 @@
 	icon_state = "zizosword"
 	wdefense = ULTMATE_PARRY
 	minstr = 10
-	sellprice = 0 // Super evil Zizo sword, nobody wants this
+	sellprice = VALUE_WORTHLESS // Super evil Zizo sword, nobody wants this
 
 /obj/item/weapon/sword/long/greatsword/zizo/getonmobprop(tag)
 	. = ..()
@@ -1158,7 +1158,7 @@
 	max_blade_int = 150 // Iron tier
 	max_integrity = INTEGRITY_STRONG
 	minstr = 10
-	sellprice = 90
+	sellprice = VALUE_IRON_ITEM * 2
 
 /obj/item/weapon/sword/long/greatsword/ironclaymore/getonmobprop(tag)
 	. = ..()
@@ -1184,7 +1184,7 @@
 	max_blade_int = INTEGRITY_STRONG
 	max_integrity = INTEGRITY_STRONGEST - 50
 	minstr = 10
-	sellprice = 110
+	sellprice = VALUE_STEEL_ITEM * 2
 
 /obj/item/weapon/sword/long/greatsword/steelclaymore/getonmobprop(tag)
 	. = ..()
@@ -1211,7 +1211,7 @@
 	max_blade_int = INTEGRITY_STRONG + 50
 	max_integrity = INTEGRITY_STRONGEST
 	minstr = 10
-	sellprice = 160
+	sellprice = VALUE_LUXURY_THING * 2
 
 /obj/item/weapon/sword/long/greatsword/gsclaymore/getonmobprop(tag)
 	. = ..()
@@ -1238,7 +1238,7 @@
 	max_blade_int = INTEGRITY_STRONG + 50
 	max_integrity = INTEGRITY_STRONGEST
 	minstr = 15
-	sellprice = 240
+	sellprice = VALUE_EXTREME
 
 /obj/item/weapon/sword/long/greatsword/gutsclaymore/getonmobprop(tag)
 	. = ..()
@@ -1327,7 +1327,7 @@
 	slot_flags = ITEM_SLOT_BACK|ITEM_SLOT_HIP
 	dropshrink = 0.90
 	melting_material = /datum/material/copper
-	sellprice = 10
+	sellprice = VALUE_COPPER_ITEM
 
 /obj/item/weapon/sword/coppermesser/getonmobprop(tag)
 	. = ..()
@@ -1361,7 +1361,7 @@
 	pickup_sound = 'sound/foley/equip/swordlarge2.ogg'
 	slot_flags = ITEM_SLOT_BACK//how the fuck you could put this thing on your hip?
 	melting_material = /datum/material/copper
-	sellprice = 25//lets make the two bars worth it
+	sellprice = VALUE_COPPER_ITEM * 2
 
 /obj/item/weapon/sword/rapier/ironestoc
 	name = "estoc"
@@ -1462,7 +1462,7 @@
 	force_wielded = DAMAGE_SWORD_WIELD - 20
 	throwforce = DAMAGE_SWORD - 18
 	max_integrity = INTEGRITY_STANDARD + 40
-	sellprice = 1
+	sellprice = VALUE_WORTHLESS
 	melting_material = /datum/material/tin
 
 /obj/item/weapon/sword/long/replica/death

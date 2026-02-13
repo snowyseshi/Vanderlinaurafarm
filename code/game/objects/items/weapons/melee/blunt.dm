@@ -29,7 +29,7 @@
 	parrysound = list('sound/combat/parry/parrygen.ogg')
 	swingsound = BLUNTWOOSH_MED
 	blade_dulling = DULLING_BASHCHOP
-	sellprice = 20
+	sellprice = VALUE_IRON_ITEM
 
 	grid_height = 64
 	grid_width = 32
@@ -69,7 +69,7 @@
 	force = DAMAGE_MACE + 1
 	force_wielded = DAMAGE_MACE_WIELD + 2
 	wdefense = GOOD_PARRY
-	sellprice = 35
+	sellprice = VALUE_IRON_ITEM * 2
 
 //................  Canes, my beloved. ............... //
 
@@ -82,7 +82,7 @@
 	force_wielded = DAMAGE_MACE - 2
 	wdefense = MEDIOCRE_PARRY
 	minstr = 4
-	sellprice = 5
+	sellprice = VALUE_DIRT_CHEAP
 
 /obj/item/weapon/mace/cane/noble
 	name = "fancy cane"
@@ -90,7 +90,7 @@
 	icon_state = "noble_cane"
 	force = DAMAGE_MACE - 3
 	force_wielded = DAMAGE_MACE - 1
-	sellprice = 200
+	sellprice = VALUE_LUXURY_THING * 2
 
 /obj/item/weapon/mace/cane/courtphysician
 	name = "physician's cane"
@@ -99,13 +99,13 @@
 	force = DAMAGE_MACE - 3
 	force_wielded = DAMAGE_MACE - 1
 	possible_item_intents = list(MACE_STRIKE, MACE_THRUST)
-	sellprice = 30
+	sellprice = VALUE_COSTLY_THING
 
 /obj/item/weapon/mace/cane/merchant
 	name = "merchant's cane"
 	desc = "An expensive cane, decorated with gold and inlaid with a gem. A symbol of great wealth for the ownner"
 	icon_state = "merchant_cane"
-	sellprice = 300
+	sellprice = VALUE_EXTREME
 
 /obj/item/weapon/mace/cane/natural
 	name = "natural wooden cane"
@@ -113,7 +113,7 @@
 	icon_state = "natural_cane"
 	force = DAMAGE_MACE - 5
 	force_wielded = DAMAGE_MACE - 3
-	sellprice = 3
+	sellprice = VALUE_DIRT_CHEAP / 2
 
 /obj/item/weapon/mace/cane/bronze
 	name = "bronze cane"
@@ -121,7 +121,7 @@
 	icon_state = "artificer_cane"
 	force = DAMAGE_MACE - 3
 	force_wielded = DAMAGE_MACE - 1
-	sellprice = 35
+	sellprice = VALUE_BRONZE_ITEM
 
 /obj/item/weapon/mace/cane/necran
 	name = "necran rod"
@@ -129,7 +129,7 @@
 	icon_state = "necran_cane"
 	force = DAMAGE_MACE - 3
 	force_wielded = DAMAGE_MACE - 1
-	sellprice = 40
+	sellprice = VALUE_COSTLY_THING
 
 /obj/item/weapon/mace/cane/Initialize()
 	. = ..()
@@ -202,7 +202,7 @@
 	melting_material = /datum/material/steel
 	melt_amount = 75
 	blade_dulling = DULLING_BASH
-	sellprice = 100
+	sellprice = VALUE_STEEL_ITEM * 2
 
 //................ Steel mace ............... //	Better wbalance and wdefense
 /obj/item/weapon/mace/steel
@@ -214,7 +214,7 @@
 	blade_dulling = DULLING_BASH
 	melting_material = /datum/material/steel
 	melt_amount = 150
-	sellprice = 60
+	sellprice = VALUE_STEEL_ITEM
 
 /obj/item/weapon/mace/steel/rungu
 	name = "steel rungu"
@@ -230,7 +230,7 @@
 	force_wielded = DAMAGE_MACE_WIELD + 3
 	wbalance = EASY_TO_DODGE
 	wdefense = GREAT_PARRY
-	sellprice = 75
+	sellprice = VALUE_STEEL_ITEM * 2
 
 //................ Spiked club ............... //
 /obj/item/weapon/mace/spiked
@@ -285,7 +285,7 @@
 	minstr = 5
 
 	melting_material = /datum/material/copper
-	sellprice = 10
+	sellprice = VALUE_COPPER_ITEM
 
 
 //................ Club ............... //
@@ -304,7 +304,7 @@
 	resistance_flags = FLAMMABLE // Weapon made mostly of wood
 	smeltresult = /obj/item/fertilizer/ash
 	melting_material = null
-	sellprice = 5
+	sellprice = VALUE_DIRT_CHEAP
 
 /obj/item/weapon/mace/woodclub/Initialize(mapload)
 	. = ..()
@@ -330,7 +330,7 @@
 	smeltresult = /obj/item/fertilizer/ash
 	melting_material = null
 	w_class = WEIGHT_CLASS_NORMAL
-	sellprice = 15
+	sellprice = VALUE_COMMON_GOODS
 
 /obj/item/weapon/mace/cudgel/getonmobprop(tag)
 	. = ..()
@@ -361,7 +361,7 @@
 	icon = 'icons/roguetown/gems/gem_shell.dmi'
 	icon_state = "rungu_shell"
 	max_integrity = INTEGRITY_POOR
-	sellprice = 35
+	sellprice = VALUE_SHELL_ITEM
 
 //................ Alt cudgel ............... //
 /obj/item/weapon/mace/cudgel/carpenter
@@ -421,7 +421,7 @@
 	melting_material = /datum/material/iron
 	resistance_flags = FLAMMABLE // Weapon made mostly of wood
 	parrysound = "parrywood"
-	sellprice = 35
+	sellprice = VALUE_IRON_ITEM * 2
 
 /obj/item/weapon/mace/goden/getonmobprop(tag)
 	. = ..()
@@ -456,7 +456,7 @@
 	resistance_flags = FIRE_PROOF
 	melting_material = /datum/material/steel
 	melt_amount = 75
-	sellprice = 60
+	sellprice = VALUE_STEEL_ITEM * 2
 
 /obj/item/weapon/mace/goden/steel/getonmobprop(tag)
 	. = ..()
@@ -482,7 +482,7 @@
 	resistance_flags = FIRE_PROOF
 	melting_material = /datum/material/silver
 	melt_amount = 150
-	sellprice = 100
+	sellprice = VALUE_SILVER_ITEM * 2
 
 /obj/item/weapon/mace/goden/psydon/Initialize(mapload)
 	. = ..()
@@ -514,7 +514,7 @@
 	bigboy = FALSE
 	gripsprite = TRUE
 	slot_flags = ITEM_SLOT_BACK
-	sellprice = 5
+	sellprice = VALUE_DIRT_CHEAP
 
 /obj/item/weapon/mace/goden/shillelagh/Initialize()
 	. = ..()
@@ -566,7 +566,7 @@
 	resistance_flags = FLAMMABLE // Weapon made mostly of wood
 	melting_material = /datum/material/copper
 	parrysound = "parrywood"
-	sellprice = 35
+	sellprice = VALUE_COPPER_ITEM * 2
 
 //................ Warhammers ............... //
 /obj/item/weapon/mace/warhammer
@@ -623,7 +623,7 @@
 	blade_dulling = DULLING_BASH
 	melting_material = /datum/material/steel
 	melt_amount = 150
-	sellprice = 60
+	sellprice = VALUE_STEEL_ITEM * 2
 
 /obj/item/weapon/mace/elvenclub/bronze
 	name = "bronze elven war club"
@@ -643,7 +643,7 @@
 	blade_dulling = DULLING_BASH
 	melting_material = /datum/material/silver
 	melt_amount = 150
-	sellprice = 150
+	sellprice = VALUE_SILVER_ITEM * 2
 
 /obj/item/weapon/mace/elvenclub/silver/Initialize(mapload)
 	. = ..()
@@ -661,7 +661,7 @@
 	blade_dulling = DULLING_BASH
 	melting_material = /datum/material/silver
 	melt_amount = 150
-	sellprice = 45
+	sellprice = VALUE_SILVER_ITEM
 
 /obj/item/weapon/mace/rungu/silver/Initialize(mapload)
 	. = ..()
@@ -674,7 +674,7 @@
 	force = DAMAGE_MACE + 2
 	wbalance = DODGE_CHANCE_NORMAL
 	minstr = 8
-	sellprice = 150 // It's silver and gold.
+	sellprice = VALUE_SILVER_ITEM * 2 // It's silver and gold.
 
 /obj/item/weapon/mace/gada/Initialize(mapload)
 	. = ..()
@@ -688,7 +688,7 @@
 	desc = "A spiked bronze mace. A weapon thats seen a revival in use amidst the cataclysm in Heartfelt."
 	wbalance = DODGE_CHANCE_NORMAL
 	minstr = 6
-	sellprice = 25
+	sellprice = VALUE_BRONZE_ITEM
 
 /obj/item/weapon/mace/bronze/shishpar
 	name = "bronze shishpar"
@@ -698,4 +698,4 @@
 	wbalance = EASY_TO_DODGE
 	max_blade_int = 105
 	max_integrity = INTEGRITY_STANDARD
-	sellprice = 25
+	sellprice = VALUE_BRONZE_ITEM

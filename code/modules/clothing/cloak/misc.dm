@@ -37,7 +37,7 @@
 	slot_flags = ITEM_SLOT_CLOAK
 	allowed_sex = list(MALE)
 	allowed_race = SPECIES_BASE_BODY
-	sellprice = 50
+	sellprice = VALUE_SMALL_FUR
 	nodismemsleeves = TRUE
 	min_cold_protection_temperature = -20
 
@@ -53,7 +53,7 @@
 	sleeved = 'icons/roguetown/clothing/onmob/cloaks.dmi'
 	nodismemsleeves = TRUE
 	boobed = FALSE
-	sellprice = 10
+	sellprice = VALUE_SMALL_FUR
 
 /obj/item/clothing/cloak/heartfelt
 	name = "red cloak"
@@ -65,7 +65,7 @@
 	slot_flags = ITEM_SLOT_CLOAK
 	allowed_sex = list(MALE)
 	allowed_race = SPECIES_BASE_BODY
-	sellprice = 50
+	sellprice = VALUE_LUXURY_THING
 	nodismemsleeves = TRUE
 
 /obj/item/clothing/cloak/half
@@ -214,7 +214,7 @@
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/blkknight.dmi'
 	//dropshrink = 0.75
 	resistance_flags = FIRE_PROOF
-	sellprice = 666
+	sellprice = VALUE_EXTREME * 2
 	static_price = TRUE
 
 /obj/item/clothing/cloak/volfmantle
@@ -268,7 +268,7 @@
 	icon = 'icons/roguetown/clothing/special/evilarmor.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/evilarmor.dmi'
 	sleeved = 'icons/roguetown/clothing/special/onmob/evilarmor.dmi'
-	sellprice = 0 // See above comment
+	sellprice = VALUE_WORTHLESS // See above comment
 
 /obj/item/clothing/cloak/silktabard
 	name = "fine silk tabard"

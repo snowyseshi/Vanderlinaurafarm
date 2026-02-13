@@ -225,7 +225,7 @@
 	output = /obj/item/clothing/cloak/cape/puritan
 	requirements = list(/obj/item/natural/silk = 4)
 	craftdiff = 3
-	sellprice = 35
+	sellprice = VALUE_FINE_CLOTHING
 	category = "Cloak"
 
 /datum/repeatable_crafting_recipe/sewing/weaving/silktabard
@@ -425,7 +425,7 @@
 				/obj/item/natural/silk = 4,
 				/obj/item/natural/hide/cured = 1)
 	craftdiff = 4
-	sellprice = 80
+	sellprice = VALUE_PADDED_DRESS
 	category = "Armor"
 
 /datum/repeatable_crafting_recipe/sewing/weaving/armordress_alt
@@ -435,7 +435,7 @@
 				/obj/item/natural/silk = 4,
 				/obj/item/natural/hide/cured = 1)
 	craftdiff = 4
-	sellprice = 80
+	sellprice = VALUE_PADDED_DRESS
 	category = "Armor"
 
 /datum/repeatable_crafting_recipe/sewing/weaving/stalker_robe
@@ -445,7 +445,7 @@
 				/obj/item/natural/silk = 4,
 				/obj/item/natural/hide/cured = 1)
 	craftdiff = 4
-	sellprice = 80
+	sellprice = VALUE_GAMBESSON
 	category = "Armor"
 
 /* craftdif of 5 = MASTER */
@@ -457,7 +457,7 @@
 				/obj/item/natural/silk = 3,
 				/obj/item/natural/fur = 2)
 	craftdiff = 5
-	sellprice = 60
+	sellprice = VALUE_LEATHER_ARMOR_PLUS
 	category = "Armor"
 
 /datum/repeatable_crafting_recipe/sewing/weaving/eorastraps
@@ -467,7 +467,7 @@
 				/obj/item/natural/silk = 5,
 				)
 	craftdiff = 5
-	sellprice = 50
+	sellprice = VALUE_FINE_CLOTHING + VALUE_GOLD_ITEM
 
 
 /datum/repeatable_crafting_recipe/sewing/weaving/barkeep
@@ -503,10 +503,8 @@
 	requirements = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/silk = 4)
 	craftdiff = 6
-	sellprice = 85
+	sellprice = VALUE_ROYAL_CLOTHING
 	category = "Dress"
-
-
 
 /datum/repeatable_crafting_recipe/sewing/weaving/royal_headdress
 	name = "foreign headdress"
@@ -514,7 +512,7 @@
 	requirements = list(/obj/item/natural/cloth = 1,
 				/obj/item/natural/silk = 2)
 	craftdiff = 6
-	sellprice = 30
+	sellprice = VALUE_ROYAL_CLOTHING/2
 	category = "Hat"
 
 /datum/repeatable_crafting_recipe/sewing/weaving/royal_headdress_alt
@@ -523,7 +521,7 @@
 	requirements = list(/obj/item/natural/cloth = 1,
 				/obj/item/natural/silk = 2)
 	craftdiff = 6
-	sellprice = 30
+	sellprice = VALUE_ROYAL_CLOTHING/2
 	category = "Hat"
 
 /datum/repeatable_crafting_recipe/sewing/weaving/royal_sleeves
@@ -532,7 +530,7 @@
 	requirements = list(/obj/item/natural/cloth = 1,
 				/obj/item/natural/silk = 1)
 	craftdiff = 6
-	sellprice = 30
+	sellprice = VALUE_ROYAL_CLOTHING/4
 	category = "Dress"
 
 /datum/repeatable_crafting_recipe/sewing/weaving/royal_gown_winter
@@ -541,7 +539,7 @@
 	requirements = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/silk = 4)
 	craftdiff = 6
-	sellprice = 85
+	sellprice = VALUE_ROYAL_CLOTHING
 	category = "Dress"
 
 /datum/repeatable_crafting_recipe/sewing/weaving/royal_gown_prince
@@ -550,7 +548,7 @@
 	requirements = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/silk = 2)
 	craftdiff = 6
-	sellprice = 85
+	sellprice = VALUE_ROYAL_CLOTHING
 	category = "Dress"
 
 /datum/repeatable_crafting_recipe/sewing/weaving/royal_gown_princess
@@ -559,7 +557,7 @@
 	requirements = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/silk = 2)
 	craftdiff = 6
-	sellprice = 85
+	sellprice = VALUE_ROYAL_CLOTHING
 	category = "Dress"
 
 /datum/repeatable_crafting_recipe/sewing/weaving/springgown
@@ -568,7 +566,7 @@
 	requirements = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/silk = 4)
 	craftdiff = 6
-	sellprice = 85
+	sellprice = VALUE_ROYAL_CLOTHING
 	category = "Dress"
 
 /datum/repeatable_crafting_recipe/sewing/weaving/summergown
@@ -578,7 +576,7 @@
 				/obj/item/natural/cloth = 1,
 				/obj/item/natural/silk = 3)
 	craftdiff = 6
-	sellprice = 70
+	sellprice = VALUE_ROYAL_CLOTHING
 	category = "Dress"
 
 /datum/repeatable_crafting_recipe/sewing/weaving/fallgown
@@ -588,7 +586,7 @@
 				/obj/item/natural/silk = 2,
 				/obj/item/natural/cloth = 2)
 	craftdiff = 6
-	sellprice = 75
+	sellprice = VALUE_ROYAL_CLOTHING
 	category = "Dress"
 
 /datum/repeatable_crafting_recipe/sewing/weaving/wintergown
@@ -598,7 +596,7 @@
 				/obj/item/natural/silk = 2,
 				/obj/item/natural/fur/cabbit = 1)
 	craftdiff = 6
-	sellprice = 90
+	sellprice = VALUE_ROYAL_CLOTHING
 	category = "Dress"
 
 /datum/repeatable_crafting_recipe/sewing/weaving/ornatedress

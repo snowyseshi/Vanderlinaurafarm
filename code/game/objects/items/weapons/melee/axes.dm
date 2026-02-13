@@ -35,7 +35,7 @@
 
 	smeltresult = /obj/item/fertilizer/ash //is a wooden log and a stone hammered in the top
 	melting_material = null
-	sellprice = 10
+	sellprice = VALUE_COMMON_GOODS
 
 /obj/item/weapon/axe/stone/getonmobprop(tag)
 	if(tag)
@@ -66,7 +66,7 @@
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
 	melting_material = /datum/material/steel
 	melt_amount = 150
-	sellprice = 60
+	sellprice = VALUE_STEEL_ITEM
 
 /obj/item/weapon/axe/battle/getonmobprop(tag)
 	if(tag)
@@ -99,7 +99,7 @@
 	parrysound = "sword"
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
 
-	sellprice = 20
+	sellprice = VALUE_IRON_ITEM
 
 /obj/item/weapon/axe/iron/getonmobprop(tag)
 	. = ..()
@@ -159,7 +159,7 @@
 	parrysound = "sword"
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
 
-	sellprice = 20
+	sellprice = VALUE_BRONZE_ITEM
 
 /obj/item/weapon/axe/bronze/getonmobprop(tag)
 	. = ..()
@@ -192,7 +192,7 @@
 	melt_amount = 75
 	parrysound = "sword"
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	sellprice = 60
+	sellprice = VALUE_SILVER_ITEM
 
 /obj/item/weapon/axe/psydon/Initialize(mapload)
 	. = ..()
@@ -235,7 +235,7 @@
 	resistance_flags = FIRE_PROOF
 	parrysound = list('sound/combat/parry/wood/parrywood (1).ogg', 'sound/combat/parry/wood/parrywood (2).ogg', 'sound/combat/parry/wood/parrywood (3).ogg')
 	swingsound = BLADEWOOSH_MED
-	sellprice = 50
+	sellprice = VALUE_STEEL_ITEM
 	pickmult = 1.2 // It's a pick...
 	axe_cut = 15 // ...and an Axe!
 	toolspeed = 2
@@ -258,7 +258,7 @@
 	melting_material = /datum/material/steel
 	melt_amount = 100
 	resistance_flags = FIRE_PROOF
-	sellprice = 35
+	sellprice = VALUE_STEEL_ITEM
 	axe_cut = 15 // Better than iron
 
 /obj/item/weapon/axe/steel/getonmobprop(tag)
@@ -304,7 +304,7 @@
 	wdefense = GOOD_PARRY
 	minstr = 8
 	melt_amount = 75
-	sellprice = 45
+	sellprice = VALUE_STEEL_ITEM
 
 /obj/item/weapon/axe/steel/nsapo/getonmobprop(tag)
 	. = ..()
@@ -333,7 +333,7 @@
 	melting_material = /datum/material/copper
 	melt_amount = 150
 	pickup_sound = 'sound/foley/equip/rummaging-03.ogg'
-	sellprice = 15
+	sellprice = VALUE_COPPER_ITEM
 
 /obj/item/weapon/axe/copper/getonmobprop(tag)
 	. = ..()
@@ -405,7 +405,7 @@
 	slot_flags = ITEM_SLOT_BACK
 	melting_material = /datum/material/iron
 	melt_amount = 150
-	sellprice = 60
+	sellprice = VALUE_IRON_ITEM * 2
 	grid_height = 96
 	grid_width = 64
 
@@ -446,7 +446,7 @@
 	max_integrity = INTEGRITY_STRONGEST
 	melting_material = /datum/material/steel
 	melt_amount = 150
-	sellprice = 90
+	sellprice = VALUE_STEEL_ITEM * 2
 
 /obj/item/weapon/greataxe/steel/doublehead // Trades more damage for being worse to parry with and easier to dodge of.
 	name = "double-headed steel greataxe"
@@ -459,7 +459,7 @@
 	minstr = 12
 
 	melt_amount = 180
-	sellprice = 100
+	sellprice = VALUE_STEEL_ITEM * 2
 
 /obj/item/weapon/greataxe/steel/doublehead/graggar
 	name = "vicious greataxe"
@@ -469,7 +469,7 @@
 	alt_intents = list(AXE_CUT, AXE_CHOP)
 	minstr = 11 // Just there to prevent the occasional hiccup where Graggar Iconoclast rolls under their minimum str for the axe without just outright buffing their str. It's made of blacksteel it can get away with being a little lighter.
 	blade_dulling = DULLING_BASHCHOP
-	sellprice = 0 // Graggarite axe, nobody wants this
+	sellprice = VALUE_WORTHLESS // Graggarite axe, nobody wants this
 
 /obj/item/weapon/greataxe/dreamscape
 	name = "otherworldly axe"
@@ -482,7 +482,7 @@
 	minstr = 13
 
 	melting_material = /datum/material/gold
-	sellprice = 0
+	sellprice = VALUE_WORTHLESS
 
 /obj/item/weapon/greataxe/dreamscape/active
 	// to do, make this burn you if you don't regularly soak it.
@@ -492,5 +492,5 @@
 	force_wielded = DAMAGE_HEAVYAXE_WIELD + 10
 	wdefense = ULTMATE_PARRY + 1
 	max_blade_int = 500
-	sellprice = 0
+	sellprice = VALUE_WORTHLESS
 

@@ -122,14 +122,14 @@
 	name = "ornate tunic"
 	desc = "A red tunic with gold accents, fit for nobility."
 	icon_state = "ornatetunic"
-	sellprice = 150
+	sellprice = VALUE_LUXURY_THING * 2
 
 /obj/item/clothing/shirt/ornate/dress
 	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
 	name = "ornate dress"
 	desc = "A red dress with gold accents, fit for nobility."
 	icon_state = "ornatedress"
-	sellprice = 150
+	sellprice = VALUE_LUXURY_THING * 2
 
 /obj/item/clothing/shirt/clothvest
 	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR|ITEM_SLOT_CLOAK

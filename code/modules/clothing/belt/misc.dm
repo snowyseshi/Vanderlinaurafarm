@@ -80,23 +80,23 @@
 	name = "plaque belt"
 	desc = "A belt with a golden plaque on its front."
 	icon_state = "goldplaque"
-	sellprice = 50
+	sellprice = VALUE_LUXURY_THING
 
 /obj/item/storage/belt/leather/shalal
 	name = "shalal belt"
 	icon_state = "shalal"
-	sellprice = 5
+	sellprice = VALUE_DIRT_CHEAP
 
 /obj/item/storage/belt/leather/black
 	name = "black belt"
 	icon_state = "blackbelt"
-	sellprice = 10
+	sellprice = VALUE_COMMON_GOODS
 
 /obj/item/storage/belt/leather/plaquesilver
 	name = "plaque belt"
 	desc = "A belt with a silver plaque on its front."
 	icon_state = "silverplaque"
-	sellprice = 30
+	sellprice = VALUE_COSTLY_THING
 
 /obj/item/storage/belt/leather/plaquesilver/Initialize(mapload)
 	. = ..()
@@ -106,7 +106,7 @@
 	name = "steel belt"
 	desc = "A belt with a steel plate on its front."
 	icon_state = "steelplaque"
-	sellprice = 30
+	sellprice = VALUE_COSTLY_THING
 
 /obj/item/storage/belt/leather/rope
 	name = "rope belt"
@@ -560,7 +560,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	max_integrity = 400
 	equip_sound = 'sound/blank.ogg'
-	sellprice = 160
+	sellprice = VALUE_LUXURY_THING * 2
 	bloody_icon_state = "bodyblood"
 	anvilrepair = /datum/skill/craft/blacksmithing
 	smeltresult = /obj/item/ingot/gold

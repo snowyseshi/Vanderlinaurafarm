@@ -28,7 +28,7 @@
 	grid_height = 32
 
 	smeltresult = /obj/item/fertilizer/ash
-	sellprice = 5
+	sellprice = VALUE_DIRT_CHEAP
 	item_weight = 4
 
 	var/blood_state = BLOOD_STATE_NOT_BLOODY

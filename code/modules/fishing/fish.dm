@@ -25,7 +25,7 @@ GLOBAL_LIST_INIT(fish_compatible_fluid_types, list(
 	verb_yell = "glubs"
 	obj_flags = CAN_BE_HIT
 	max_integrity = 50
-	sellprice = 10
+	sellprice = VALUE_COMMON_GOODS
 	slices_num = 1
 	slice_bclass = BCLASS_CHOP
 	faretype = FARE_IMPOVERISHED //incase someone decides to eat raw fish
@@ -1172,7 +1172,7 @@ GLOBAL_LIST_INIT(fish_compatible_fluid_types, list(
 	required_fluid_type = FISH_FLUID_FRESHWATER
 	fishing_difficulty_modifier = 5
 	fish_movement_type = /datum/fish_movement/choppy
-	sellprice = 10
+	sellprice = VALUE_COMMON_GOODS
 
 /obj/item/reagent_containers/food/snacks/fish/clownfish
 	name = "clownfish"
@@ -1187,7 +1187,7 @@ GLOBAL_LIST_INIT(fish_compatible_fluid_types, list(
 	fishing_difficulty_modifier = 5
 	fish_movement_type = /datum/fish_movement/zippy
 	beauty = 5
-	sellprice = 40
+	sellprice = VALUE_COSTLY_THING
 	favorite_bait = list(
 		list(
 			FISH_BAIT_TYPE = FISH_BAIT_FOODTYPE,
@@ -1208,7 +1208,7 @@ GLOBAL_LIST_INIT(fish_compatible_fluid_types, list(
 	required_temperature_max = 8
 	fishing_difficulty_modifier = 15
 	fish_movement_type = /datum/fish_movement/plunger
-	sellprice = 15
+	sellprice = VALUE_COMMON_GOODS
 	favorite_bait = list(
 		list(
 			FISH_BAIT_TYPE = FISH_BAIT_FOODTYPE,
@@ -1227,7 +1227,7 @@ GLOBAL_LIST_INIT(fish_compatible_fluid_types, list(
 	required_fluid_type = FISH_FLUID_FRESHWATER
 	fishing_difficulty_modifier = 10
 	fish_movement_type = /datum/fish_movement/zippy
-	sellprice = 5
+	sellprice = VALUE_DIRT_CHEAP
 	favorite_bait = list(
 		list(
 			FISH_BAIT_TYPE = FISH_BAIT_FOODTYPE,
@@ -1247,7 +1247,7 @@ GLOBAL_LIST_INIT(fish_compatible_fluid_types, list(
 	fishing_difficulty_modifier = -5
 	fish_movement_type = /datum/fish_movement/slow
 	beauty = 2
-	sellprice = 2
+	sellprice = VALUE_WORTHLESS
 	feeding_frequency = 10 MINUTES
 	favorite_bait = list(
 		list(

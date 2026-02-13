@@ -88,7 +88,7 @@
 	blade_dulling = DULLING_BASHCHOP
 	sewrepair = TRUE
 	nodismemsleeves = TRUE
-	sellprice = 20
+	sellprice = VALUE_LEATHER_ARMOR
 	armor_class = AC_LIGHT
 	allowed_race = RACES_PLAYER_ALL
 	flags_inv = HIDEBOOB
@@ -124,7 +124,7 @@
 	item_state = "eastsuit4"
 	armor = ARMOR_LEATHER_GOOD
 	max_integrity = ARMOR_INT_CHEST_LIGHT_MASTER + 25 // Head Honcho gets a buff
-	sellprice = 25
+	sellprice = VALUE_LEATHER_ARMOR_PLUS
 
 
 // this robe spawns on a role that offers no leg protection nor further upgrades to the loadout, in exchange for better roundstart gear
@@ -212,25 +212,25 @@
 	name = "pearl amulet"
 	icon_state = "pearlcross"
 	desc = "An amulet made of white pearls, usually worn by fishers or sailors."
-	sellprice = 80
+	sellprice = VALUE_LUXURY_THING
 
 /obj/item/clothing/neck/psycross/bpearl
 	name = "blue pearl amulet"
 	icon_state = "bpearlcross"
-	desc = "An amulet made of rare blue pearls, usually worn by priests and worshippers of Abyssor, or as lucky charms for captains of ships."
-	sellprice = 220
+	desc = "An amulet made of rare blue pearls, usually worn by worshippers of Abyssor, or as lucky charms for captains of ships."
+	sellprice = VALUE_EXTREME
 
 /obj/item/clothing/neck/psycross/shell
 	name = "oyster shell necklace"
 	icon_state = "oyster_necklace"
 	desc = "A necklace of strung-up seashells, the calming noise they make when they clack together is reminiscent of a shellfish's claws. They remind you that while men no longer live in water, Abyssor will always remember our origins."
-	sellprice = 25
+	sellprice = VALUE_SHELL_ITEM
 
 /obj/item/clothing/neck/psycross/shell/bracelet
 	name = "shell bracelet"
 	icon_state = "oyster_bracelet"
 	desc = "A beaded bracelet made from seashells, their rough exterior and glossy interior reminding you that Abyssor's children hide the best gifts at the deepest spots beneath the waves."
-	sellprice = 15
+	sellprice = VALUE_SHELL_ITEM
 	slot_flags = ITEM_SLOT_WRISTS
 
 /obj/item/clothing/pants/trou/leather/eastpants1

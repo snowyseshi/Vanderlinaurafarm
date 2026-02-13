@@ -98,7 +98,7 @@
 	var/dead = FALSE
 	eat_effect = /datum/status_effect/debuff/uncookedfood
 	max_integrity = 10
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 	blade_dulling = DULLING_CUT
 	rotprocess = null
 	static_debris = list(/obj/item/natural/feather=1)
@@ -114,7 +114,7 @@
 	tastes = list("burnt flesh" = 1)
 	eat_effect = null
 	rotprocess = SHELFLIFE_SHORT
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 
 /obj/item/reagent_containers/food/snacks/messenger_bird/burning(input as num)
 	. = ..()

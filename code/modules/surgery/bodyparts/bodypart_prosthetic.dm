@@ -26,7 +26,7 @@
 	burn_reduction = 0
 	max_damage = 0
 	w_class = WEIGHT_CLASS_TINY
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 	fingers = FALSE
 
 /obj/item/bodypart/r_arm/prosthetic
@@ -40,7 +40,7 @@
 	burn_reduction = 0
 	max_damage = 0
 	w_class = WEIGHT_CLASS_TINY
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 	fingers = FALSE
 
 /obj/item/bodypart/l_leg/prosthetic
@@ -54,7 +54,7 @@
 	burn_reduction = 0
 	max_damage = 0
 	w_class = WEIGHT_CLASS_TINY
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 
 /obj/item/bodypart/r_leg/prosthetic
 	name = "debug right leg"
@@ -67,7 +67,7 @@
 	burn_reduction = 0
 	max_damage = 0
 	w_class = WEIGHT_CLASS_TINY
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 
 // --------- WOOD PROSTHETICS -----------
 
@@ -91,7 +91,7 @@
 	max_damage = 100
 	w_class = WEIGHT_CLASS_SMALL
 	max_integrity = 300
-	sellprice = 20
+	sellprice = VALUE_WOOD_ITEM
 	metalizer_result = /obj/item/bodypart/l_arm/prosthetic/iron
 	anvilrepair = /datum/skill/craft/carpentry
 
@@ -103,7 +103,7 @@
 	max_damage = 100
 	w_class = WEIGHT_CLASS_SMALL
 	max_integrity = 300
-	sellprice = 20
+	sellprice = VALUE_WOOD_ITEM
 	//organ_slowdown = 1.3
 	metalizer_result = /obj/item/bodypart/l_arm/prosthetic/iron
 	anvilrepair = /datum/skill/craft/carpentry
@@ -116,7 +116,7 @@
 	max_damage = 100
 	w_class = WEIGHT_CLASS_SMALL
 	max_integrity = 300
-	sellprice = 20
+	sellprice = VALUE_WOOD_ITEM
 	//organ_slowdown = 1.3
 	metalizer_result = /obj/item/bodypart/l_arm/prosthetic/iron
 	anvilrepair = /datum/skill/craft/carpentry
@@ -133,7 +133,7 @@
 	max_damage = 150
 	brute_reduction = 5
 	burn_reduction = 5
-	sellprice = 30
+	sellprice = VALUE_IRON_ITEM
 	anvilrepair = /datum/skill/craft/engineering
 	smeltresult = /obj/item/ingot/iron
 	punch_modifier = 1.2
@@ -147,7 +147,7 @@
 	max_damage = 150
 	brute_reduction = 5
 	burn_reduction = 5
-	sellprice = 30
+	sellprice = VALUE_IRON_ITEM
 	anvilrepair = /datum/skill/craft/engineering
 	smeltresult = /obj/item/ingot/iron
 	punch_modifier = 1.2
@@ -162,7 +162,7 @@
 	//organ_slowdown = 1.2
 	brute_reduction = 5
 	burn_reduction = 5
-	sellprice = 30
+	sellprice = VALUE_IRON_ITEM
 	anvilrepair = /datum/skill/craft/engineering
 	smeltresult = /obj/item/ingot/iron
 
@@ -176,7 +176,7 @@
 	//organ_slowdown = 1.2
 	brute_reduction = 5
 	burn_reduction = 5
-	sellprice = 30
+	sellprice = VALUE_IRON_ITEM
 	anvilrepair = /datum/skill/craft/engineering
 	smeltresult = /obj/item/ingot/iron
 
@@ -192,7 +192,7 @@
 	max_damage = 200
 	brute_reduction = 10
 	burn_reduction = 10
-	sellprice = 40
+	sellprice = VALUE_STEEL_ITEM
 	anvilrepair = /datum/skill/craft/engineering
 	melt_amount = 75
 	melting_material = /datum/material/steel
@@ -207,7 +207,7 @@
 	max_damage = 200
 	brute_reduction = 10
 	burn_reduction = 10
-	sellprice = 40
+	sellprice = VALUE_STEEL_ITEM
 	anvilrepair = /datum/skill/craft/engineering
 	melt_amount = 75
 	melting_material = /datum/material/steel
@@ -223,7 +223,7 @@
 	//organ_slowdown = 1.1
 	brute_reduction = 10
 	burn_reduction = 10
-	sellprice = 40
+	sellprice = VALUE_STEEL_ITEM
 	anvilrepair = /datum/skill/craft/engineering
 	melt_amount = 75
 	melting_material = /datum/material/steel
@@ -238,7 +238,7 @@
 	//organ_slowdown = 1.1
 	brute_reduction = 10
 	burn_reduction = 10
-	sellprice = 40
+	sellprice = VALUE_STEEL_ITEM
 	anvilrepair = /datum/skill/craft/engineering
 	melt_amount = 75
 	melting_material = /datum/material/steel
@@ -253,7 +253,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	max_damage = 120
 	fingers = TRUE
-	sellprice = 70
+	sellprice = VALUE_GOLD_ITEM
 	anvilrepair = /datum/skill/craft/engineering
 	smeltresult = /obj/item/ingot/gold
 
@@ -265,7 +265,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	max_damage = 120
 	fingers = TRUE
-	sellprice = 70
+	sellprice = VALUE_GOLD_ITEM
 	anvilrepair = /datum/skill/craft/engineering
 	smeltresult = /obj/item/ingot/gold
 
@@ -277,7 +277,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	max_damage = 120
 	//organ_slowdown = 0
-	sellprice = 70
+	sellprice = VALUE_GOLD_ITEM
 	anvilrepair = /datum/skill/craft/engineering
 	smeltresult = /obj/item/ingot/gold
 
@@ -289,7 +289,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	max_damage = 120
 	//organ_slowdown = 0
-	sellprice = 70
+	sellprice = VALUE_GOLD_ITEM
 	anvilrepair = /datum/skill/craft/engineering
 	smeltresult = /obj/item/ingot/gold
 
@@ -302,7 +302,7 @@
 	resistance_flags = FIRE_PROOF
 	max_damage = 170
 	max_integrity = 350
-	sellprice = 40
+	sellprice = VALUE_BRONZE_ITEM
 	fingers = TRUE
 	anvilrepair = /datum/skill/craft/engineering
 	smeltresult = /obj/item/ingot/bronze
@@ -314,7 +314,7 @@
 	resistance_flags = FIRE_PROOF
 	max_damage = 170
 	max_integrity = 350
-	sellprice = 40
+	sellprice = VALUE_BRONZE_ITEM
 	fingers = TRUE
 	anvilrepair = /datum/skill/craft/engineering
 	smeltresult = /obj/item/ingot/bronze

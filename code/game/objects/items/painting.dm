@@ -6,7 +6,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	dropshrink = 0.65
 	static_price = TRUE
-	sellprice = 20
+	sellprice = VALUE_COMMON_GOODS * 2
 	icon = 'icons/roguetown/misc/decoration.dmi'
 	var/deployed_structure = /obj/structure/fluff/walldeco/painting
 
@@ -60,7 +60,7 @@
 /obj/item/painting/queen
 	icon_state = "queenpainting"
 	desc = "A portrait of Queen Samantha I of Psydonia. Her sudden disappearance marked a day of tragedy and mourning still practiced to this year."
-	sellprice = 40
+	sellprice = VALUE_COSTLY_THING
 	deployed_structure = /obj/structure/fluff/walldeco/painting/queen
 
 /obj/structure/fluff/walldeco/painting/queen
@@ -71,7 +71,7 @@
 /obj/item/painting/seraphina
 	icon_state = "seraphinapainting"
 	desc = "A portrait of holy priest Seraphina, first of her name, blessed be her name."
-	sellprice = 40
+	sellprice = VALUE_COSTLY_THING
 	deployed_structure = /obj/structure/fluff/walldeco/painting/seraphina
 
 /obj/structure/fluff/walldeco/painting/seraphina
@@ -82,7 +82,7 @@
 /obj/item/painting/skull
 	icon_state = "skullpainting"
 	desc = "A moody scene depicting a skull and candles on a table. Memento mori."
-	sellprice = 40
+	sellprice = VALUE_COSTLY_THING
 	deployed_structure = /obj/structure/fluff/walldeco/painting/skull
 
 /obj/structure/fluff/walldeco/painting/skull
@@ -93,7 +93,7 @@
 /obj/item/painting/castle
 	icon_state = "castlepainting"
 	desc = "A painting of a dark tower looming beyond mountains and mist."
-	sellprice = 40
+	sellprice = VALUE_COSTLY_THING
 	deployed_structure = /obj/structure/fluff/walldeco/painting/castle
 
 /obj/structure/fluff/walldeco/painting/castle
@@ -104,7 +104,7 @@
 /obj/item/painting/crown
 	icon_state = "crownpainting"
 	desc = "A painting of a kingly crown resting on a book."
-	sellprice = 40
+	sellprice = VALUE_COSTLY_THING
 	deployed_structure = /obj/structure/fluff/walldeco/painting/crown
 
 /obj/structure/fluff/walldeco/painting/crown
@@ -128,7 +128,7 @@
 /obj/item/painting/lorehead/one
 	icon_state = "crownpainting"
 	desc = ""
-	sellprice = 40
+	sellprice = VALUE_COSTLY_THING
 	headprice = 5
 	deployed_structure = /obj/structure/fluff/walldeco/painting/crown
 

@@ -103,7 +103,7 @@
 	icon = 'icons/roguetown/clothing/special/evilarmor.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/evilarmor.dmi'
 	sleeved = 'icons/roguetown/clothing/special/onmob/evilarmor.dmi'
-	sellprice = 0 // Incredibly evil Zizoid armor, this should be burnt, nobody wants this
+	sellprice = NO_MARKET_VALUE // Incredibly evil Zizoid armor, this should be burnt, nobody wants this
 
 /obj/item/clothing/pants/platelegs/matthios
 	name = "gilded leggings"
@@ -112,7 +112,7 @@
 	icon = 'icons/roguetown/clothing/special/evilarmor.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/evilarmor.dmi'
 	sleeved = 'icons/roguetown/clothing/special/onmob/evilarmor.dmi'
-	sellprice = 0 // See above comment
+	sellprice = NO_MARKET_VALUE // See above comment
 
 /obj/item/clothing/pants/platelegs/graggar
 	name = "vicious leggings"
@@ -121,7 +121,7 @@
 	icon = 'icons/roguetown/clothing/special/evilarmor.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/evilarmor.dmi'
 	sleeved = 'icons/roguetown/clothing/special/onmob/evilarmor.dmi'
-	sellprice = 0 // See above comment
+	sellprice = NO_MARKET_VALUE // See above comment
 
 //.............. Silver Platelegs .................//
 

@@ -164,7 +164,7 @@
 	allow_inverse_start = FALSE // so we can typecheck less
 
 /obj/item/weapon/shield/wood/crafted
-	sellprice = 6
+	sellprice = VALUE_WOOD_ITEM
 
 /datum/repeatable_crafting_recipe/crafting/heatershield
 	name = "heater shield"

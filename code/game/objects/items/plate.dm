@@ -185,7 +185,7 @@
 	icon_state = "platter_copper"
 	resistance_flags = FIRE_PROOF
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	max_fork_usages = 7
+	max_fork_usages = VALUE_COMMON_GOODS
 
 /obj/item/plate/pewter
 	name = "pewter platter"
@@ -193,7 +193,7 @@
 	icon_state = "platter_tin"
 	resistance_flags = FIRE_PROOF
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	max_fork_usages = 7
+	max_fork_usages = VALUE_COMMON_GOODS
 
 /obj/item/plate/silver
 	name = "silver platter"
@@ -201,7 +201,7 @@
 	icon_state = "platter_silver"
 	resistance_flags = FIRE_PROOF
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	sellprice = 12
+	sellprice = VALUE_SILVER_TINY_ITEM
 	smeltresult = /obj/item/ingot/silver
 	max_fork_usages = 9
 
@@ -215,7 +215,7 @@
 	icon_state = "platter_gold"
 	resistance_flags = FIRE_PROOF
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	sellprice = 20
+	sellprice = VALUE_GOLD_TINY_ITEM
 	smeltresult = /obj/item/ingot/gold
 	max_fork_usages = 11
 
@@ -225,7 +225,7 @@
 	icon_state = "platter_jade"
 	resistance_flags = FIRE_PROOF
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	sellprice = 60
+	sellprice = VALUE_JADE_ITEM
 	max_fork_usages = 11
 
 /obj/item/plate/onyxa
@@ -234,7 +234,7 @@
 	icon_state = "platter_onyxa"
 	resistance_flags = FIRE_PROOF
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	sellprice = 40
+	sellprice = VALUE_ONYX_ITEM
 	max_fork_usages = 11
 
 /obj/item/plate/shell
@@ -243,7 +243,7 @@
 	icon_state = "platter_shell"
 	resistance_flags = FIRE_PROOF
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	sellprice = 20
+	sellprice = VALUE_SHELL_ITEM
 	max_fork_usages = 11
 
 /obj/item/plate/rose
@@ -252,7 +252,7 @@
 	icon_state = "platter_rose"
 	resistance_flags = FIRE_PROOF
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	sellprice = 25
+	sellprice = VALUE_ROSE_ITEM
 	max_fork_usages = 11
 
 /obj/item/plate/amber
@@ -261,7 +261,7 @@
 	icon_state = "platter_amber"
 	resistance_flags = FIRE_PROOF
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	sellprice = 60
+	sellprice = VALUE_AMBER_ITEM
 	max_fork_usages = 11
 
 /obj/item/plate/opal
@@ -270,7 +270,7 @@
 	icon_state = "platter_opal"
 	resistance_flags = FIRE_PROOF
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	sellprice = 90
+	sellprice = VALUE_OPAL_ITEM
 	max_fork_usages = 11
 
 /obj/item/plate/coral
@@ -279,7 +279,7 @@
 	icon_state = "platter_coral"
 	resistance_flags = FIRE_PROOF
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	sellprice = 70
+	sellprice = VALUE_CORAL_ITEM
 	max_fork_usages = 11
 
 /obj/item/plate/turq
@@ -288,7 +288,7 @@
 	icon_state = "platter_turq"
 	resistance_flags = FIRE_PROOF
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	sellprice = 85
+	sellprice = VALUE_TURQ_ITEM
 	max_fork_usages = 11
 
 /obj/item/tray

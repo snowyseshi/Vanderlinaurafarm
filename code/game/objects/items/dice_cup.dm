@@ -12,7 +12,7 @@
 	obj_flags = CAN_BE_HIT
 	grid_height = 64
 	grid_width = 32
-	sellprice = 1
+	sellprice = VALUE_IRON_TINY_ITEM
 	melting_material = /datum/material/iron
 	melt_amount = 25
 	var/max_dice = 8

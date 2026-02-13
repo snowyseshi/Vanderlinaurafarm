@@ -16,7 +16,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	volume = 25
 	obj_flags = CAN_BE_HIT
-	sellprice = 1
+	sellprice = VALUE_IRON_TINY_ITEM
 	drinksounds = list('sound/items/drink_cup (1).ogg','sound/items/drink_cup (2).ogg','sound/items/drink_cup (3).ogg','sound/items/drink_cup (4).ogg','sound/items/drink_cup (5).ogg')
 	fillsounds = list('sound/items/fillcup.ogg')
 	gripped_intents = list(INTENT_POUR)
@@ -38,14 +38,14 @@
 	name = "goblet"
 	desc = "A steel goblet that bears a few dents from previous scuffles."
 	icon_state = "cup_steel"
-	sellprice = 10
+	sellprice = VALUE_STEEL_TINY_ITEM
 
 /obj/item/reagent_containers/glass/cup/silver
 	name = "silver goblet"
 	desc = "A silver goblet, its surface adorned with intricate carvings and runes."
 	icon_state = "cup_silver"
 	dropshrink = 0.65
-	sellprice = 30
+	sellprice = VALUE_SILVER_TINY_ITEM
 	last_used = 0
 
 /obj/item/reagent_containers/glass/cup/silver/Initialize(mapload, vol)
@@ -57,7 +57,7 @@
 	desc = "A golden gilded goblet which gleams pathetically despite its illustrious metal."
 	icon_state = "cup_golden"
 	dropshrink = 0.65
-	sellprice = 50
+	sellprice = VALUE_GOLD_TINY_ITEM
 
 /obj/item/reagent_containers/glass/cup/skull
 	name = "skull goblet"
@@ -72,13 +72,13 @@
 	volume = 25
 	dropshrink = 0.7
 	fill_icon_state = "teacup"
-	sellprice = 10
+	sellprice = VALUE_COMMON_GOODS
 
 /obj/item/reagent_containers/glass/cup/teacup/fancy
 	name = "fancy teacup"
 	desc = "A fancy tea cup made out of ceramic, decorated with an ornate glaze. Used to serve tea."
 	icon_state = "teacup_fancy"
-	sellprice = 20
+	sellprice = VALUE_COMMON_GOODS * 2
 
 /obj/item/reagent_containers/glass/cup/jade
 	name = "joapstone cup"
@@ -86,7 +86,7 @@
 	dropshrink = null
 	icon_state = "cup_jade"
 	fill_icon_state = "fancycup"
-	sellprice = 55
+	sellprice = VALUE_JADE_ITEM
 
 /obj/item/reagent_containers/glass/cup/turq
 	name = "ceruleabaster cup"
@@ -94,7 +94,7 @@
 	dropshrink = null
 	icon_state = "cup_turq"
 	fill_icon_state = "fancycup"
-	sellprice = 80
+	sellprice = VALUE_TURQ_ITEM
 
 /obj/item/reagent_containers/glass/cup/amber
 	name = "petriamber cup"
@@ -102,7 +102,7 @@
 	dropshrink = null
 	icon_state = "cup_amber"
 	fill_icon_state = "fancycup"
-	sellprice = 55
+	sellprice = VALUE_AMBER_ITEM
 
 /obj/item/reagent_containers/glass/cup/coral
 	name = "aoetal cup"
@@ -110,7 +110,7 @@
 	dropshrink = null
 	icon_state = "cup_coral"
 	fill_icon_state = "fancycup"
-	sellprice = 65
+	sellprice = VALUE_CORAL_ITEM
 
 /obj/item/reagent_containers/glass/cup/onyxa
 	name = "onyxa cup"
@@ -118,7 +118,7 @@
 	dropshrink = null
 	icon_state = "cup_onyxa"
 	fill_icon_state = "fancycup"
-	sellprice = 35
+	sellprice = VALUE_ONYX_ITEM
 
 /obj/item/reagent_containers/glass/cup/shell
 	name = "shell cup"
@@ -126,7 +126,7 @@
 	dropshrink = null
 	icon_state = "cup_shell"
 	fill_icon_state = "fancycup"
-	sellprice = 15
+	sellprice = VALUE_SHELL_ITEM
 
 /obj/item/reagent_containers/glass/cup/opal
 	name = "opaloise cup"
@@ -134,7 +134,7 @@
 	dropshrink = null
 	icon_state = "cup_opal"
 	fill_icon_state = "fancycup"
-	sellprice = 85
+	sellprice = VALUE_OPAL_ITEM
 
 /obj/item/reagent_containers/glass/cup/rose
 	name = "rosellusk cup"
@@ -142,7 +142,7 @@
 	dropshrink = null
 	icon_state = "cup_rose"
 	fill_icon_state = "fancycup"
-	sellprice = 20
+	sellprice = VALUE_ROSE_ITEM
 
 /obj/item/reagent_containers/glass/cup/jadefancy
 	name = "fancy joapstone cup"
@@ -150,7 +150,7 @@
 	dropshrink = null
 	icon_state = "fancycup_jade"
 	fill_icon_state = "fancycup"
-	sellprice = 65
+	sellprice = VALUE_JADE_ITEM_FINE
 
 /obj/item/reagent_containers/glass/cup/turqfancy
 	name = "fancy ceruleabaster cup"
@@ -158,7 +158,7 @@
 	dropshrink = null
 	icon_state = "fancycup_turq"
 	fill_icon_state = "fancycup"
-	sellprice = 90
+	sellprice = VALUE_TURQ_ITEM_FINE
 
 /obj/item/reagent_containers/glass/cup/opalfancy
 	name = "fancy opaloise cup"
@@ -166,7 +166,7 @@
 	dropshrink = null
 	icon_state = "fancycup_opal"
 	fill_icon_state = "fancycup"
-	sellprice = 95
+	sellprice = VALUE_OPAL_ITEM_FINE
 
 /obj/item/reagent_containers/glass/cup/coralfancy
 	name = "fancy aoetal cup"
@@ -174,7 +174,7 @@
 	dropshrink = null
 	icon_state = "fancycup_coral"
 	fill_icon_state = "fancycup"
-	sellprice = 75
+	sellprice = VALUE_CORAL_ITEM_FINE
 
 /obj/item/reagent_containers/glass/cup/amberfancy
 	name = "fancy petriamber cup"
@@ -182,7 +182,7 @@
 	dropshrink = null
 	icon_state = "fancycup_amber"
 	fill_icon_state = "fancycup"
-	sellprice = 65
+	sellprice = VALUE_AMBER_ITEM_FINE
 
 /obj/item/reagent_containers/glass/cup/shellfancy
 	name = "fancy shell cup"
@@ -190,7 +190,7 @@
 	dropshrink = null
 	icon_state = "fancycup_shell"
 	fill_icon_state = "fancycup"
-	sellprice = 25
+	sellprice = VALUE_SHELL_ITEM_FINE
 
 /obj/item/reagent_containers/glass/cup/rosefancy
 	name = "fancy rosellusk cup"
@@ -198,7 +198,7 @@
 	dropshrink = null
 	icon_state = "fancycup_rose"
 	fill_icon_state = "fancycup"
-	sellprice = 30
+	sellprice = VALUE_ROSE_ITEM_FINE
 
 /obj/item/reagent_containers/glass/cup/onyxafancy
 	name = "fancy onyxa cup"
@@ -206,7 +206,7 @@
 	dropshrink = null
 	icon_state = "fancycup_onyxa"
 	fill_icon_state = "fancycup"
-	sellprice = 45
+	sellprice = VALUE_ONYX_ITEM_FINE
 
 /obj/item/reagent_containers/glass/cup/clay
 	name = "clay cup"

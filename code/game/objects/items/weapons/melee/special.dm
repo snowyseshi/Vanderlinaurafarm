@@ -152,55 +152,57 @@
 	user.changeNext_move(CLICK_CD_MELEE)
 
 
-	if(ishuman(user))
-		var/mob/living/carbon/human/HU = user
+	if(!ishuman(user))
+		return
 
-		if(!is_priest_job(HU.mind?.assigned_role))
-			to_chat(user, span_danger("The staff doesn't obey me."))
+	var/mob/living/carbon/human/HU = user
+
+	if(!is_priest_job(HU.mind?.assigned_role))
+		to_chat(user, span_danger("The staff doesn't obey me."))
+		return
+
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+
+		user.visible_message(span_warning("[user] points [src] at [target]."))
+
+		if(H == HU)
 			return
 
-		if(ishuman(target))
-			var/mob/living/carbon/human/H = target
+		if(H.can_block_magic(MAGIC_RESISTANCE))
+			return
 
-			user.visible_message(span_warning("[user] points [src] at [target]."))
-
-			if(H == HU)
-				return
-
-			if(H.can_block_magic(MAGIC_RESISTANCE))
-				return
-
-			if(!rod_jobs_priest)
-				rod_jobs_priest = GLOB.church_positions | list(
-				/datum/job/monk::title,
-				/datum/job/templar::title,
-				/datum/job/churchling::title,
-				/datum/job/undertaker::title,
+		if(!rod_jobs_priest)
+			rod_jobs_priest = GLOB.church_positions | list(
+			/datum/job/monk::title,
+			/datum/job/templar::title,
+			/datum/job/churchling::title,
+			/datum/job/undertaker::title,
 			)
 
-			if(!((H.mind?.assigned_role.title in rod_jobs_priest)))
-				return
+		if(!((H.mind?.assigned_role.title in rod_jobs_priest)))
+			return
 
-			if(!COOLDOWN_FINISHED(src, staff))
-				to_chat(user, span_danger("The [src] is not ready yet! [round(COOLDOWN_TIMELEFT(src, staff) / 10, 1)] seconds left!"))
-				return
+		if(!COOLDOWN_FINISHED(src, staff))
+			to_chat(user, span_danger("The [src] is not ready yet! [round(COOLDOWN_TIMELEFT(src, staff) / 10, 1)] seconds left!"))
+			return
 
-			if(istype(user.used_intent, /datum/intent/priest_smite))
-				HU.visible_message(span_warning("[HU] smites [H] with \the [src]."))
-				user.Beam(target, icon_state = "solar_beam", time = 0.5 SECONDS) // LIGHTNING
-				playsound(user, 'sound/magic/lightningshock.ogg', 70, TRUE)
-				H.electrocute_act(5, src)
-				HU.log_message("has smitten [H.real_name] with the [src]!", LOG_ATTACK)
-				to_chat(H, span_danger("I'm smitten by the staff!"))
-				COOLDOWN_START(src, staff, 20 SECONDS)
-				return
+		if(istype(user.used_intent, /datum/intent/priest_smite))
+			HU.visible_message(span_warning("[HU] smites [H] with \the [src]."))
+			user.Beam(target, icon_state = "solar_beam", time = 0.5 SECONDS) // LIGHTNING
+			playsound(user, 'sound/magic/lightningshock.ogg', 70, TRUE)
+			H.electrocute_act(5, src)
+			HU.log_message("has smitten [H.real_name] with the [src]!", LOG_ATTACK)
+			to_chat(H, span_danger("I'm smitten by the staff!"))
+			COOLDOWN_START(src, staff, 20 SECONDS)
+			return
 
-			if(istype(user.used_intent, /datum/intent/priest_silence))
-				HU.visible_message(span_warning("[HU] silences [H] with \the [src]."))
-				H.set_silence(20 SECONDS)
-				HU.log_message("has silenced [H.real_name] with the [src]!", LOG_ATTACK)
-				to_chat(H, span_danger("I'm silenced by the staff!"))
-				COOLDOWN_START(src, staff, 10 SECONDS)
+		if(istype(user.used_intent, /datum/intent/priest_silence))
+			HU.visible_message(span_warning("[HU] silences [H] with \the [src]."))
+			H.set_silence(20 SECONDS)
+			HU.log_message("has silenced [H.real_name] with the [src]!", LOG_ATTACK)
+			to_chat(H, span_danger("I'm silenced by the staff!"))
+			COOLDOWN_START(src, staff, 10 SECONDS)
 
 /obj/item/weapon/mace/stunmace
 	name = "stunmace"

@@ -5,7 +5,7 @@
 	icon_state = "beaver_amber"
 	grid_height = 32
 	grid_width = 32
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 
 //.....................Shell......................//
 

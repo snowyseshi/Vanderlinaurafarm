@@ -430,7 +430,7 @@
 	sharpness = IS_SHARP
 	experimental_inhand = TRUE
 	w_class = WEIGHT_CLASS_SMALL
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 	verb_exclaim = "blares"
 	var/cursedblood
 	var/active
@@ -641,7 +641,7 @@
 	var/remaining
 	var/heatedup
 	var/messageshown = 1
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 
 /obj/item/inqarticles/tallowpot/Initialize(mapload)
 	. = ..()
@@ -722,7 +722,7 @@
 	experimental_inhand = TRUE
 	w_class = WEIGHT_CLASS_SMALL
 	embedding = null
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 
 /obj/item/rope/inqarticles/inquirycord/getonmobprop(tag)
 	. = ..()
@@ -762,7 +762,7 @@
 	var/active = FALSE
 	var/choke_damage = 8
 	integrity_failure = 0.01
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 	wield_block = FALSE
 
 	var/static/list/wield_sounds = list('sound/items/garrote.ogg', 'sound/items/garrote2.ogg')
@@ -962,7 +962,7 @@
 	item_state = "garrote"
 	resistance_flags = INDESTRUCTIBLE
 	choke_damage = 16
-	sellprice = 100
+	sellprice = VALUE_LUXURY_THING
 
 /obj/item/clothing/head/inqarticles/blackbag
 	name = "black bag"
@@ -1115,7 +1115,7 @@
 	force = 15
 	dropshrink = 0
 	hitsound = 'sound/blank.ogg'
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 	resistance_flags = FIRE_PROOF
 	var/opened = FALSE
 	var/fedblood = FALSE

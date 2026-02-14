@@ -45,7 +45,7 @@
 	resistance_flags = FIRE_PROOF
 	melting_material = /datum/material/steel
 	melt_amount = 75
-	sellprice = VALUE_STEEL_ITEM * 2
+	sellprice = VALUE_DOUBLE_STEEL_ITEM
 
 //................ Silver Whip ............... //
 /obj/item/weapon/whip/silver

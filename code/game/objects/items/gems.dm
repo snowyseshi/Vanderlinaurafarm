@@ -8,7 +8,7 @@
 	drop_sound = 'sound/items/gem.ogg'
 	///I am leaving this here as a note. If you leave the price null on subtypes, you're eating the infinite recursion pill.
 	///I dont care if its negative just DONT LEAVE IT 0
-	sellprice = 0
+	sellprice = NO_MARKET_VALUE
 	static_price = FALSE
 	experimental_inhand = FALSE
 	///For Mappers; gem_path = weight

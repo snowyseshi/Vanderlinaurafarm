@@ -546,7 +546,7 @@
 	name = "decorated rapier"
 	desc = "A rapier decorated with gold inlaid on its hilt. A regal weapon fit for nobility."
 	icon_state = "decrapier"
-	sellprice = VALUE_LUXURY_THING * 2
+	sellprice = VALUE_STEEL_ITEM + VALUE_GOLD_ITEM
 
 /obj/item/weapon/sword/rapier/nimcha
 	name = "nimcha"
@@ -555,7 +555,7 @@
 	icon_state = "nimcha"
 	wbalance = HARD_TO_DODGE
 	dropshrink = 0.8
-	sellprice = VALUE_LUXURY_THING * 2 // its made with gold and steel, thats pretty valuable
+	sellprice = VALUE_STEEL_ITEM + VALUE_GOLD_ITEM // its made with gold and steel, thats pretty valuable
 
 //................ Lord's Rapier ............... //
 /obj/item/weapon/sword/rapier/dec/lord
@@ -644,7 +644,7 @@
 	inhand_y_dimension = 64
 	slot_flags = ITEM_SLOT_BACK|ITEM_SLOT_HIP
 	dropshrink = 0.75
-	sellprice = VALUE_STEEL_ITEM * 2
+	sellprice = VALUE_DOUBLE_STEEL_ITEM
 	grid_height = 96
 	grid_width = 64
 
@@ -658,7 +658,7 @@
 
 	gripsprite = FALSE
 	dropshrink = 0.8
-	sellprice = VALUE_STEEL_ITEM * 2
+	sellprice = VALUE_DOUBLE_STEEL_ITEM
 	max_integrity = INTEGRITY_STRONG - 50 //this thing is long as hell, it would be more likely to break over time
 
 /obj/item/weapon/sword/long/shotel/getonmobprop(tag)
@@ -681,7 +681,7 @@
 	icon_state = "shotel_iron"
 	max_integrity = INTEGRITY_STANDARD - 50
 	melting_material = /datum/material/iron
-	sellprice = VALUE_IRON_ITEM * 2
+	sellprice = VALUE_DOUBLE_IRON_ITEM
 
 /obj/item/weapon/sword/long/death
 	color = CLOTHING_SOOT_BLACK
@@ -917,7 +917,7 @@
 
 	last_used = 0
 	melting_material = /datum/material/silver
-	sellprice = VALUE_SILVER_ITEM * 2
+	sellprice = VALUE_DOUBLE_SILVER_ITEM
 
 /obj/item/weapon/sword/long/psydon/Initialize(mapload)
 	. = ..()
@@ -972,7 +972,7 @@
 	swingsound = BLADEWOOSH_HUGE
 	slot_flags = ITEM_SLOT_BACK
 	melt_amount = 225
-	sellprice = VALUE_STEEL_ITEM * 2
+	sellprice = VALUE_DOUBLE_STEEL_ITEM + VALUE_STEEL_ITEM
 
 /obj/item/weapon/sword/long/greatsword/getonmobprop(tag)
 	. = ..()
@@ -998,7 +998,7 @@
 	minstr = 11
 	melting_material = /datum/material/silver
 	melt_amount = 150
-	sellprice = VALUE_SILVER_ITEM * 2
+	sellprice = VALUE_DOUBLE_SILVER_ITEM
 
 /obj/item/weapon/sword/long/greatsword/psydon/Initialize(mapload)
 	. = ..()
@@ -1066,7 +1066,7 @@
 	desc = "Commonly known as a flame-bladed sword, this weapon has an undulating blade. Its wave-like form distributes force better, and is less likely to break on impact."
 	icon_state = "flamberge"
 	wbalance = DODGE_CHANCE_NORMAL
-	sellprice = VALUE_STEEL_ITEM * 3
+	sellprice = VALUE_DOUBLE_STEEL_ITEM + VALUE_DOUBLE_STEEL_ITEM
 
 /obj/item/weapon/sword/long/greatsword/steelflamberge
 	name = "steel flamberge"
@@ -1074,7 +1074,7 @@
 	icon_state = "steelflamberge"
 	wbalance = DODGE_CHANCE_NORMAL
 	melt_amount = 300
-	sellprice = VALUE_STEEL_ITEM * 3
+	sellprice = VALUE_DOUBLE_STEEL_ITEM + VALUE_DOUBLE_STEEL_ITEM
 
 /obj/item/weapon/sword/long/greatsword/zwei
 	name = "zweihander"
@@ -1087,7 +1087,7 @@
 	max_integrity = INTEGRITY_STRONG
 	melting_material = /datum/material/iron
 	melt_amount = 225
-	sellprice = VALUE_IRON_ITEM * 2
+	sellprice = VALUE_DOUBLE_IRON_ITEM + VALUE_IRON_ITEM
 
 /obj/item/weapon/sword/long/greatsword/zwei/getonmobprop(tag)
 	. = ..()
@@ -1131,7 +1131,7 @@
 	icon_state = "zizosword"
 	wdefense = ULTMATE_PARRY
 	minstr = 10
-	sellprice = VALUE_WORTHLESS // Super evil Zizo sword, nobody wants this
+	sellprice = NO_MARKET_VALUE // Super evil Zizo sword, nobody wants this
 
 /obj/item/weapon/sword/long/greatsword/zizo/getonmobprop(tag)
 	. = ..()
@@ -1158,7 +1158,7 @@
 	max_blade_int = 150 // Iron tier
 	max_integrity = INTEGRITY_STRONG
 	minstr = 10
-	sellprice = VALUE_IRON_ITEM * 2
+	sellprice = VALUE_DOUBLE_IRON_ITEM + VALUE_IRON_ITEM
 
 /obj/item/weapon/sword/long/greatsword/ironclaymore/getonmobprop(tag)
 	. = ..()
@@ -1184,7 +1184,7 @@
 	max_blade_int = INTEGRITY_STRONG
 	max_integrity = INTEGRITY_STRONGEST - 50
 	minstr = 10
-	sellprice = VALUE_STEEL_ITEM * 2
+	sellprice = VALUE_DOUBLE_STEEL_ITEM + VALUE_STEEL_ITEM
 
 /obj/item/weapon/sword/long/greatsword/steelclaymore/getonmobprop(tag)
 	. = ..()
@@ -1361,7 +1361,7 @@
 	pickup_sound = 'sound/foley/equip/swordlarge2.ogg'
 	slot_flags = ITEM_SLOT_BACK//how the fuck you could put this thing on your hip?
 	melting_material = /datum/material/copper
-	sellprice = VALUE_COPPER_ITEM * 2
+	sellprice = VALUE_DOUBLE_COPPER_ITEM
 
 /obj/item/weapon/sword/rapier/ironestoc
 	name = "estoc"

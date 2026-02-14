@@ -31,7 +31,7 @@
 	name = "raw gold"
 	icon_state = "oregold1"
 	smeltresult = /obj/item/ingot/gold
-	sellprice = 10
+	sellprice = M_RAWGOLD
 	melting_material = /datum/material/gold
 	item_weight = 6.2 * GOLD_MULITPLIER
 	mill_result = /obj/item/ore/dust/gold
@@ -44,7 +44,7 @@
 	name = "raw silver"
 	icon_state = "oresilv1"
 	smeltresult = /obj/item/ingot/silver
-	sellprice = 8
+	sellprice = M_RAWSILVER
 	melting_material = /datum/material/silver
 	item_weight = 6.2 * SILVER_MULTIPLIER
 	mill_result = /obj/item/ore/dust/silver
@@ -58,7 +58,7 @@
 	name = "raw iron"
 	icon_state = "oreiron1"
 	smeltresult = /obj/item/ingot/iron
-	sellprice = 5
+	sellprice = M_RAWIRON
 	melting_material = /datum/material/iron
 	item_weight = 6.2 * IRON_MULTIPLIER
 	mill_result = /obj/item/ore/dust/iron
@@ -71,7 +71,7 @@
 	name = "raw copper"
 	icon_state = "orecop1"
 	smeltresult = /obj/item/ingot/copper
-	sellprice = 2
+	sellprice = M_RAWCOPPER
 	melting_material = /datum/material/copper
 	item_weight = 6.2 * COPPER_MULTIPLIER
 	mill_result = /obj/item/ore/dust/copper
@@ -85,7 +85,7 @@
 	desc = "A mass of soft, almost malleable white ore."
 	icon_state = "oretin1"
 	smeltresult = /obj/item/ingot/tin
-	sellprice = 4
+	sellprice = M_RAWTIN
 	melting_material = /datum/material/tin
 	item_weight = 6.2 * TIN_MULTIPLIER
 	mill_result = /obj/item/ore/dust/tin
@@ -99,7 +99,7 @@
 	icon_state = "orecoal1"
 	firefuel = 10 MINUTES
 	smeltresult = /obj/item/ore/coal
-	sellprice = 1
+	sellprice = VALUE_WORTHLESS
 	item_weight = 7
 
 /obj/item/ore/coal/Initialize(mapload)
@@ -111,7 +111,7 @@
 	desc = "Red gems that contain the essence of quicksilver."
 	icon_state = "orecinnabar"
 	grind_results = list(/datum/reagent/mercury = 15)
-	sellprice = 5
+	sellprice = VALUE_DIRT_CHEAP
 	item_weight = 6.2
 
 /obj/item/ore/coal/charcoal
@@ -122,7 +122,7 @@
 	color = "#929292"
 	firefuel = 30 MINUTES
 	smeltresult = /obj/item/ore/coal/charcoal
-	sellprice = 1
+	sellprice = VALUE_WORTHLESS
 
 /obj/item/ingot
 	name = "ingot"
@@ -278,7 +278,7 @@
 	desc = "This bar radiates a divine purity. The Psycross and the words cast into the surface denotes the Oratorium Throni Vacui as the point of its origin."
 	icon_state = "ingotsilvblessed_psy"
 	melting_material = /datum/material/silver
-	sellprice = M_SILVER * 1.5
+	sellprice = M_SILVER * 2
 
 
 /obj/item/ingot/blacksteel
@@ -295,6 +295,6 @@
 	desc = "Slag containing steel, the result of blooming iron and coal."
 	icon_state = "steel_slag"
 	smeltresult = /obj/item/ingot/steel_slag
-	sellprice = M_STEEL
+	sellprice = M_STEELSLAG
 	melting_material = /datum/material/steel
 	item_weight = 7.5 * STEEL_MULTIPLIER

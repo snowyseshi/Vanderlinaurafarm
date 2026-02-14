@@ -69,7 +69,7 @@
 	force = DAMAGE_MACE + 1
 	force_wielded = DAMAGE_MACE_WIELD + 2
 	wdefense = GOOD_PARRY
-	sellprice = VALUE_IRON_ITEM * 2
+	sellprice = VALUE_DOUBLE_IRON_ITEM
 
 //................  Canes, my beloved. ............... //
 
@@ -90,7 +90,7 @@
 	icon_state = "noble_cane"
 	force = DAMAGE_MACE - 3
 	force_wielded = DAMAGE_MACE - 1
-	sellprice = VALUE_LUXURY_THING * 2
+	sellprice = VALUE_DOUBLE_GOLD_ITEM+VALUE_WOOD_ITEM
 
 /obj/item/weapon/mace/cane/courtphysician
 	name = "physician's cane"
@@ -202,7 +202,7 @@
 	melting_material = /datum/material/steel
 	melt_amount = 75
 	blade_dulling = DULLING_BASH
-	sellprice = VALUE_STEEL_ITEM * 2
+	sellprice = VALUE_DOUBLE_STEEL_ITEM
 
 //................ Steel mace ............... //	Better wbalance and wdefense
 /obj/item/weapon/mace/steel
@@ -230,7 +230,7 @@
 	force_wielded = DAMAGE_MACE_WIELD + 3
 	wbalance = EASY_TO_DODGE
 	wdefense = GREAT_PARRY
-	sellprice = VALUE_STEEL_ITEM * 2
+	sellprice = VALUE_DOUBLE_STEEL_ITEM
 
 //................ Spiked club ............... //
 /obj/item/weapon/mace/spiked
@@ -421,7 +421,7 @@
 	melting_material = /datum/material/iron
 	resistance_flags = FLAMMABLE // Weapon made mostly of wood
 	parrysound = "parrywood"
-	sellprice = VALUE_IRON_ITEM * 2
+	sellprice = VALUE_IRON_ITEM + VALUE_WOOD_ITEM
 
 /obj/item/weapon/mace/goden/getonmobprop(tag)
 	. = ..()
@@ -456,7 +456,7 @@
 	resistance_flags = FIRE_PROOF
 	melting_material = /datum/material/steel
 	melt_amount = 75
-	sellprice = VALUE_STEEL_ITEM * 2
+	sellprice = VALUE_STEEL_ITEM + VALUE_WOOD_ITEM
 
 /obj/item/weapon/mace/goden/steel/getonmobprop(tag)
 	. = ..()
@@ -482,7 +482,7 @@
 	resistance_flags = FIRE_PROOF
 	melting_material = /datum/material/silver
 	melt_amount = 150
-	sellprice = VALUE_SILVER_ITEM * 2
+	sellprice = VALUE_DOUBLE_SILVER_ITEM
 
 /obj/item/weapon/mace/goden/psydon/Initialize(mapload)
 	. = ..()
@@ -566,7 +566,7 @@
 	resistance_flags = FLAMMABLE // Weapon made mostly of wood
 	melting_material = /datum/material/copper
 	parrysound = "parrywood"
-	sellprice = VALUE_COPPER_ITEM * 2
+	sellprice = VALUE_DOUBLE_COPPER_ITEM
 
 //................ Warhammers ............... //
 /obj/item/weapon/mace/warhammer
@@ -623,7 +623,7 @@
 	blade_dulling = DULLING_BASH
 	melting_material = /datum/material/steel
 	melt_amount = 150
-	sellprice = VALUE_STEEL_ITEM * 2
+	sellprice = VALUE_STEEL_ITEM
 
 /obj/item/weapon/mace/elvenclub/bronze
 	name = "bronze elven war club"
@@ -643,7 +643,7 @@
 	blade_dulling = DULLING_BASH
 	melting_material = /datum/material/silver
 	melt_amount = 150
-	sellprice = VALUE_SILVER_ITEM * 2
+	sellprice = VALUE_SILVER_ITEM + VALUE_GOLD_ITEM
 
 /obj/item/weapon/mace/elvenclub/silver/Initialize(mapload)
 	. = ..()
@@ -674,7 +674,7 @@
 	force = DAMAGE_MACE + 2
 	wbalance = DODGE_CHANCE_NORMAL
 	minstr = 8
-	sellprice = VALUE_SILVER_ITEM * 2 // It's silver and gold.
+	sellprice = VALUE_SILVER_ITEM + VALUE_GOLD_ITEM  // It's silver and gold.
 
 /obj/item/weapon/mace/gada/Initialize(mapload)
 	. = ..()

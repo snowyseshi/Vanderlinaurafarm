@@ -190,12 +190,18 @@ GLOBAL_LIST_EMPTY(job_respawn_delays)
 #define M_TIN		15	// one tin bar
 #define M_IRON		12	// one iron bar  Twelve is a good number for it can be halved, cut in three and four without fractions. Multiples of 6
 #define M_BRONZE	M_COPPER+W_MODERATE // bronze bar
-#define M_STEEL		M_IRON+W_MAJOR	// one steel bar
+#define M_STEELSLAG M_IRON+W_MAJOR
+#define M_STEEL		M_STEELSLAG+W_MODERATE	// one steel bar
 #define M_BSTEEL 	M_STEEL+M_SILVER+W_MAJOR // one blacksteel bar
 #define M_SILVER	M_IRON*3	// one silver bar
 #define M_GOLD		M_IRON*5	// one gold bar
 
-// Unusual materials cost.
+// raw materials cost.
+#define M_RAWIRON	5
+#define M_RAWTIN	4
+#define M_RAWCOPPER	2
+#define M_RAWSILVER	8
+#define M_RAWGOLD	10
 #define M_GEMERALD	44
 #define M_BLORTZ	88
 #define M_TOPER		25
@@ -260,6 +266,13 @@ GLOBAL_LIST_EMPTY(job_respawn_delays)
 #define VALUE_GOLD_TINY_ITEM	M_GOLD/3+W_MODERATE/3
 #define VALUE_GOLD_ITEM			M_GOLD+W_MODERATE
 #define VALUE_GOLD_RARE_ITEM	VALUE_GOLD_ITEM+BONUS_VALUE_MODEST
+
+#define VALUE_DOUBLE_COPPER_ITEM	VALUE_COPPER_ITEM+VALUE_COPPER_ITEM
+#define VALUE_DOUBLE_STEEL_ITEM		VALUE_STEEL_ITEM+VALUE_STEEL_ITEM
+#define VALUE_DOUBLE_IRON_ITEM		VALUE_IRON_ITEM+VALUE_IRON_ITEM
+#define VALUE_DOUBLE_BRONZE_ITEM	VALUE_BRONZE_ITEM+VALUE_BRONZE_ITEM
+#define VALUE_DOUBLE_SILVER_ITEM	VALUE_SILVER_ITEM+VALUE_SILVER_ITEM
+#define VALUE_DOUBLE_GOLD_ITEM		VALUE_GOLD_ITEM+VALUE_GOLD_ITEM
 
 #define VALUE_GEMERALD_ITEM		M_GEMERALD+W_MODERATE
 #define VALUE_BLORTZ_ITEM		M_BLORTZ+W_MODERATE

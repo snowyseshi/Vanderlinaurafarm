@@ -402,7 +402,7 @@
 	desc = "A large decorative bronze urn."
 	icon = 'icons/roguetown/items/precious_objects.dmi'
 	icon_state = "urn_bronze"
-	sellprice = VALUE_BRONZE_ITEM * 2 // because its two bronze bars
+	sellprice = VALUE_DOUBLE_BRONZE_ITEM // because its two bronze bars
 
 /obj/item/statue/bronze/vase
 	name = "bronze vase"
@@ -416,7 +416,7 @@
 	desc = "A large decorative bronze vase. It's quite fancy!"
 	icon = 'icons/roguetown/items/precious_objects.dmi'
 	icon_state = "fancyvase_bronze"
-	sellprice = VALUE_BRONZE_ITEM * 2
+	sellprice = VALUE_DOUBLE_BRONZE_ITEM
 
 /obj/item/statue/bronze/bust
 	name = "bronze bust"

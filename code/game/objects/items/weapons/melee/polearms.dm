@@ -59,7 +59,7 @@
 
 	slot_flags = ITEM_SLOT_BACK
 	sharpness = IS_BLUNT
-	sellprice = VALUE_DIRT_CHEAP
+	sellprice = VALUE_WOOD_ITEM
 
 /obj/item/weapon/polearm/woodstaff/getonmobprop(tag)
 	. = ..()

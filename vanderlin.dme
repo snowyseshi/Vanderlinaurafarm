@@ -183,6 +183,7 @@
 #include "code\__DEFINES\twitch.dm"
 #include "code\__DEFINES\typeids.dm"
 #include "code\__DEFINES\unit_tests.dm"
+#include "code\__DEFINES\values.dm"
 #include "code\__DEFINES\vampires.dm"
 #include "code\__DEFINES\vectors.dm"
 #include "code\__DEFINES\vehicles.dm"

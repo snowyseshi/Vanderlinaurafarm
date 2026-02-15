@@ -618,7 +618,7 @@
 	throw_speed = 4
 	max_integrity = INTEGRITY_POOR
 	embedding = list("embedded_pain_multiplier" = 4, "embed_chance" = 50, "embedded_fall_chance" = 0)
-	sellprice = VALUE_SILVER_ITEM
+	sellprice = VALUE_WORTHLESS
 	melting_material = /datum/material/silver
 
 /obj/item/weapon/knife/throwingknife/psydon/Initialize(mapload)

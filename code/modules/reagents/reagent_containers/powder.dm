@@ -7,7 +7,7 @@
 	possible_transfer_amounts = null
 	volume = 15
 	list_reagents = null
-	sellprice = VALUE_COMMON_GOODS
+	sellprice = VALUE_DRUGS
 	grid_height = 32
 	grid_width = 32
 
@@ -78,7 +78,7 @@
 	icon_state = "spice"
 	item_state = "spice"
 	list_reagents = list(/datum/reagent/druqks = 15)
-	sellprice = VALUE_COMMON_GOODS
+	sellprice = VALUE_DRUGS
 
 /datum/reagent/druqks
 	name = "Drukqs"
@@ -137,7 +137,7 @@
 	icon = 'icons/roguetown/items/produce.dmi'
 	icon_state = "ozium"
 	list_reagents = list(/datum/reagent/ozium = 15)
-	sellprice = VALUE_COMMON_GOODS
+	sellprice = VALUE_DRUGS
 
 /datum/reagent/ozium
 	name = "Ozium"
@@ -170,7 +170,7 @@
 	icon = 'icons/roguetown/items/produce.dmi'
 	icon_state = "moondust"
 	list_reagents = list(/datum/reagent/moondust = 15)
-	sellprice = VALUE_COMMON_GOODS
+	sellprice = VALUE_DRUGS
 
 /datum/reagent/moondust
 	name = "Moondust"
@@ -213,7 +213,7 @@
 	icon = 'icons/roguetown/items/produce.dmi'
 	icon_state = "moondust_purest"
 	list_reagents = list(/datum/reagent/moondust_purest = 15)
-	sellprice = VALUE_COMMON_GOODS * 2
+	sellprice = VALUE_DRUGS * 2
 
 /datum/reagent/moondust_purest
 	name = "Purest Moondust"
@@ -259,7 +259,7 @@
 	icon = 'icons/roguetown/items/produce.dmi'
 	icon_state = "salt"
 	list_reagents = list(/datum/reagent/toxin/manabloom_juice = 5)
-	sellprice = VALUE_COMMON_GOODS
+	sellprice = VALUE_MAGIC_MATERIAL
 	color = COLOR_CYAN
 
 //generic herbs and spices used in cooking

@@ -214,7 +214,7 @@
 	icon = 'icons/obj/handmade/cup.dmi'
 	icon_state = "world"
 	dropshrink = 1
-	sellprice = 5
+	sellprice = VALUE_DIRT_CHEAP
 
 /obj/item/reagent_containers/glass/cup/clay/set_material_information()
 	. = ..()

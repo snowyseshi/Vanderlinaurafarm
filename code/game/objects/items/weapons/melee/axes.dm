@@ -35,7 +35,7 @@
 
 	smeltresult = /obj/item/fertilizer/ash //is a wooden log and a stone hammered in the top
 	melting_material = null
-	sellprice = VALUE_COMMON_GOODS
+	sellprice = VALUE_WOOD_ITEM
 
 /obj/item/weapon/axe/stone/getonmobprop(tag)
 	if(tag)

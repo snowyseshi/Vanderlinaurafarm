@@ -75,7 +75,7 @@
 	desc = "fur from one of Dendor's mightiest creachers."
 	icon_state = "pelt_direbear"
 	color = "#33302b"
-	sellprice = M_FUR * 5
+	sellprice = M_FUR + BONUS_VALUE_MODEST
 
 /obj/item/natural/fur/fox
 	desc = "Fur from a venard."

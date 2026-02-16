@@ -17,32 +17,32 @@
 /obj/item/clothing/ring/silver/dorpel
 	name = "dorpel ring"
 	icon_state = "s_ring_diamond"
-	sellprice = VALUE_DORPEL_ITEM
+	sellprice = VALUE_DORPEL_ITEM + VALUE_SILVER_ITEM
 
 /obj/item/clothing/ring/silver/blortz
 	name = "blortz ring"
 	icon_state = "s_ring_quartz"
-	sellprice = VALUE_BLORTZ_ITEM
+	sellprice = VALUE_BLORTZ_ITEM + VALUE_SILVER_ITEM
 
 /obj/item/clothing/ring/silver/saffira
 	name = "saffira ring"
 	icon_state = "s_ring_sapphire"
-	sellprice = VALUE_SAFFIRA_ITEM
+	sellprice = VALUE_SAFFIRA_ITEM + VALUE_SILVER_ITEM
 
 /obj/item/clothing/ring/silver/gemerald
 	name = "gemerald ring"
 	icon_state = "s_ring_emerald"
-	sellprice = VALUE_GEMERALD_ITEM
+	sellprice = VALUE_GEMERALD_ITEM + VALUE_SILVER_ITEM
 
 /obj/item/clothing/ring/silver/toper
 	name = "toper ring"
 	icon_state = "s_ring_topaz"
-	sellprice = VALUE_TOPER_ITEM
+	sellprice = VALUE_TOPER_ITEM + VALUE_SILVER_ITEM
 
 /obj/item/clothing/ring/silver/rontz
 	name = "rontz ring"
 	icon_state = "s_ring_ruby"
-	sellprice = VALUE_RONTZ_ITEM
+	sellprice = VALUE_RONTZ_ITEM + VALUE_SILVER_ITEM
 
 /obj/item/clothing/ring/gold
 	name = "gold ring"
@@ -58,32 +58,32 @@
 /obj/item/clothing/ring/gold/dorpel
 	name = "dorpel ring"
 	icon_state = "g_ring_diamond"
-	sellprice = VALUE_DORPEL_ITEM * 2
+	sellprice = VALUE_DORPEL_ITEM + VALUE_GOLD_ITEM
 
 /obj/item/clothing/ring/gold/blortz
 	name = "blortz ring"
 	icon_state = "g_ring_quartz"
-	sellprice = VALUE_BLORTZ_ITEM * 2
+	sellprice = VALUE_BLORTZ_ITEM + VALUE_GOLD_ITEM
 
 /obj/item/clothing/ring/gold/saffira
 	name = "saffira ring"
 	icon_state = "g_ring_sapphire"
-	sellprice = VALUE_SAFFIRA_ITEM * 2
+	sellprice = VALUE_SAFFIRA_ITEM + VALUE_GOLD_ITEM
 
 /obj/item/clothing/ring/gold/gemerald
 	name = "gemerald ring"
 	icon_state = "g_ring_emerald"
-	sellprice = VALUE_GEMERALD_ITEM * 2
+	sellprice = VALUE_GEMERALD_ITEM + VALUE_GOLD_ITEM
 
 /obj/item/clothing/ring/gold/toper
 	name = "toper ring"
 	icon_state = "g_ring_topaz"
-	sellprice = VALUE_TOPER_ITEM * 2
+	sellprice = VALUE_TOPER_ITEM + VALUE_GOLD_ITEM
 
 /obj/item/clothing/ring/gold/rontz
 	name = "rontz ring"
 	icon_state = "g_ring_ruby"
-	sellprice = VALUE_RONTZ_ITEM * 2
+	sellprice = VALUE_RONTZ_ITEM + VALUE_GOLD_ITEM
 
 /obj/item/clothing/ring/jade
 	name = "joapstone ring"

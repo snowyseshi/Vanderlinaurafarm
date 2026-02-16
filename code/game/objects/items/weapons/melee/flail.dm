@@ -126,7 +126,7 @@
 	gripsprite = TRUE
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK
-	sellprice = VALUE_IRON_ITEM * 2
+	sellprice = VALUE_IRON_ITEM + VALUE_WOOD_ITEM
 
 /obj/item/weapon/flail/peasant/getonmobprop(tag)
 	. = ..()

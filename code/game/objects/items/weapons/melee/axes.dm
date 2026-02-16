@@ -333,7 +333,7 @@
 	melting_material = /datum/material/copper
 	melt_amount = 150
 	pickup_sound = 'sound/foley/equip/rummaging-03.ogg'
-	sellprice = VALUE_COPPER_ITEM+VALUE_COPPER_ITEM
+	sellprice = VALUE_COPPER_ITEM + VALUE_COPPER_ITEM
 
 /obj/item/weapon/axe/copper/getonmobprop(tag)
 	. = ..()
@@ -446,7 +446,7 @@
 	max_integrity = INTEGRITY_STRONGEST
 	melting_material = /datum/material/steel
 	melt_amount = 150
-	sellprice = VALUE_DOUBLE_STEEL_ITEM+VALUE_STEEL_ITEM+VALUE_WOOD_ITEM
+	sellprice = VALUE_DOUBLE_STEEL_ITEM + VALUE_STEEL_ITEM+VALUE_WOOD_ITEM
 
 /obj/item/weapon/greataxe/steel/doublehead // Trades more damage for being worse to parry with and easier to dodge of.
 	name = "double-headed steel greataxe"
@@ -459,7 +459,7 @@
 	minstr = 12
 
 	melt_amount = 180
-	sellprice = VALUE_DOUBLE_STEEL_ITEM+VALUE_DOUBLE_STEEL_ITEM
+	sellprice = VALUE_DOUBLE_STEEL_ITEM + VALUE_DOUBLE_STEEL_ITEM
 
 /obj/item/weapon/greataxe/steel/doublehead/graggar
 	name = "vicious greataxe"

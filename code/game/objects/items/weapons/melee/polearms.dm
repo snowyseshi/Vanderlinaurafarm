@@ -27,7 +27,7 @@
 	thrown_bclass = BCLASS_STAB
 	grid_height = 96
 	grid_width = 64
-	sellprice = VALUE_COMMON_GOODS
+	sellprice = VALUE_WOOD_ITEM
 
 /obj/item/weapon/polearm/Initialize()
 	. = ..()
@@ -133,7 +133,7 @@
 	melt_amount = 75
 	dropshrink = 0.8
 	thrown_bclass = BCLASS_STAB
-	sellprice = VALUE_IRON_ITEM
+	sellprice = VALUE_IRON_SMALL_ITEM + VALUE_WOOD_ITEM
 
 /obj/item/weapon/polearm/spear/getonmobprop(tag)
 	. = ..()
@@ -179,7 +179,7 @@
 	max_integrity = INTEGRITY_STRONG
 	resistance_flags = FIRE_PROOF
 	melting_material = /datum/material/silver
-	sellprice = VALUE_SILVER_ITEM
+	sellprice = VALUE_SILVER_ITEM + VALUE_WOOD_ITEM
 
 /obj/item/weapon/polearm/spear/psydon/Initialize(mapload)
 	. = ..()
@@ -210,7 +210,7 @@
 	drop_sound = 'sound/foley/dropsound/blade_drop.ogg'
 	melting_material = /datum/material/steel
 	melt_amount = 75
-	sellprice = VALUE_STEEL_ITEM
+	sellprice = VALUE_STEEL_ITEM + VALUE_WOOD_ITEM
 
 /obj/item/weapon/polearm/spear/billhook/ji
 	name = "steel dagger-ax"
@@ -251,7 +251,7 @@
 	smeltresult = /obj/item/fertilizer/ash
 	melting_material = null
 	dropshrink = 0.7
-	sellprice = VALUE_DIRT_CHEAP
+	sellprice = VALUE_WOOD_ITEM
 
 //................ Javelin ............... //
 /obj/item/weapon/polearm/spear/stone/copper
@@ -265,7 +265,7 @@
 	melting_material = /datum/material/copper
 	melt_amount = 75
 	dropshrink = 0.9
-	sellprice = VALUE_COPPER_ITEM
+	sellprice = VALUE_COPPER_SMALL_ITEM
 	throw_speed = 3
 	embedding = list("embedded_pain_multiplier" = 4, "embed_chance" = 50, "embedded_fall_chance" = 0, "embedded_ignore_throwspeed_threshold" = 1)
 
@@ -299,7 +299,7 @@
 	dropshrink = 0.8
 	melting_material = /datum/material/steel
 	melt_amount = 150
-	sellprice = VALUE_STEEL_ITEM * 2
+	sellprice = VALUE_DOUBLE_STEEL_ITEM + VALUE_WOOD_ITEM
 
 /obj/item/weapon/polearm/halberd/getonmobprop(tag)
 	. = ..()
@@ -332,7 +332,7 @@
 	axe_cut = 15
 	melting_material = /datum/material/iron
 	melt_amount = 75
-	sellprice = VALUE_IRON_ITEM
+	sellprice = VALUE_IRON_ITEM + VALUE_WOOD_ITEM
 
 /obj/item/weapon/woodchopper/getonmobprop(tag)
 	. = ..()
@@ -368,7 +368,7 @@
 	axe_cut = 15
 	melting_material = /datum/material/iron
 	melt_amount = 150
-	sellprice = VALUE_IRON_ITEM
+	sellprice = VALUE_DOUBLE_IRON_ITEM + VALUE_WOOD_ITEM
 
 /obj/item/weapon/polearm/halberd/bardiche/warcutter/getonmobprop(tag)
 	. = ..()
@@ -396,7 +396,7 @@
 	resistance_flags = FIRE_PROOF
 	melting_material = /datum/material/silver
 	melt_amount = 150
-	sellprice = VALUE_SILVER_ITEM * 2
+	sellprice = VALUE_DOUBLE_SILVER_ITEM + VALUE_WOOD_ITEM
 
 /obj/item/weapon/polearm/halberd/psydon/Initialize(mapload)
 	. = ..()
@@ -439,7 +439,7 @@
 	axe_cut = 10
 	melting_material = /datum/material/iron
 	melt_amount = 140
-	sellprice = VALUE_IRON_ITEM * 2
+	sellprice = VALUE_DOUBLE_IRON_ITEM + VALUE_WOOD_ITEM
 
 /obj/item/weapon/polearm/halberd/bardiche/ancient
 	name = "bardiche"
@@ -472,7 +472,7 @@
 	dropshrink = 0.8
 	melting_material = /datum/material/steel
 	melt_amount = 150
-	sellprice = VALUE_STEEL_ITEM * 2
+	sellprice = VALUE_DOUBLE_STEEL_ITEM + VALUE_WOOD_ITEM
 
 /obj/item/weapon/polearm/eaglebeak/getonmobprop(tag)
 	. = ..()
@@ -495,7 +495,7 @@
 	max_integrity = INTEGRITY_STRONG
 	melting_material = /datum/material/iron
 	melt_amount = 150
-	sellprice = VALUE_IRON_ITEM * 2
+	sellprice = VALUE_DOUBLE_IRON_ITEM + VALUE_WOOD_ITEM
 
 //................ Hoplite Spear ............... //
 /obj/item/weapon/polearm/spear/hoplite

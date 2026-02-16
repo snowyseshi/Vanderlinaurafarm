@@ -113,7 +113,7 @@
 
 /obj/item/weapon/sword/decorated
 	icon_state = "decsword1"
-	sellprice = VALUE_LUXURY_THING * 2
+	sellprice = VALUE_STEEL_ITEM + VALUE_GOLD_ITEM
 
 /obj/item/weapon/sword/decorated/Initialize()
 	. = ..()
@@ -227,7 +227,7 @@
 	name = "decorated sabre"
 	desc = "A sabre decorated with fashionable gold accents without sacrificing its lethal practicality."
 	icon_state = "decsaber"
-	sellprice = VALUE_LUXURY_THING * 2
+	sellprice = VALUE_STEEL_ITEM + VALUE_GOLD_ITEM
 
 /obj/item/weapon/sword/sabre/stalker
 	name = "stalker sabre"
@@ -946,7 +946,7 @@
 
 	last_used = 0
 	melting_material = /datum/material/silver
-	sellprice = VALUE_LUXURY_THING * 2
+	sellprice = VALUE_DOUBLE_SILVER_ITEM + VALUE_GOLD_ITEM
 
 /obj/item/weapon/sword/long/decorated/Initialize(mapload)
 	. = ..()

@@ -178,6 +178,7 @@
 			/datum/job/templar::title,
 			/datum/job/churchling::title,
 			/datum/job/undertaker::title,
+			/datum/job/gmtemplar,
 			)
 
 		if(!((H.mind?.assigned_role.title in rod_jobs_priest)))

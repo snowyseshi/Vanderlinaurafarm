@@ -157,7 +157,7 @@
 		/datum/species/triton,
 		/datum/species/rakshari,
 		/datum/species/kobold,
-		/datum/species/medicator,
+		/datum/species/automaton,
 		/datum/oratorium,
 		"Nobles",
 	)
@@ -199,7 +199,7 @@
 				to_chat(H, span_userdanger("You see [human] and freeze in terror!"))
 				next_scream_time = world.time + 25 SECONDS
 				return
-	else
+	else if(fear_type == /datum/oratorium)
 		for(var/mob/living/carbon/human/human in view(5, user))
 			if(human == user)
 				continue

@@ -152,10 +152,12 @@
 		/datum/species/halfling,
 		/datum/species/demihuman,
 		/datum/species/dwarf,
-		/datum/species/elf,
+		/datum/species/elf/snow,
+		/datum/species/elf/dark,
 		/datum/species/triton,
 		/datum/species/rakshari,
 		/datum/species/kobold,
+		/datum/species/medicator,
 		/datum/oratorium,
 		"Nobles",
 	)

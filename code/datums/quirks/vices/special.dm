@@ -156,6 +156,7 @@
 		/datum/species/elf/dark,
 		/datum/species/triton,
 		/datum/species/rakshari,
+		/datum/species/medicator,
 		/datum/species/kobold,
 		/datum/species/automaton,
 		/datum/oratorium,

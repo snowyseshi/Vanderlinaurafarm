@@ -169,7 +169,7 @@
 		if(H == HU)
 			return
 
-		if(H.can_block_magic(MAGIC_RESISTANCE))
+		if(H.can_block_magic(MAGIC_RESISTANCE_HOLY))
 			return
 
 		if(!rod_jobs_priest)

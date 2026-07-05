@@ -981,4 +981,9 @@
 		if(!(tested.department_flag & OUTSIDERS))
 			return FALSE
 
+	if(species.id == SPEC_ID_SNOW_ELF && SPEC_ID_HALF_SNOW_ELF)
+		var/datum/job/tested = parent_job ? SSjob.GetJobType(parent_job) : src
+		if(!(tested.department_flag & OUTSIDERS))
+			return FALSE
+
 	return TRUE

@@ -17,6 +17,7 @@
 /datum/species/human/halfzizo
 	name = "Half-Snow Elf"
 	id = SPEC_ID_HALF_SNOW_ELF
+	id_override = SPEC_ID_HALF_DROW
 	multiple_accents = list(
 		"Humen Accent" = "Imperial",
 		"Dark Elf Accent" = "Elfish"
@@ -189,4 +190,3 @@
 		return TRUE
 
 	return prefs.parent.has_triumph_buy(TRIUMPH_BUY_HALF_SNOW_ELF)
-

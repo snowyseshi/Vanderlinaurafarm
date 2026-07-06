@@ -31,6 +31,7 @@
 /datum/species/elf/zizo
 	name = "Snow Elf"
 	id = SPEC_ID_SNOW_ELF
+	id_override = SPEC_ID_DROW
 	desc = "Zizo's progeny. \
 	\n\n\
 	These elves hail from an underground expanse of newly-reborn empires. \
@@ -141,15 +142,6 @@
 	if(message_language.type == /datum/language/elvish)
 		return list(SPAN_DELF)
 	return message_language.spans
-/*
-/datum/species/elf/dark/on_species_gain(mob/living/carbon/C, datum/species/old_species)
-	. = ..()
-	C.remove_language(/datum/language/common)
-
-/datum/species/elf/dark/on_species_loss(mob/living/carbon/C)
-	. = ..()
-	C.grant_language(/datum/language/common)
-*/
 /datum/species/elf/zizo/check_roundstart_eligible()
 	return TRUE
 

@@ -22,7 +22,7 @@
 		"Humen Accent" = "Imperial",
 		"Dark Elf Accent" = "Elfish"
 	)
-	desc = "Zizo's Bastard's \
+	desc = "The bastards of Zizo \
 	\n\n\
 	The distinction between Half-Elves and 'Half-Drow' has been a subject of debate for centuries. \
 	While similar in physicality and longevity to their non-drow cousins, their origins cause them to face discrimination akin to their elven side. \

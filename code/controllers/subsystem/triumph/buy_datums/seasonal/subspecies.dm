@@ -15,11 +15,12 @@
 
 /datum/triumph_buy/seasonal/subspecies/snow_elf
 	name = "Snow Elf"
-	desc = "Able to select a subspecies of Elf, they have a unique examine."
+	desc = "Able to select a subspecies of Elf."
 	triumph_buy_id = TRIUMPH_BUY_SNOW_ELF
-	triumph_cost = 250
+	triumph_cost = 150
 
 /datum/triumph_buy/seasonal/subspecies/half_snow_elf
 	name = "Half Snow Elf"
 	desc = "Able to select a half-snow elf."
 	triumph_buy_id = TRIUMPH_BUY_HALF_SNOW_ELF
+	triumph_cost = 100

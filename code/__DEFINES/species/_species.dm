@@ -123,6 +123,7 @@
 	SPEC_ID_AASIMAR,\
 	SPEC_ID_ELF,\
 	SPEC_ID_HALF_ELF,\
+	SPEC_ID_HALF_DROW,\
 	SPEC_ID_HALFLING,\
 )
 
@@ -133,6 +134,7 @@
 	SPEC_ID_AASIMAR,\
 	SPEC_ID_ELF,\
 	SPEC_ID_HALF_ELF,\
+	SPEC_ID_HALF_DROW,\
 	SPEC_ID_HALFLING,\
 	SPEC_ID_HARPY,\
 	SPEC_ID_TRITON,\
@@ -177,12 +179,21 @@
 	SPEC_ID_AASIMAR,\
 )
 
+/// Species who can be Grenzelhoft Mercenaries but not other important grenzel stuff
+#define RACES_PLAYER_GRENZ_MERC list(\
+	SPEC_ID_HUMEN,\
+	SPEC_ID_DWARF,\
+	SPEC_ID_AASIMAR,\
+	SPEC_ID_HALF_ELF,\
+)
+
 /// Species who are affiliated with Zaladin
 #define RACES_PLAYER_ZALADIN list(\
 	SPEC_ID_HUMEN,\
 	SPEC_ID_RAKSHARI,\
 	SPEC_ID_ELF,\
 	SPEC_ID_HALF_ELF,\
+	SPEC_ID_HALF_DROW,\
 	SPEC_ID_DWARF,\
 )
 
@@ -226,10 +237,19 @@
 	SPEC_ID_HALF_ORC,\
 )
 
-/// Vanderlin royalty
+/// Vanderlin monarch
+#define RACES_PLAYER_MONARCH list(\
+	SPEC_ID_HUMEN,\
+	SPEC_ID_HALF_ELF,\
+	SPEC_ID_ELF,\
+	SPEC_ID_DWARF,\
+)
+
+/// Vanderlin non-monarch royalty
 #define RACES_PLAYER_ROYALTY list(\
 	SPEC_ID_HUMEN,\
 	SPEC_ID_HALF_ELF,\
+	SPEC_ID_HALF_DROW,\
 	SPEC_ID_ELF,\
 	SPEC_ID_DWARF,\
 )
@@ -246,6 +266,7 @@
 	SPEC_ID_HALF_DROW,\
 	SPEC_ID_TIEFLING,\
 	SPEC_ID_AASIMAR,\
+	SPEC_ID_RAKSHARI,\
 	SPEC_ID_HARPY,\
 	SPEC_ID_MEDICATOR,\
 	SPEC_ID_TRITON,\
@@ -256,6 +277,7 @@
 	SPEC_ID_HUMEN,\
 	SPEC_ID_ELF,\
 	SPEC_ID_HALF_ELF,\
+	SPEC_ID_HALF_DROW,\
 	SPEC_ID_DWARF,\
 	SPEC_ID_AASIMAR,\
 	SPEC_ID_MEDICATOR,\

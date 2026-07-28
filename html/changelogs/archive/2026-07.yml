@@ -481,3 +481,10 @@
   - rscadd: Added a bunch of new titles for the court roles.
   yafesdot:
   - rscadd: add culture accents to the accent mix
+2026-07-28:
+  dwasint:
+  - bugfix: coins now sanity check on reduction so if they are below or equal to 0
+      they get cleaned
+  realforest2001:
+  - balance: You can no longer drink blood through armor that protects from bite criticals.
+  - balance: Miracles are more effective at healing organ damage.

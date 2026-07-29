@@ -1,4 +1,0 @@
-author: "Cheffie, Mothblocks, ninjanomnom"
-delete-after: True
-changes:
-  - code_imp: "Stack traces are now no longer grouped in the runtime viewer"

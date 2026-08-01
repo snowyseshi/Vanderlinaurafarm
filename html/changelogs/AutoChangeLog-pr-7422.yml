@@ -1,4 +1,0 @@
-author: "dwasint"
-delete-after: True
-changes:
-  - admin: "Updates job ban panel to include jobs and classes properly."

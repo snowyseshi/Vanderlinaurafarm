@@ -12,3 +12,4 @@
   realforest2001:
   - bugfix: Correctly closes hrefs
   - bugfix: Magical noble is correctly patron locked.
+  - rscadd: Added a chat color for maniac prayers.

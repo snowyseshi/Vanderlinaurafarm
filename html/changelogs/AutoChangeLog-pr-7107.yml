@@ -1,0 +1,4 @@
+author: "Monkeke2"
+delete-after: True
+changes:
+  - rscadd: "Added an ability that lets rakshari and werevolves sniff to detect mobs in their vicinity (20 tiles)"

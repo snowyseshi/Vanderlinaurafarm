@@ -1,0 +1,5 @@
+author: "Telvayne"
+delete-after: True
+changes:
+  - qol: "Reduced hunger/thirst rates"
+  - refactor: "brought hunger and thirst variables back into operation"

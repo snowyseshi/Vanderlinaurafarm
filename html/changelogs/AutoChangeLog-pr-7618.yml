@@ -1,5 +1,0 @@
-author: "CheffieGithub"
-delete-after: True
-changes:
-  - rscdel: "Removed natural fog"
-  - balance: "Reduced duration and probability of weather"

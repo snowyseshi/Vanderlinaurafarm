@@ -373,15 +373,16 @@
 	injury_flags &= ~INJURY_BANDAGED
 	return TRUE
 
-/datum/injury/proc/is_bleeding()
+/datum/injury/proc/is_bleeding(ignore_bandage = FALSE)
 	if(!CAN_HAVE_BLOOD(parent_mob))
 		return
 
 	for(var/obj/item/item as anything in embedded_objects)
 		if(item.w_class >= WEIGHT_CLASS_SMALL)
 			return FALSE
-
-	if(is_bandaged() || is_sutured())
+	if(!ignore_bandage && is_bandaged())
+		return FALSE
+	if(is_sutured())
 		return FALSE
 
 	if(required_status & BODYPART_ROBOTIC)
@@ -389,10 +390,10 @@
 
 	return (damage_per_injury() > bleed_threshold)
 
-/datum/injury/proc/get_bleed_rate(ignore_is_bleeding = FALSE)
+/datum/injury/proc/get_bleed_rate(ignore_bandage = FALSE)
 	if(!CAN_HAVE_BLOOD(parent_mob))
 		return 0
-	if(!ignore_is_bleeding && !is_bleeding())
+	if(!is_bleeding(ignore_bandage))
 		return 0
 	var/bad_embeddies = 0
 	for(var/obj/item/item in embedded_objects)

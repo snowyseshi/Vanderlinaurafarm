@@ -8,7 +8,6 @@
 
 # aberrantQuesrist
 
-/icons/ @aberrantQuesrist
 /_maps/map_files/daftmarsh.dmm @aberrantQuesrist
 /_maps/map_files/vanderlin.dmm @aberrantQuesrist
 
@@ -18,4 +17,8 @@
 
 # Lore
 
-/strings/rt/Lore_Primer.txt @aberrantQuesrist @tired-wired
+/strings/rt/Lore_Primer.txt @aberrantQuesrist
+
+# Icons
+
+/icons/ @aberrantQuesrist @Blumengama

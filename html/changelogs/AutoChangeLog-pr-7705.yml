@@ -1,0 +1,9 @@
+author: "realforest2001"
+delete-after: True
+changes:
+  - code_imp: "Updated the logic for pickpocketing."
+  - code_imp: "Changed the trait name for being impossible to steal."
+  - rscadd: "Added an Anti-Theft enchantment."
+  - rscadd: "Changed the description of the Finger's Crown ring to reflect above."
+  - rscadd: "Added a trait that makes someone impossible to steal from."
+  - rscadd: "Added an unimplemented variable for difficulty stealing something. To be used in a following PR."

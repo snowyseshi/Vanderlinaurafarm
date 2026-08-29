@@ -1,0 +1,4 @@
+author: "Monkeke2"
+delete-after: True
+changes:
+  - bugfix: "Lost Keys vice no longer makes your keys spawn in the river/moat."

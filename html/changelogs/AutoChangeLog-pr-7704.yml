@@ -1,4 +1,0 @@
-author: "Ardcrumb"
-delete-after: True
-changes:
-  - map: "added some more texture to the bandit camp visually, as well as adding some minor clothing objects, like cloaks and hats, as well as a unique matthios amulet.\n## Pre-Merge Checklist\n<!-- Don't bother filling these in while creating your Pull Request, just click the checkboxes after the Pull Request is opened and you are redirected to the page. -->\n- [x] You tested this on a local server.\n- [x] This code did not runtime during testing.\n- [x] You documented all of your changes.\n<!-- Neither the compiler nor workflow checks are perfect at detecting runtimes and errors. It is important to test your code/feature/fix locally. -->"

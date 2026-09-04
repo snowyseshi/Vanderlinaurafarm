@@ -1,5 +1,0 @@
-author: "Monkeke2"
-delete-after: True
-changes:
-  - rscadd: "Mercenary statue announces a random mercenary every 2-4 minutes"
-  - bugfix: "Mercenary statue no longer shows \"/list\" on examine"
